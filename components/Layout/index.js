@@ -1,10 +1,8 @@
-import { Children } from 'react';
-// import Navigation from "../Navbar";
 import Footer from '../../container/footer';
 
+// eslint-disable-next-line react/prop-types
 const Layout = ({ children }) => (
   <div>
-    {/* <Navigation /> */}
     <main>{children}</main>
     <Footer />
   </div>

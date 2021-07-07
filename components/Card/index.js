@@ -1,7 +1,10 @@
 import PropTypes from 'prop-types';
 import styles from './card.module.scss';
 
-const Card = ({ children, variant, className, ...props }) => (
+// eslint-disable-next-line prettier/prettier
+const Card = ({
+  children, variant, className, ...props
+}) => (
   <div className={`${styles[variant]} ${className}`} {...props}>
     {children}
   </div>

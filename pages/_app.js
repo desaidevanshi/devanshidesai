@@ -1,7 +1,8 @@
+/* eslint-disable react/prop-types */
 import '../styles/_global.scss';
 import Layout from '../components/Layout';
 
-export default function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }) {
   return (
     <>
       <div>
@@ -12,3 +13,5 @@ export default function MyApp({ Component, pageProps }) {
     </>
   );
 }
+
+export default MyApp;

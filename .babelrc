@@ -3,7 +3,6 @@
   "plugins": [
     "@babel/plugin-transform-runtime",
     "@babel/plugin-proposal-class-properties",
-    "@babel/plugin-proposal-nullish-coalescing-operator",
-    "inline-react-svg"
+    "@babel/plugin-proposal-nullish-coalescing-operator"
   ]
 }

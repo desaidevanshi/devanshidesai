@@ -1,10 +1,14 @@
+/* eslint-disable react/prop-types */
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import Loader from '../Loader';
 import styles from './button.module.scss';
 
 // main button
-const Button = ({ variant, className, isDisabled, children, isLoading, onClick, ...rest }) => (
+// eslint-disable-next-line prettier/prettier
+const Button = ({
+  variant, className, isDisabled, children, isLoading, onClick, ...rest
+}) => (
   <button
     type="button"
     className={classNames(!isDisabled && !isLoading && styles[variant], {
@@ -12,7 +16,9 @@ const Button = ({ variant, className, isDisabled, children, isLoading, onClick, 
       [className]: !!className,
     })}
     onClick={isDisabled || isLoading ? () => {} : onClick}
-    {...rest}>
+    // eslint-disable-next-line prettier/prettier
+    {...rest}
+  >
     {isLoading && <Loader />}
     {children}
   </button>

@@ -1,7 +1,10 @@
 import PropTypes from 'prop-types';
 import styles from './portText.module.scss';
 
-const PortText = ({ variant, component, children, className }) => (
+// eslint-disable-next-line prettier/prettier
+const PortText = ({
+  variant, component, children, className,
+}) => (
   <div>
     {component === 'h1' ? (
       <h1 className={`${styles[variant]} ${className}`} component={component}>
@@ -53,7 +56,7 @@ PortText.propTypes = {
     'portCommentdetailText',
   ]),
   component: PropTypes.string,
-  className: PropTypes.string,
+  className: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
 };
 

@@ -1,7 +1,11 @@
+/* eslint-disable jsx-a11y/control-has-associated-label */
+/* eslint-disable react/button-has-type */
+/* eslint-disable react/no-find-dom-node */
+/* eslint-disable arrow-parens */
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import ReactDOM from 'react-dom';
-import React, { useRef } from 'react';
+import React from 'react';
 import classNames from 'classnames';
 
 const Navbar = () => {
@@ -16,9 +20,9 @@ const Navbar = () => {
     }
     window.addEventListener('keydown', event => {
       if (event.key === 'Escape') {
-        const element = document.getElementById('navbar');
-        if (ReactDOM.findDOMNode(element).style.display === 'flex') {
-          ReactDOM.findDOMNode(element).style.display = 'none';
+        const ele = document.getElementById('navbar');
+        if (ReactDOM.findDOMNode(ele).style.display === 'flex') {
+          ReactDOM.findDOMNode(ele).style.display = 'none';
         }
       }
     });
@@ -33,8 +37,9 @@ const Navbar = () => {
           <div className="container">
             <div className="max-width">
               <Link href="/">
-                <a className="logo">
-                  Devan<span>shi.</span>
+                <a href="/" className="logo">
+                  Devan
+                  <span>shi.</span>
                 </a>
               </Link>
               <button className="nav-btn" id="toggle" onClick={toggleNavbar} />
@@ -46,9 +51,10 @@ const Navbar = () => {
                 <li>
                   <Link href="http://localhost:3000/#home">
                     <a
-                      className={classNames('nav-link-white', {
-                        active: pathname === '#home',
-                      })}>
+                      href="/"
+                      // eslint-disable-next-line prettier/prettier
+                      className={classNames('nav-link-white', { active: pathname === '#home' })}
+                    >
                       Home
                     </a>
                   </Link>
@@ -56,9 +62,12 @@ const Navbar = () => {
                 <li>
                   <Link href="http://localhost:3000/#about">
                     <a
+                      href="#about"
                       className={classNames('nav-link-white', {
                         active: pathname === '#about',
-                      })}>
+                      })}
+                      // eslint-disable-next-line prettier/prettier
+                    >
                       About
                     </a>
                   </Link>
@@ -66,9 +75,12 @@ const Navbar = () => {
                 <li>
                   <Link href="http://localhost:3000/#services">
                     <a
+                      href="#services"
                       className={classNames('nav-link-white', {
                         active: pathname === '#services',
-                      })}>
+                      })}
+                      // eslint-disable-next-line prettier/prettier
+                    >
                       Services
                     </a>
                   </Link>
@@ -76,9 +88,12 @@ const Navbar = () => {
                 <li>
                   <Link href="http://localhost:3000/#work">
                     <a
+                      href="#work"
                       className={classNames('nav-link-white', {
                         active: pathname === '#work',
-                      })}>
+                      })}
+                      // eslint-disable-next-line prettier/prettier
+                    >
                       Work
                     </a>
                   </Link>
@@ -86,9 +101,12 @@ const Navbar = () => {
                 <li>
                   <Link href="http://localhost:3000/#contact">
                     <a
+                      href="#contact"
                       className={classNames('nav-link-white', {
                         active: pathname === '#contact',
-                      })}>
+                      })}
+                      // eslint-disable-next-line prettier/prettier
+                    >
                       Contact
                     </a>
                   </Link>

@@ -5,32 +5,31 @@ import Twitter from '../../public/svg/logo-twitter.svg';
 import Gmail from '../../public/svg/mail.svg';
 import styles from './footer.module.scss';
 
-const Footer = () => {
-  return (
-    <section id="footer" className={styles.footer}>
-      <div className={styles.footerSoc}>
-        <a href="https://github.com/desaidevanshi">
-          <Button className={styles.portSocialBtn} variant="portSocialButton">
-            <Github className={styles.btnHover} height={18} width={18} />
-          </Button>
-        </a>
-        <a href="www.linkedin.com/in/devanshi-desai-5716bb182">
-          <Button className={styles.portSocialBtn} variant="portSocialButton">
-            <Linkedin className={styles.btnHover} height={18} width={18} />
-          </Button>
-        </a>
-        <a href="https://twitter.com/Devansh70765923">
-          <Button className={styles.portSocialBtn} variant="portSocialButton">
-            <Twitter className={styles.btnHover} height={18} width={18} />
-          </Button>
-        </a>
-        <a href="mailto:contact.ddevanshi@gmail.com">
-          <Button className={styles.portSocialBtn} variant="portSocialButton">
-            <Gmail className={styles.btnHover} height={18} width={18} />
-          </Button>
-        </a>
-      </div>
-      {/* <div className={styles.footerMain}>
+const Footer = () => (
+  <section id="footer" className={styles.footer}>
+    <div className={styles.footerSoc}>
+      <a href="https://github.com/desaidevanshi">
+        <Button className={styles.portSocialBtn} variant="portSocialButton">
+          <Github className={styles.btnHover} height={18} width={18} />
+        </Button>
+      </a>
+      <a href="www.linkedin.com/in/devanshi-desai-5716bb182">
+        <Button className={styles.portSocialBtn} variant="portSocialButton">
+          <Linkedin className={styles.btnHover} height={18} width={18} />
+        </Button>
+      </a>
+      <a href="https://twitter.com/Devansh70765923">
+        <Button className={styles.portSocialBtn} variant="portSocialButton">
+          <Twitter className={styles.btnHover} height={18} width={18} />
+        </Button>
+      </a>
+      <a href="mailto:contact.ddevanshi@gmail.com">
+        <Button className={styles.portSocialBtn} variant="portSocialButton">
+          <Gmail className={styles.btnHover} height={18} width={18} />
+        </Button>
+      </a>
+    </div>
+    {/* <div className={styles.footerMain}>
         <div className={styles.contactF}>
           <div className={styles.footerText}>
             <caption>Devanshi</caption>
@@ -56,12 +55,11 @@ const Footer = () => {
           </div>
         </div>
       </div> */}
-      <div className={styles.footerLine} />
-      <div className={styles.footerText}>
-        <footer>Devanshi © 2021. All Right Reserved, Designed By Devanshi Desai.</footer>
-      </div>
-    </section>
-  );
-};
+    <div className={styles.footerLine} />
+    <div className={styles.footerText}>
+      <footer>Devanshi © 2021. All Right Reserved, Designed By Devanshi Desai.</footer>
+    </div>
+  </section>
+);
 
 export default Footer;

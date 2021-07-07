@@ -1,7 +1,7 @@
 import Card from '../../components/Card';
 import Header from '../../components/Header';
 import PortText from '../../components/PortText';
-import Footer from '../../container/footer';
+// import Footer from '../../container/footer';
 import Search from '../../public/svg/search_white_48dp.svg';
 
 const PortfolioPage = () => (

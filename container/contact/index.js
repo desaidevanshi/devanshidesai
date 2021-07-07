@@ -1,12 +1,13 @@
 import React from 'react';
 import { useFormik } from 'formik';
+import classNames from 'classnames';
 import Button from '../../components/Button';
 import styles from './contact.module.scss';
-import classNames from 'classnames';
 
 // A custom validation function. This must return an object
 // which keys are symmetrical to our values/initialValues
-const validate = values => {
+// eslint-disable-next-line prettier/prettier
+const validate = (values) => {
   const errors = {};
   if (!values.name) {
     errors.name = 'Required';
@@ -36,6 +37,7 @@ const SignupForm = () => {
     validate,
     onSubmit: (values, { resetForm }) => {
       resetForm();
+      // eslint-disable-next-line no-alert
       alert(JSON.stringify(values, null, 2));
     },
   });

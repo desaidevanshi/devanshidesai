@@ -7,5 +7,6 @@
     "vue-html": "html"
   },
   "files.eol": "\n",
-  "liveServer.settings.port": 5502
+  "liveServer.settings.port": 5502,
+  "git.ignoreLimitWarning": true
 }
