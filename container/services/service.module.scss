@@ -1,0 +1,56 @@
+.serviceSec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: #1b3241;
+  color: white;
+}
+
+.heading {
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.heading h2 {
+  @apply mb-10 text-center;
+  font-size: xx-large;
+  color: #4da8da;
+}
+
+.heading p {
+  @apply text-center;
+  font-size: x-large;
+}
+.mainbox {
+  @apply grid md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1;
+}
+
+.divRow {
+  @apply flex lg:flex-col md:flex-col xs:flex-col sm:flex-col;
+}
+.divRow h3 {
+  @apply my-10 text-center;
+  font-size: x-large;
+}
+.divRow p {
+  font-size: large;
+  font-weight: lighter;
+}
+.box {
+  @apply flex flex-col items-center lg:m-3;
+  @apply h-full bg-[#12232e] p-10 rounded-[10px] overflow-hidden relative z-[1];
+}
+
+@media screen and (max-width: 777px) {
+  .serviceSec {
+    height: fit-content;
+  }
+  .mainbox {
+    padding: 10px;
+    gap: 10px;
+  }
+}

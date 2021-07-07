@@ -1,0 +1,128 @@
+.portEduPercent {
+  @apply text-3xl font-semibold text-textColor-skin-base mt-8;
+}
+
+.portLogoText {
+  font-family: "Montserrat", sans-serif;
+  @apply font-extrabold text-[28px] m-0 text-textColor-skin-inverted uppercase z-50 absolute;
+}
+
+.portNavText {
+  @apply text-[13px] font-normal uppercase;
+}
+
+.portHeaderText {
+  @apply text-textColor-skin-base text-[88px] font-black;
+}
+.portHeaderHomeText {
+  @apply text-textColor-skin-inverted font-black;
+}
+.portHeaderCaption {
+  @apply text-textColor-skin-inverted-dull;
+}
+
+.portHeaderCaptionBold {
+  @apply text-[24px] font-bold text-textColor-skin-inverted-dull;
+}
+
+.portHeadingText {
+  @apply font-semibold lg:text-[32px] md:text-[31px] sm:text-[30px] xs:text-[24px] m-0 uppercase;
+  color: #4da8da;
+}
+
+.portHeadingCaption {
+  @apply uppercase text-[16px] m-0 text-textColor-skin-base  font-medium;
+}
+
+.portParaText {
+  @apply text-[16px] text-textColor-skin-dull font-thin leading-[26.5px];
+}
+
+.portAboutCaption {
+  @apply text-[20px] text-textColor-skin-base;
+}
+
+.portParaAboutText {
+  @apply text-[16px] text-textColor-skin-dull font-thin leading-[28px];
+}
+
+.portButtonText {
+  @apply text-[13px] font-semibold uppercase;
+}
+
+.portServiceSubHeadingText {
+  @apply text-textColor-skin-base font-semibold text-lg uppercase;
+}
+
+.portCounterText {
+  @apply text-[32px] font-extrabold;
+}
+
+.portCounterCaption {
+  @apply text-[16px] font-semibold;
+}
+
+.portCardHeaderText {
+  @apply text-textColor-skin-base text-[16px] font-semibold;
+}
+
+.portCardReadText {
+  @apply text-[13px]  font-semibold  text-textColor-skin-copyright border-b-2 border-gray-600;
+}
+
+.portHeaderTextPCard {
+  @apply text-[32px] mt-0 font-bold text-center;
+}
+
+.portCardDateText {
+  @apply text-[13px]  font-semibold  text-textColor-skin-date;
+}
+
+.portTestimonialText {
+  @apply text-textColor-skin-inverted text-[24px] font-semibold m-0;
+}
+.portCommentText {
+  @apply text-textColor-skin-base text-[24px] font-semibold m-0;
+}
+
+.portTestimonialPText {
+  @apply text-[16px] font-sans text-textColor-skin-inverted;
+}
+.portEduLeftText {
+  @apply font-sans;
+  color: white;
+  padding: 5px 0;
+}
+
+.portTestimonialRoleText {
+  @apply text-textColor-skin-inverted-dull text-[14px] font-semibold mt-2;
+}
+
+.portContactHeadingText {
+  @apply text-[16px] font-bold text-textColor-skin-inverted;
+}
+
+.portContactDetailText {
+  @apply text-[14px] text-textColor-skin-inverted;
+}
+.portCommentdetailText {
+  @apply text-[14px] text-textColor-skin-base;
+}
+.portFooterText {
+  @apply text-[14px] text-textColor-skin-copyright;
+}
+
+.portFilterText {
+  @apply text-textColor-skin-base text-[14px] uppercase;
+}
+
+.portHoverCardText {
+  @apply text-textColor-skin-base text-[20px] font-semibold text-center;
+}
+.portSingleBlog {
+  @apply font-semibold md:text-[48px] sm:text-[40px] xs:text-[30px] m-0 uppercase;
+}
+
+.portSingleBlogText {
+  @apply text-textColor-skin-base font-semibold text-[28px] m-0 uppercase;
+}

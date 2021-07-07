@@ -1,0 +1,76 @@
+.about {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.aboutImg {
+  margin: 10px 10px;
+}
+.aboutImg img {
+  border: solid 2px #4da8da;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2%;
+}
+.name {
+  @apply mb-10 text-center;
+  font-size: xxx-large;
+  color: #4da8da;
+}
+.caption {
+  @apply mb-10 text-center;
+  font-size: x-large;
+}
+.des {
+  font-size: large;
+  font-weight: lighter;
+  @apply mb-10;
+}
+.portSocial {
+  justify-content: center;
+  @apply mb-10 flex flex-row;
+}
+
+.portSocialBtn {
+  @apply mx-1 flex items-center flex-col fill-current ease-in-out text-white;
+  &:hover {
+    .btnHover {
+      @apply fill-current ease-in-out cursor-pointer;
+      color: #4da8da;
+    }
+  }
+}
+@media screen and (max-width: 777px) {
+  .about {
+    flex-direction: column;
+    justify-content: flex-end;
+    height: fit-content;
+  }
+  .des {
+    padding: 0 10px;
+  }
+  .description {
+    align-items: center;
+  }
+}
+@media screen and (max-width: 513px) {
+  .about {
+    justify-content: center;
+  }
+  .aboutImg img {
+    width: 300px;
+  }
+  .name {
+    font-size: xx-large;
+  }
+}
+@media screen and (min-width: 777px) {
+  .description {
+    width: 50%;
+  }
+}

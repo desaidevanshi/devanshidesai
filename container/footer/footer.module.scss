@@ -1,0 +1,54 @@
+.footer {
+  @apply md:gap-6 sm:gap-5 py-6 h-full lg:px-20 md:px-20;
+  background-color: #12232e;
+  color: white;
+}
+.footerMain {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.contactF {
+  display: flex;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+.footerText {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footerText span a {
+  color: white;
+}
+.footerText span a:hover {
+  color: #4da8da;
+}
+.footerSoc {
+  display: flex;
+  justify-content: center;
+}
+.portSocialBtn {
+  @apply mx-1 flex items-center flex-col fill-current ease-in-out text-white;
+  &:hover {
+    .btnHover {
+      @apply fill-current ease-in-out cursor-pointer;
+      color: #4da8da;
+    }
+  }
+}
+.footerLine {
+  @apply h-[1px] col-span-4 my-6 bg-gray-500;
+}
+@media screen and (max-width: 600px) {
+  .footerMain {
+    flex-direction: column;
+  }
+  .contactF {
+    padding: 20px;
+  }
+}

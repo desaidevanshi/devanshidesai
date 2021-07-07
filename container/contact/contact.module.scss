@@ -1,0 +1,53 @@
+.contactContainer {
+  @apply sm:flex justify-center text-[16px] flex-col items-center text-center;
+  height: 100vh;
+  padding: 0 15px;
+  display: flex;
+}
+
+.contactForm {
+  @apply flex xs:flex-col xs:gap-0  sm:flex-row sm:gap-8;
+}
+
+.buttonMargin {
+  @apply mt-10;
+}
+
+.borderBottom {
+  @apply border-red-500;
+}
+
+.validMsg {
+  @apply text-left text-red-500;
+}
+.contactInput {
+  @apply border-t-0 border-r-0 my-5 border-l-0 border-b-2 h-10 xs:w-full md:w-72 lg:w-96 p-[6px] font-opensans text-[14px];
+  background: transparent;
+  border-color: #4da8da;
+  color: white;
+  font-size: 20px;
+}
+.borderApply {
+  @apply border-red-500 border-t-0 border-r-0 my-5 border-l-0 border-b-2 h-10 xs:w-full md:w-72 lg:w-96 p-[6px] font-opensans text-[14px];
+  background: transparent;
+  color: white;
+  font-size: 20px;
+}
+
+.contactTextArea {
+  @apply resize-none w-full h-32 leading-6 shadow-none  p-[10px] border-t-0 border-r-0 border-l-0 border-b-2 font-opensans text-[14px];
+  background: transparent;
+  border-color: #4da8da;
+  color: white;
+  font-size: 18px;
+}
+.captionCon {
+  @apply mb-10 text-center;
+  font-size: xx-large;
+  color: #4da8da;
+}
+
+.desCon {
+  @apply mb-10 text-center;
+  font-size: x-large;
+}
