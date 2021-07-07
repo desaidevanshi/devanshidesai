@@ -1,8 +1,8 @@
-import Computer from "../../public/svg/laptop_white_48dp.svg";
-import Code from "../../public/svg/code_white_48dp.svg";
-import Settings from "../../public/svg/support_white_48dp.svg";
-import Button from "../../components/Button";
-import styles from "./service.module.scss";
+import Computer from '../../public/svg/laptop_white_48dp.svg';
+import Code from '../../public/svg/code_white_48dp.svg';
+import Settings from '../../public/svg/support_white_48dp.svg';
+import Button from '../../components/Button';
+import styles from './service.module.scss';
 
 const Services = () => {
   return (
@@ -20,9 +20,9 @@ const Services = () => {
             <div className={styles.divRow}>
               <h3>Web Design</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Inventore expedita et veniam aut nulla ipsa enim ex in, quaerat,
-                hic aspernatur voluptatem debitis, accusantium itaque!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore expedita et
+                veniam aut nulla ipsa enim ex in, quaerat, hic aspernatur voluptatem debitis,
+                accusantium itaque!
               </p>
             </div>
           </div>
@@ -33,9 +33,9 @@ const Services = () => {
             <div className={styles.divRow}>
               <h3>Web Development</h3>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe
-                vel reiciendis laborum dolor recusandae deleniti repudiandae aut
-                libero animi. Eaque qui debitis aperiam est ullam?
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe vel reiciendis
+                laborum dolor recusandae deleniti repudiandae aut libero animi. Eaque qui debitis
+                aperiam est ullam?
               </p>
             </div>
           </div>
@@ -46,9 +46,9 @@ const Services = () => {
             <div className={styles.divRow}>
               <h3>Support</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius
-                est molestias excepturi atque deserunt quod dolore, aut beatae
-                distinctio unde quae aliquam iste asperiores vero.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius est molestias
+                excepturi atque deserunt quod dolore, aut beatae distinctio unde quae aliquam iste
+                asperiores vero.
               </p>
             </div>
           </div>

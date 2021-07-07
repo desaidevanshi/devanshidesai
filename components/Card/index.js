@@ -1,4 +1,4 @@
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 import styles from './card.module.scss';
 
 const Card = ({ children, variant, className, ...props }) => (
@@ -10,12 +10,12 @@ const Card = ({ children, variant, className, ...props }) => (
 Card.propTypes = {
   children: PropTypes.node.isRequired,
   className: PropTypes.string,
-  variant: PropTypes.oneOf(["cardPort", "hoverPort", "cardBlog"]),
+  variant: PropTypes.oneOf(['cardPort', 'hoverPort', 'cardBlog']),
 };
 
 Card.defaultProps = {
-  className: "",
-  variant: "cardPort",
+  className: '',
+  variant: 'cardPort',
 };
 
 export default Card;

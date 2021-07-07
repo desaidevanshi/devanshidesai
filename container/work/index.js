@@ -1,12 +1,12 @@
-import Card from "../../components/Card";
-import Search from "../../public/svg/search_white_48dp.svg";
-import Button from "../../components/Button";
-import styles from "./work.module.scss";
-import classNames from "classnames";
+import Card from '../../components/Card';
+import Search from '../../public/svg/search_white_48dp.svg';
+import Button from '../../components/Button';
+import styles from './work.module.scss';
+import classNames from 'classnames';
 
 const Work = ({ data }) => {
   function liClicked() {
-    const item = document.querySelector("listItems");
+    const item = document.querySelector('listItems');
     console.log(item);
     // x.classList.add('selItem');
   }

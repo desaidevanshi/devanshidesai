@@ -1,30 +1,30 @@
-import Link from "next/link";
-import { useRouter } from "next/router";
-import ReactDOM from "react-dom";
-import React, { useRef } from "react";
-import classNames from "classnames";
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+import ReactDOM from 'react-dom';
+import React, { useRef } from 'react';
+import classNames from 'classnames';
 
 const Navbar = () => {
   const { pathname } = useRouter();
 
   const toggleNavbar = () => {
-    const element = document.getElementById("navbar");
-    if (ReactDOM.findDOMNode(element).style.display === "flex") {
-      ReactDOM.findDOMNode(element).style.display = "none";
+    const element = document.getElementById('navbar');
+    if (ReactDOM.findDOMNode(element).style.display === 'flex') {
+      ReactDOM.findDOMNode(element).style.display = 'none';
     } else {
-      ReactDOM.findDOMNode(element).style.display = "flex";
+      ReactDOM.findDOMNode(element).style.display = 'flex';
     }
-    window.addEventListener("keydown", (event) => {
-      if (event.key === "Escape") {
-        const element = document.getElementById("navbar");
-        if (ReactDOM.findDOMNode(element).style.display === "flex") {
-          ReactDOM.findDOMNode(element).style.display = "none";
+    window.addEventListener('keydown', event => {
+      if (event.key === 'Escape') {
+        const element = document.getElementById('navbar');
+        if (ReactDOM.findDOMNode(element).style.display === 'flex') {
+          ReactDOM.findDOMNode(element).style.display = 'none';
         }
       }
     });
 
-    const toggle = document.getElementById("toggle");
-    toggle.classList.toggle("active");
+    const toggle = document.getElementById('toggle');
+    toggle.classList.toggle('active');
   };
   return (
     <>
@@ -46,10 +46,9 @@ const Navbar = () => {
                 <li>
                   <Link href="http://localhost:3000/#home">
                     <a
-                      className={classNames("nav-link-white", {
-                        active: pathname === "#home",
-                      })}
-                    >
+                      className={classNames('nav-link-white', {
+                        active: pathname === '#home',
+                      })}>
                       Home
                     </a>
                   </Link>
@@ -57,10 +56,9 @@ const Navbar = () => {
                 <li>
                   <Link href="http://localhost:3000/#about">
                     <a
-                      className={classNames("nav-link-white", {
-                        active: pathname === "#about",
-                      })}
-                    >
+                      className={classNames('nav-link-white', {
+                        active: pathname === '#about',
+                      })}>
                       About
                     </a>
                   </Link>
@@ -68,10 +66,9 @@ const Navbar = () => {
                 <li>
                   <Link href="http://localhost:3000/#services">
                     <a
-                      className={classNames("nav-link-white", {
-                        active: pathname === "#services",
-                      })}
-                    >
+                      className={classNames('nav-link-white', {
+                        active: pathname === '#services',
+                      })}>
                       Services
                     </a>
                   </Link>
@@ -79,10 +76,9 @@ const Navbar = () => {
                 <li>
                   <Link href="http://localhost:3000/#work">
                     <a
-                      className={classNames("nav-link-white", {
-                        active: pathname === "#work",
-                      })}
-                    >
+                      className={classNames('nav-link-white', {
+                        active: pathname === '#work',
+                      })}>
                       Work
                     </a>
                   </Link>
@@ -90,10 +86,9 @@ const Navbar = () => {
                 <li>
                   <Link href="http://localhost:3000/#contact">
                     <a
-                      className={classNames("nav-link-white", {
-                        active: pathname === "#contact",
-                      })}
-                    >
+                      className={classNames('nav-link-white', {
+                        active: pathname === '#contact',
+                      })}>
                       Contact
                     </a>
                   </Link>

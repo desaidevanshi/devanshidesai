@@ -1,6 +1,6 @@
-import { Children } from "react";
+import { Children } from 'react';
 // import Navigation from "../Navbar";
-import Footer from "../../container/footer";
+import Footer from '../../container/footer';
 
 const Layout = ({ children }) => (
   <div>

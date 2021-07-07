@@ -1,23 +1,23 @@
-import React from "react";
-import { useFormik } from "formik";
-import Button from "../../components/Button";
-import styles from "./contact.module.scss";
-import classNames from "classnames";
+import React from 'react';
+import { useFormik } from 'formik';
+import Button from '../../components/Button';
+import styles from './contact.module.scss';
+import classNames from 'classnames';
 
 // A custom validation function. This must return an object
 // which keys are symmetrical to our values/initialValues
-const validate = (values) => {
+const validate = values => {
   const errors = {};
   if (!values.name) {
-    errors.name = "Required";
+    errors.name = 'Required';
   } else if (values.name.length > 15) {
-    errors.name = "Must be 15 characters or less";
+    errors.name = 'Must be 15 characters or less';
   }
 
   if (!values.tel) {
-    errors.tel = "Required";
+    errors.tel = 'Required';
   } else if (!/^[+]?[0-9]{3}[0-9]{3}[0-9]{4,6}$/i.test(values.tel)) {
-    errors.tel = "Invalid phone number";
+    errors.tel = 'Invalid phone number';
   }
 
   return errors;
@@ -29,9 +29,9 @@ const SignupForm = () => {
   // be called when the form is submitted
   const formik = useFormik({
     initialValues: {
-      name: "",
-      tel: "",
-      message: "",
+      name: '',
+      tel: '',
+      message: '',
     },
     validate,
     onSubmit: (values, { resetForm }) => {
@@ -41,7 +41,7 @@ const SignupForm = () => {
   });
   return (
     <form id="contact" onSubmit={formik.handleSubmit}>
-      <div className={classNames(styles.contactContainer, "bg-primary")}>
+      <div className={classNames(styles.contactContainer, 'bg-primary')}>
         <h2 className={styles.captionCon}>Contact</h2>
         <p className={styles.desCon}>GET IN TOUCH</p>
         <div>
@@ -57,11 +57,7 @@ const SignupForm = () => {
                   onBlur={formik.handleBlur}
                   variant="contactInput"
                   placeholder="Name"
-                  className={
-                    formik.errors.name
-                      ? styles.borderApply
-                      : styles.contactInput
-                  }
+                  className={formik.errors.name ? styles.borderApply : styles.contactInput}
                 />
               </div>
               <div>
@@ -74,9 +70,7 @@ const SignupForm = () => {
                   value={formik.values.tel}
                   variant="contactInput"
                   placeholder="Phone Number"
-                  className={
-                    formik.errors.tel ? styles.borderApply : styles.contactInput
-                  }
+                  className={formik.errors.tel ? styles.borderApply : styles.contactInput}
                 />
               </div>
             </div>

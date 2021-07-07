@@ -1,9 +1,9 @@
-import PropTypes from "prop-types";
-import styles from "./portText.module.scss";
+import PropTypes from 'prop-types';
+import styles from './portText.module.scss';
 
 const PortText = ({ variant, component, children, className }) => (
   <div>
-    {component === "h1" ? (
+    {component === 'h1' ? (
       <h1 className={`${styles[variant]} ${className}`} component={component}>
         {children}
       </h1>
@@ -17,40 +17,40 @@ const PortText = ({ variant, component, children, className }) => (
 
 PortText.propTypes = {
   variant: PropTypes.oneOf([
-    "portEduLeftText",
-    "portEduPercent",
-    "portHeaderText",
-    "portHeaderHomeText",
-    "portLogoText",
-    "portNavText",
-    "contactTextArea",
-    "portHeaderCaption",
-    "portHeaderCaptionBold",
-    "portHeadingText",
-    "portHeadingCaption",
-    "portParaText",
-    "portAboutCaption",
-    "portParaAboutText",
-    "portButtonText",
-    "portServiceSubHeadingText",
-    "portCounterText",
-    "portCounterCaption",
-    "portCardHeaderText",
-    "portCardReadText",
-    "portCardDateText",
-    "portTestimonialText",
-    "portTestimonialPText",
-    "portTestimonialRoleText",
-    "portContactHeadingText",
-    "portContactDetailText",
-    "portFilterText",
-    "portFlexText",
-    "portHeaderTextPCard",
-    "portHoverCardText",
-    "portSingleBlog",
-    "portSingleBlogText",
-    "portCommentText",
-    "portCommentdetailText",
+    'portEduLeftText',
+    'portEduPercent',
+    'portHeaderText',
+    'portHeaderHomeText',
+    'portLogoText',
+    'portNavText',
+    'contactTextArea',
+    'portHeaderCaption',
+    'portHeaderCaptionBold',
+    'portHeadingText',
+    'portHeadingCaption',
+    'portParaText',
+    'portAboutCaption',
+    'portParaAboutText',
+    'portButtonText',
+    'portServiceSubHeadingText',
+    'portCounterText',
+    'portCounterCaption',
+    'portCardHeaderText',
+    'portCardReadText',
+    'portCardDateText',
+    'portTestimonialText',
+    'portTestimonialPText',
+    'portTestimonialRoleText',
+    'portContactHeadingText',
+    'portContactDetailText',
+    'portFilterText',
+    'portFlexText',
+    'portHeaderTextPCard',
+    'portHoverCardText',
+    'portSingleBlog',
+    'portSingleBlogText',
+    'portCommentText',
+    'portCommentdetailText',
   ]),
   component: PropTypes.string,
   className: PropTypes.string,
@@ -58,8 +58,8 @@ PortText.propTypes = {
 };
 
 PortText.defaultProps = {
-  variant: "portHeaderText",
-  component: "",
+  variant: 'portHeaderText',
+  component: '',
 };
 
 export default PortText;

@@ -1,7 +1,7 @@
-import React from "react";
-import Header from "../../components/Header";
-import Footer from "../../container/footer";
-import PortText from "../../components/PortText";
+import React from 'react';
+import Header from '../../components/Header';
+import Footer from '../../container/footer';
+import PortText from '../../components/PortText';
 
 const Skills = () => {
   return (
@@ -106,18 +106,16 @@ const Skills = () => {
               <b>FRONT-END DEVELOPER </b> (from Nov 2020 to present)
             </PortText>
             <PortText variant="portAboutCaption">
-              At{" "}
-              <a style={{ color: "#4da8da" }} href="https://www.upgmp.com/">
+              At{' '}
+              <a style={{ color: '#4da8da' }} href="https://www.upgmp.com/">
                 UpGMP.inc
               </a>
-              , as Front-End developer from Novemver 2020 to present.
-              Contributed in developing 2 mobile application IOS & ANDROID, 1.
-              It was a recipe app, a famous youtuber in gujarat needed a mobile
-              application which can provide their recipe videos to all over the
-              world. 2. There was a survay application needed by VKC footwere
-              company to get a proper feedback application from thir retailers.
-              As working there I used to enjoy working as a front-end dev. I am
-              taking the training of back-end as well.
+              , as Front-End developer from Novemver 2020 to present. Contributed in developing 2
+              mobile application IOS & ANDROID, 1. It was a recipe app, a famous youtuber in gujarat
+              needed a mobile application which can provide their recipe videos to all over the
+              world. 2. There was a survay application needed by VKC footwere company to get a
+              proper feedback application from thir retailers. As working there I used to enjoy
+              working as a front-end dev. I am taking the training of back-end as well.
             </PortText>
           </div>
         </div>
@@ -132,7 +130,7 @@ const Skills = () => {
               </PortText>
               <PortText variant="portEduLeftText">2018-2022</PortText>
               <PortText variant="portEduLeftText">
-                At{" "}
+                At{' '}
                 <a className="college" href="https://silveroakuni.ac.in/">
                   SilverOak University
                 </a>
@@ -144,7 +142,7 @@ const Skills = () => {
               </PortText>
               <PortText variant="portEduLeftText">2018-2022</PortText>
               <PortText variant="portEduLeftText">
-                At{" "}
+                At{' '}
                 <a className="college" href="https://silveroakuni.ac.in/">
                   SilverOak University
                 </a>
@@ -156,7 +154,7 @@ const Skills = () => {
               </PortText>
               <PortText variant="portEduLeftText">2018-2022</PortText>
               <PortText variant="portEduLeftText">
-                At{" "}
+                At{' '}
                 <a className="college" href="https://silveroakuni.ac.in/">
                   SilverOak University
                 </a>

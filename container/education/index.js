@@ -1,6 +1,6 @@
-import React from "react";
-import Button from "../../components/Button";
-import PortText from "../../components/PortText";
+import React from 'react';
+import Button from '../../components/Button';
+import PortText from '../../components/PortText';
 
 const Education = () => (
   <section id="Education" className="alignment bg-primary">
@@ -12,16 +12,12 @@ const Education = () => (
         <div className="leftTextAlign">
           <PortText variant="portEduLeftText">2010-2012</PortText>
           <PortText variant="portEduLeftText">Graphic Designer</PortText>
-          <PortText variant="portEduLeftText">
-            International Design Institute
-          </PortText>
+          <PortText variant="portEduLeftText">International Design Institute</PortText>
         </div>
         <div className="leftTextAlign">
           <PortText variant="portEduLeftText">2010-2012</PortText>
           <PortText variant="portEduLeftText">Graphic Designer</PortText>
-          <PortText variant="portEduLeftText">
-            International Design Institute
-          </PortText>
+          <PortText variant="portEduLeftText">International Design Institute</PortText>
         </div>
       </div>
       <div className="baralign">

@@ -1,18 +1,10 @@
-import PropTypes from "prop-types";
-import classNames from "classnames";
-import Loader from "../Loader";
+import PropTypes from 'prop-types';
+import classNames from 'classnames';
+import Loader from '../Loader';
 import styles from './button.module.scss';
 
 // main button
-const Button = ({
-  variant,
-  className,
-  isDisabled,
-  children,
-  isLoading,
-  onClick,
-  ...rest
-}) => (
+const Button = ({ variant, className, isDisabled, children, isLoading, onClick, ...rest }) => (
   <button
     type="button"
     className={classNames(!isDisabled && !isLoading && styles[variant], {
@@ -20,8 +12,7 @@ const Button = ({
       [className]: !!className,
     })}
     onClick={isDisabled || isLoading ? () => {} : onClick}
-    {...rest}
-  >
+    {...rest}>
     {isLoading && <Loader />}
     {children}
   </button>
@@ -29,17 +20,17 @@ const Button = ({
 
 Button.propTypes = {
   variant: PropTypes.oneOf([
-    "portHomeButton",
-    "portResume",
-    "portSocialButton",
-    "disable",
-    "portNavButton",
-    "portServiceButton",
+    'portHomeButton',
+    'portResume',
+    'portSocialButton',
+    'disable',
+    'portNavButton',
+    'portServiceButton',
   ]),
 };
 
 Button.defaultProps = {
-  variant: "portHomeButton",
+  variant: 'portHomeButton',
 };
 
 export default Button;

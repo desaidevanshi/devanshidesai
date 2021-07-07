@@ -1,9 +1,9 @@
-import Button from "../../components/Button";
-import Github from "../../public/svg/logo-github.svg";
-import Linkedin from "../../public/svg/logo-linkedin.svg";
-import Twitter from "../../public/svg/logo-twitter.svg";
-import Gmail from "../../public/svg/mail.svg";
-import styles from "./footer.module.scss";
+import Button from '../../components/Button';
+import Github from '../../public/svg/logo-github.svg';
+import Linkedin from '../../public/svg/logo-linkedin.svg';
+import Twitter from '../../public/svg/logo-twitter.svg';
+import Gmail from '../../public/svg/mail.svg';
+import styles from './footer.module.scss';
 
 const Footer = () => {
   return (
@@ -58,9 +58,7 @@ const Footer = () => {
       </div> */}
       <div className={styles.footerLine} />
       <div className={styles.footerText}>
-        <footer>
-          Devanshi © 2021. All Right Reserved, Designed By Devanshi Desai.
-        </footer>
+        <footer>Devanshi © 2021. All Right Reserved, Designed By Devanshi Desai.</footer>
       </div>
     </section>
   );
