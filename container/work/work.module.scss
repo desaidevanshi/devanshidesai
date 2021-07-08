@@ -5,20 +5,28 @@
   background-color: #1b3241;
   color: white;
 }
+@media screen and (max-width: 1000px) {
+  .center {
+    height: auto;
+  }
+}
 .portHoverCardText {
   color: #1b3241;
 }
 .portfolio {
-  @apply px-2;
-  margin: 10px;
+  margin: 2% 7%;
 }
 .row {
   @apply flex flex-col;
+  height: 30vh;
+  justify-content: center;
+  align-items: center;
 }
 .headText {
-  @apply mb-10 text-center;
+  @apply text-center;
   font-size: xx-large;
   color: #4da8da;
+  margin-bottom: 2%;
 }
 .pFilter {
   @apply mb-10 text-center;
@@ -34,7 +42,7 @@
   @apply inline-block text-sm mr-5 relative cursor-pointer uppercase;
 }
 .pFilter ul li::before {
-  content: "/";
+  content: '/';
   @apply absolute -right-4 font-normal;
 }
 .pFilter ul li:last-child::before {

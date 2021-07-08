@@ -16,9 +16,10 @@
   align-items: center;
 }
 .heading h2 {
-  @apply mb-10 text-center;
+  @apply text-center;
   font-size: xx-large;
   color: #4da8da;
+  margin-bottom: 2%;
 }
 
 .heading p {
@@ -27,6 +28,8 @@
 }
 .mainbox {
   @apply grid md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1;
+  margin: 2% 7%;
+  gap: 10px;
 }
 
 .divRow {
@@ -41,7 +44,7 @@
   font-weight: lighter;
 }
 .box {
-  @apply flex flex-col items-center lg:m-3;
+  @apply flex flex-col items-center;
   @apply h-full bg-[#12232e] p-10 rounded-[10px] overflow-hidden relative z-[1];
 }
 

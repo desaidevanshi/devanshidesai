@@ -7,7 +7,6 @@ import styles from './work.module.scss';
 const Work = () => (
   // function liClicked() {
   //   const item = document.querySelector('listItems');
-  //   console.log(item);
   //   // x.classList.add('selItem');
   // }
   <section id="work" className={styles.center}>

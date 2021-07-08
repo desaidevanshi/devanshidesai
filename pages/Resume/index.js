@@ -126,7 +126,7 @@ const Skills = () => (
         <div className="education">
           <div className="leftTextAlign">
             <PortText variant="portEduLeftText">
-              <b>Bachelor of Electronics and Communication Engineering</b>
+              <b>Bachelor of Computer Engineering</b>
             </PortText>
             <PortText variant="portEduLeftText">2018-2022</PortText>
             <PortText variant="portEduLeftText">
@@ -138,7 +138,7 @@ const Skills = () => (
           </div>
           <div className="leftTextAlign">
             <PortText variant="portEduLeftText">
-              <b>Bachelor of Electronics and Communication Engineering</b>
+              <b>Bachelor of Computer Engineering</b>
             </PortText>
             <PortText variant="portEduLeftText">2018-2022</PortText>
             <PortText variant="portEduLeftText">
@@ -150,7 +150,7 @@ const Skills = () => (
           </div>
           <div className="leftTextAlign">
             <PortText variant="portEduLeftText">
-              <b>Bachelor of Electronics and Communication Engineering</b>
+              <b>Bachelor of Computer Engineering</b>
             </PortText>
             <PortText variant="portEduLeftText">2018-2022</PortText>
             <PortText variant="portEduLeftText">

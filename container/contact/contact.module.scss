@@ -1,14 +1,26 @@
 .contactContainer {
-  @apply sm:flex justify-center text-[16px] flex-col items-center text-center;
+  @apply xs:p-10 sm:py-24 sm:flex justify-center text-[16px] flex-col text-center;
   height: 100vh;
-  padding: 0 15px;
   display: flex;
+  padding: 2% 15%;
+}
+@media screen and (max-width: 480px) {
+  .contactContainer {
+    padding: 2% 7%;
+  }
 }
 
 .contactForm {
   @apply flex xs:flex-col xs:gap-0  sm:flex-row sm:gap-8;
+  justify-content: center;
+  align-items: center;
 }
-
+.contactIn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .buttonMargin {
   @apply mt-10;
 }
@@ -21,21 +33,21 @@
   @apply text-left text-red-500;
 }
 .contactInput {
-  @apply border-t-0 border-r-0 my-5 border-l-0 border-b-2 h-10 xs:w-full md:w-72 lg:w-96 p-[6px] font-opensans text-[14px];
+  @apply border-t-0 border-r-0 my-5 border-l-0 border-b-2 h-10  md:w-72 lg:w-96 p-[6px];
   background: transparent;
   border-color: #4da8da;
   color: white;
   font-size: 20px;
 }
 .borderApply {
-  @apply border-red-500 border-t-0 border-r-0 my-5 border-l-0 border-b-2 h-10 xs:w-full md:w-72 lg:w-96 p-[6px] font-opensans text-[14px];
+  @apply border-red-500 border-t-0 border-r-0 my-5 border-l-0 border-b-2 h-10 xs:w-full md:w-72 lg:w-96 p-[6px];
   background: transparent;
   color: white;
   font-size: 20px;
 }
 
 .contactTextArea {
-  @apply resize-none w-full h-32 leading-6 shadow-none  p-[10px] border-t-0 border-r-0 border-l-0 border-b-2 font-opensans text-[14px];
+  @apply resize-none h-32 md:w-full sm:w-full xs:w-72 leading-6 shadow-none  p-[10px] border-t-0 border-r-0 border-l-0 border-b-2;
   background: transparent;
   border-color: #4da8da;
   color: white;
@@ -51,3 +63,53 @@
   @apply mb-10 text-center;
   font-size: x-large;
 }
+.footerLine {
+  @apply h-[1px] col-span-4 bg-gray-500;
+}
+// .divider {
+//   padding: 50px 100px;
+// }
+// .lines {
+//   width: 100%;
+//   position: relative;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+// .lines::after,
+// .lines::before {
+//   content: '';
+//   position: absolute;
+//   margin: auto;
+//   height: 1px;
+//   background: gray;
+//   width: 45%;
+//   top: 45%;
+// }
+// @media screen and (max-width: 700px) {
+//   .lines::after,
+//   .lines::before {
+//     width: 40%;
+//   }
+//   .divider {
+//     padding: 40px;
+//   }
+// }
+
+// .lines::after {
+//   left: 0;
+// }
+// .lines::before {
+//   right: 0;
+// }
+// .circle {
+//   height: 30px;
+//   width: 30px;
+//   border: 1px solid gray;
+//   left: 0;
+//   right: 0;
+//   top: 0;
+//   bottom: 0;
+//   margin: auto;
+//   border-radius: 50%;
+// }

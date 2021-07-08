@@ -3,6 +3,11 @@
 // card portfolio style
 .cardPort {
   @apply w-full px-0 py-2 sm:w-1/2 sm:p-1 lg:w-1/3 md:p-2;
+  :hover {
+    .hoverPort {
+      @apply opacity-70;
+    }
+  }
 }
 
 .cardPort img {
@@ -10,6 +15,6 @@
 }
 
 .hoverPort {
-  @apply opacity-0 absolute  h-[90%] w-[90%] flex justify-center items-center inset-0 m-auto hover:opacity-60 duration-500;
+  @apply opacity-0 absolute  h-[90%] w-[90%] flex justify-center items-center inset-0 m-auto duration-500;
   background: #4da8da;
 }

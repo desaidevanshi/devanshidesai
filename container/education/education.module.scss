@@ -1,5 +1,6 @@
 .alignment {
-  @apply bg-[#f2f2f2] py-[70px] lg:px-[200px] md:px-[70px] sm:px-[50px];
+  @apply bg-[#f2f2f2];
+  padding: 5% 7%;
 }
 
 .textAlign {
@@ -11,8 +12,7 @@
 }
 
 .leftsubbox {
-  @apply bg-[#4da8da] py-5 pl-5 xs:w-[90%] rounded-xl;
-  width: 50%;
+  @apply bg-[#4da8da] py-5 pl-5 lg:w-[50%] xs:w-[90%] rounded-xl;
 }
 
 .leftTextAlign {

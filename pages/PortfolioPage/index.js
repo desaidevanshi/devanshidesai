@@ -7,7 +7,9 @@ import Search from '../../public/svg/search_white_48dp.svg';
 const PortfolioPage = () => (
   <div className="light-theme">
     <Header>
-      <PortText variant="portSingleBlog">Portfolio List</PortText>
+      <PortText variant="portSingleBlog" className="portSingleBlog">
+        Portfolio List
+      </PortText>
       <a className="backAlign" href="http://localhost:3000/">
         Back
       </a>

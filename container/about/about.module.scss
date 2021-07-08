@@ -2,11 +2,10 @@
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 10px;
+  padding: 2% 7%;
 }
 .aboutImg {
-  margin: 10px 10px;
+  margin-right: 10px;
 }
 .aboutImg img {
   border: solid 2px #4da8da;
@@ -15,7 +14,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 2%;
+  padding-left: 2%;
 }
 .name {
   @apply mb-10 text-center;
@@ -45,7 +44,7 @@
     }
   }
 }
-@media screen and (max-width: 777px) {
+@media screen and (max-width: 850px) {
   .about {
     flex-direction: column;
     justify-content: flex-end;
@@ -67,10 +66,5 @@
   }
   .name {
     font-size: xx-large;
-  }
-}
-@media screen and (min-width: 777px) {
-  .description {
-    width: 50%;
   }
 }

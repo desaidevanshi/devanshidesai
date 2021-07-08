@@ -1,5 +1,5 @@
 .footer {
-  @apply md:gap-6 sm:gap-5 py-6 h-full lg:px-20 md:px-20;
+  @apply md:gap-6 sm:gap-5 py-14 h-full lg:px-20 md:px-20;
   background-color: #12232e;
   color: white;
 }
@@ -21,6 +21,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 20px;
 }
 .footerText span a {
   color: white;
@@ -41,9 +42,7 @@
     }
   }
 }
-.footerLine {
-  @apply h-[1px] col-span-4 my-6 bg-gray-500;
-}
+
 @media screen and (max-width: 600px) {
   .footerMain {
     flex-direction: column;

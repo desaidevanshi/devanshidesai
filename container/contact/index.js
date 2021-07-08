@@ -7,7 +7,7 @@ import styles from './contact.module.scss';
 // A custom validation function. This must return an object
 // which keys are symmetrical to our values/initialValues
 // eslint-disable-next-line prettier/prettier
-const validate = (values) => {
+const validate = values => {
   const errors = {};
   if (!values.name) {
     errors.name = 'Required';
@@ -42,53 +42,63 @@ const SignupForm = () => {
     },
   });
   return (
-    <form id="contact" onSubmit={formik.handleSubmit}>
-      <div className={classNames(styles.contactContainer, 'bg-primary')}>
-        <h2 className={styles.captionCon}>Contact</h2>
-        <p className={styles.desCon}>GET IN TOUCH</p>
-        <div>
+    <>
+      <form id="contact" onSubmit={formik.handleSubmit}>
+        <div className={classNames(styles.contactContainer, 'bg-primary')}>
+          <h2 className={styles.captionCon}>Contact</h2>
+          <p className={styles.desCon}>GET IN TOUCH</p>
           <div>
-            <div className={styles.contactForm}>
-              <div>
-                <input
-                  id="name"
-                  name="name"
-                  type="text"
-                  value={formik.values.name}
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                  variant="contactInput"
-                  placeholder="Name"
-                  className={formik.errors.name ? styles.borderApply : styles.contactInput}
-                />
+            <div className={styles.contactIn}>
+              <div className={styles.contactForm}>
+                <div>
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    value={formik.values.name}
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                    variant="contactInput"
+                    placeholder="Name"
+                    className={formik.errors.name ? styles.borderApply : styles.contactInput}
+                  />
+                </div>
+                <div>
+                  <input
+                    id="tel"
+                    name="tel"
+                    type="tel"
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                    value={formik.values.tel}
+                    variant="contactInput"
+                    placeholder="Phone Number"
+                    className={formik.errors.tel ? styles.borderApply : styles.contactInput}
+                  />
+                </div>
               </div>
-              <div>
-                <input
-                  id="tel"
-                  name="tel"
-                  type="tel"
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                  value={formik.values.tel}
-                  variant="contactInput"
-                  placeholder="Phone Number"
-                  className={formik.errors.tel ? styles.borderApply : styles.contactInput}
-                />
-              </div>
+              <textarea
+                variant="contactTextArea"
+                className={styles.contactTextArea}
+                component="textarea"
+                placeholder="How can we help you?"
+              />
             </div>
-            <textarea
-              variant="contactTextArea"
-              className={styles.contactTextArea}
-              component="textarea"
-              placeholder="How can we help you?"
-            />
+            <Button type="submit" className={styles.buttonMargin}>
+              SEND MESSAGE
+            </Button>
           </div>
-          <Button type="submit" className={styles.buttonMargin}>
-            SEND MESSAGE
-          </Button>
         </div>
+      </form>
+      {/* <div className={classNames(styles.divider, 'bg-primary')}>
+        <div className={styles.lines}>
+          <div className={styles.circle} />
+        </div>
+      </div> */}
+      <div className="bg-primary">
+        <div className={styles.footerLine} />
       </div>
-    </form>
+    </>
   );
 };
 

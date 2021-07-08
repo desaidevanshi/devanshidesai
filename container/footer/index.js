@@ -55,7 +55,7 @@ const Footer = () => (
           </div>
         </div>
       </div> */}
-    <div className={styles.footerLine} />
+    {/* <div className={styles.footerLine} /> */}
     <div className={styles.footerText}>
       <footer>Devanshi © 2021. All Right Reserved, Designed By Devanshi Desai.</footer>
     </div>

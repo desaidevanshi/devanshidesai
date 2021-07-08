@@ -4,7 +4,7 @@
   color: white;
 }
 .portfolioItems {
-  @apply flex flex-wrap h-full w-full px-[15px] md:px-20 lg:px-32 justify-center;
+  @apply flex flex-wrap h-full w-full px-[20px] justify-center;
 }
 .portHoverCardText {
   color: #1b3241;
@@ -23,7 +23,7 @@
   font-size: large;
 }
 .pFilter ul li::before {
-  content: "/";
+  content: '/';
   @apply absolute -right-4;
 }
 .pFilter ul li:last-child::before {
