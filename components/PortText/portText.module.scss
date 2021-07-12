@@ -1,3 +1,4 @@
+@use '../../styles/colors.scss';
 .portEduPercent {
   font-size: 1.875rem;
   font-weight: 600;
@@ -33,7 +34,7 @@
 }
 
 .portHeadingText {
-  color: #4da8da;
+  color: colors.$fontcolor-secondary;
   font-weight: 600;
   font-size: 1.875rem;
   margin: 0;
@@ -70,78 +71,99 @@
 }
 
 .portServiceSubHeadingText {
-  @apply font-semibold text-lg uppercase;
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .portCounterText {
-  @apply text-3xl font-extrabold;
+  font-size: 1.875rem;
+  font-weight: 800;
 }
 
 .portCounterCaption {
-  @apply text-base font-semibold;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .portCardHeaderText {
-  @apply text-base font-semibold;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .portCardReadText {
-  @apply text-sm  font-semibold border-b-2 border-gray-600;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-bottom: 2px solid gray;
 }
 
 .portHeaderTextPCard {
-  @apply text-3xl mt-0 font-bold text-center;
+  margin-top: 0;
+  font-size: 1.875rem;
+  font-weight: 700;
+  text-align: center;
 }
 
 .portCardDateText {
-  @apply text-sm  font-semibold;
+  font-size: 0.875rem;
+  font-weight: 600;
 }
 
 .portTestimonialText {
-  @apply text-2xl font-semibold m-0;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 .portCommentText {
-  @apply text-2xl font-semibold m-0;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .portTestimonialPText {
-  @apply text-base font-sans;
+  font-size: 1rem;
 }
 .portEduLeftText {
-  @apply font-sans;
   color: white;
   padding: 5px 0;
 }
 
 .portTestimonialRoleText {
-  @apply-dull text-sm font-semibold mt-2;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
 }
 
-.portContactHeadingText {
-  @apply text-base font-bold;
-}
+// .portContactHeadingText {
+//   @apply text-base font-bold;
+// }
 
-.portContactDetailText {
-  @apply text-sm;
-}
-.portCommentdetailText {
-  @apply text-sm;
-}
-.portFooterText {
-  @apply text-sm;
-}
+// .portContactDetailText {
+//   @apply text-sm;
+// }
+// .portCommentdetailText {
+//   @apply text-sm;
+// }
+// .portFooterText {
+//   @apply text-sm;
+// }
 
-.portFilterText {
-  @apply text-sm uppercase;
-}
+// .portFilterText {
+//   @apply text-sm uppercase;
+// }
 
 .portHoverCardText {
-  @apply text-xl font-semibold text-center;
+  text-align: center;
+  font-weight: 600;
 }
 .portSingleBlog {
-  @apply font-semibold md:text-5xl sm:text-4xl xs:text-3xl m-0 uppercase;
+  font-weight: 600;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: xx-large;
 }
 
 .portSingleBlogText {
-  @apply font-semibold text-2xl m-0 uppercase;
+  font-weight: 600;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 1.5rem;
 }
