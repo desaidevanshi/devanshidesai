@@ -118,7 +118,7 @@ const Skills = () => (
             Work experience
           </PortText>
         </div>
-        <div className="workPara">
+        <div className={styles.workPara}>
           <PortText variant="portHeadingCaption" className={styles.portHeadingCaption}>
             <b>FRONT-END DEVELOPER </b>
             (from Nov 2020 to present)

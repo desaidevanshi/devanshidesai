@@ -86,5 +86,6 @@
   @apply flex flex-col sm:flex-row flex-1 w-full md:justify-around;
 }
 .backAlign {
+  @apply text-xs mt-2 border-t-0 border-r-0 border-l-0 border-2 border-solid;
   color: colors.$fontcolor-secondary;
 }
