@@ -93,7 +93,7 @@
     flex-direction: column;
     position: relative;
     transition: 0.5s;
-    width: 30%;
+    width: 35%;
     height: 90vh;
   }
   .blankSpace {
@@ -123,6 +123,11 @@
 }
 @media screen and (max-width: 500px) {
   .menu {
-    width: 45%;
+    width: 40%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .menu {
+    width: 55%;
   }
 }
