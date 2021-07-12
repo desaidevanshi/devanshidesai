@@ -75,9 +75,6 @@
 .menu li a:hover {
   color: colors.$fontcolor-secondary;
 }
-// .nav-link-white:active {
-//   color: colors.$fontcolor-secondary;
-// }
 .blankSpace {
   display: none;
 }
@@ -87,6 +84,12 @@
 }
 .active {
   color: colors.$fontcolor-secondary;
+}
+.fixed-header {
+  background: colors.$background-dark;
+}
+.nav-transparent {
+  background: colors.$background-dark;
 }
 @media screen and (min-width: 777px) {
   .menu {
@@ -102,11 +105,11 @@
     position: relative;
     transition: 0.5s;
     width: 35%;
-    height: 90vh;
+    height: 95vh;
   }
   .blankSpace {
     width: 70%;
-    height: 90vh;
+    height: 95vh;
     background: none;
     border: none;
     display: flex;
@@ -132,6 +135,9 @@
 @media screen and (max-width: 500px) {
   .menu {
     width: 40%;
+  }
+  .sub-container {
+    margin-top: 45px;
   }
 }
 @media screen and (max-width: 400px) {

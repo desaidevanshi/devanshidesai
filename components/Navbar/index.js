@@ -5,11 +5,30 @@
 /* eslint-disable react/no-find-dom-node */
 /* eslint-disable arrow-parens */
 import { useRouter } from 'next/router';
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 
 const Navbar = () => {
   const { pathname } = useRouter();
   const navRef = useRef();
+  const ulRef = useRef();
+  const navbarRef = useRef();
+
+  useEffect(() => {
+    const onScroll = () => {
+      if (window.scrollY >= 60) {
+        navbarRef.current.classList.add('fixed-header');
+        ulRef.current.classList.add('nav-transparent');
+      } else {
+        navbarRef.current.classList.remove('fixed-header');
+        ulRef.current.classList.remove('nav-transparent');
+      }
+    };
+    window.addEventListener('scroll', onScroll, false);
+    return () => {
+      window.removeEventListener('scroll', onScroll, false);
+    };
+  }, []);
+
   const toggleNavbar = () => {
     if (navRef.current.style.display === 'flex') {
       navRef.current.style.display = 'none';
@@ -31,7 +50,7 @@ const Navbar = () => {
     <>
       <header>
         <nav className="navbar">
-          <div className="container">
+          <div className="container" ref={navbarRef}>
             <div className="max-width">
               <a href="/" className="logo">
                 Devan
@@ -43,7 +62,7 @@ const Navbar = () => {
             <div className="sub-container" id="navbar" ref={navRef}>
               <button onClick={toggleNavbar} className="blankSpace" />
 
-              <ul className="menu">
+              <ul className="menu" ref={ulRef}>
                 <li>
                   <a href="/#home" className={pathname === '/#home' ? 'active' : undefined}>
                     Home
