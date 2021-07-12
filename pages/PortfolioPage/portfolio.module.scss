@@ -1,10 +1,12 @@
 .portfolioList {
-  @apply pt-[100px] pb-[50px];
+  // @apply pt-[100px] pb-[50px];
+  padding-top: 100px;
+  padding-bottom: 50px;
   background-color: #1b3241;
   color: white;
 }
 .portfolioItems {
-  @apply flex flex-wrap h-full w-full px-[20px] justify-center;
+  @apply flex flex-wrap h-full w-full px-5 justify-center;
 }
 .portHoverCardText {
   color: #1b3241;
