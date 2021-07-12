@@ -56,13 +56,14 @@ PortText.propTypes = {
     'portCommentdetailText',
   ]),
   component: PropTypes.string,
-  className: PropTypes.string.isRequired,
+  className: PropTypes.string,
   children: PropTypes.node.isRequired,
 };
 
 PortText.defaultProps = {
   variant: 'portHeaderText',
   component: '',
+  className: '',
 };
 
 export default PortText;
