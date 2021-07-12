@@ -75,15 +75,18 @@
 .menu li a:hover {
   color: colors.$fontcolor-secondary;
 }
-.nav-link-white:active {
-  color: colors.$fontcolor-secondary;
-}
+// .nav-link-white:active {
+//   color: colors.$fontcolor-secondary;
+// }
 .blankSpace {
   display: none;
 }
 .sub-container {
   align-items: center;
   display: flex;
+}
+.active {
+  color: colors.$fontcolor-secondary;
 }
 @media screen and (min-width: 777px) {
   .menu {

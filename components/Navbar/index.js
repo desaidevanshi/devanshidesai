@@ -4,10 +4,8 @@
 /* eslint-disable react/button-has-type */
 /* eslint-disable react/no-find-dom-node */
 /* eslint-disable arrow-parens */
-import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React, { useRef } from 'react';
-import classNames from 'classnames';
 
 const Navbar = () => {
   const { pathname } = useRouter();
@@ -35,12 +33,11 @@ const Navbar = () => {
         <nav className="navbar">
           <div className="container">
             <div className="max-width">
-              <Link href="/">
-                <a href="/" className="logo">
-                  Devan
-                  <span>shi.</span>
-                </a>
-              </Link>
+              <a href="/" className="logo">
+                Devan
+                <span>shi.</span>
+              </a>
+
               <button className="nav-btn" id="toggle" onClick={toggleNavbar} />
             </div>
             <div className="sub-container" id="navbar" ref={navRef}>
@@ -48,57 +45,29 @@ const Navbar = () => {
 
               <ul className="menu">
                 <li>
-                  <Link href="http://localhost:3000/#home">
-                    <a
-                      href="/"
-                      className={classNames('nav-link-white', { active: pathname === '#home' })}>
-                      Home
-                    </a>
-                  </Link>
+                  <a href="/#home" className={pathname === '/#home' ? 'active' : undefined}>
+                    Home
+                  </a>
                 </li>
                 <li>
-                  <Link href="http://localhost:3000/#about">
-                    <a
-                      href="#about"
-                      className={classNames('nav-link-white', {
-                        active: pathname === '#about',
-                      })}>
-                      About
-                    </a>
-                  </Link>
+                  <a href="/#about" className={pathname === '/#about' ? 'active' : undefined}>
+                    About
+                  </a>
                 </li>
                 <li>
-                  <Link href="http://localhost:3000/#services">
-                    <a
-                      href="#services"
-                      className={classNames('nav-link-white', {
-                        active: pathname === '#services',
-                      })}>
-                      Services
-                    </a>
-                  </Link>
+                  <a href="/#services" className={pathname === '/#services' ? 'active' : undefined}>
+                    Services
+                  </a>
                 </li>
                 <li>
-                  <Link href="http://localhost:3000/#work">
-                    <a
-                      href="#work"
-                      className={classNames('nav-link-white', {
-                        active: pathname === '#work',
-                      })}>
-                      Work
-                    </a>
-                  </Link>
+                  <a href="/#work" className={pathname === '/#work' ? 'active' : undefined}>
+                    Work
+                  </a>
                 </li>
                 <li>
-                  <Link href="http://localhost:3000/#contact">
-                    <a
-                      href="#contact"
-                      className={classNames('nav-link-white', {
-                        active: pathname === '#contact',
-                      })}>
-                      Contact
-                    </a>
-                  </Link>
+                  <a href="/#contact" className={pathname === '/#contact' ? 'active' : undefined}>
+                    Contact
+                  </a>
                 </li>
               </ul>
             </div>
