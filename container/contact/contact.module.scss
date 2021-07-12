@@ -64,6 +64,7 @@
 .desCon {
   @apply mb-10 text-center;
   font-size: x-large;
+  color: colors.$fontcolor-primary;
 }
 .footerLine {
   @apply col-span-4 bg-gray-500;
