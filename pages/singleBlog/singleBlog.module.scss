@@ -6,9 +6,15 @@
   height: 100vh;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 777px) {
+  .mainDiv {
+    height: auto;
+  }
 }
 .img {
-  @apply lg:w-6/12 md:w-6/12 sm:w-6/12 xs:w-11/12;
+  width: 100%;
 }
 
 .imgdiv {

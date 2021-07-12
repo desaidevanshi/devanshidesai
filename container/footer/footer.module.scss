@@ -3,6 +3,7 @@
   @apply md:gap-6 sm:gap-5 py-14 h-full lg:px-20 md:px-20;
   background-color: colors.$background-dark;
   color: colors.$fontcolor-primary;
+  gap: 20px;
 }
 .footerMain {
   display: flex;

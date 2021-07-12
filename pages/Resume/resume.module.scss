@@ -13,8 +13,18 @@
 }
 
 .workPara {
-  @apply flex-1 flex flex-col md:ml-8;
-  margin-left: 4em;
+  @apply flex-1 flex flex-col ml-16 mb-10;
+}
+
+@media screen and (max-width: 1000px) {
+  .workPara {
+    margin-left: 2rem;
+  }
+}
+@media screen and (max-width: 777px) {
+  .workPara {
+    margin-left: 0;
+  }
 }
 
 .workExp {
