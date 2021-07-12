@@ -1,4 +1,3 @@
-import classNames from 'classnames';
 import Button from '../../components/Button';
 import Github from '../../public/svg/logo-github.svg';
 import Linkedin from '../../public/svg/logo-linkedin.svg';
@@ -8,7 +7,7 @@ import styles from './about.module.scss';
 
 const About = () => (
   <div id="about">
-    <article className={classNames(styles.about, 'bg-primary')}>
+    <article className={styles.about}>
       <picture className={styles.aboutImg}>
         <source media="(max-width:1025px)" srcSet="/images/about-img-lg.jpg" type="image.jpg" />
         <img src="/images/about-img-lg.jpg" alt="Me" />
