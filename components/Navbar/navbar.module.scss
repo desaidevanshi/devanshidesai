@@ -85,6 +85,11 @@
   align-items: center;
   display: flex;
 }
+@media screen and (min-width: 777px) {
+  .menu {
+    display: flex !important;
+  }
+}
 @media screen and (max-width: 777px) {
   .nav-btn {
     display: flex;
