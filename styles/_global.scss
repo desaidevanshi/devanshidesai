@@ -1,9 +1,10 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+// @tailwind base;
+// @tailwind components;
+// @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 @import '../components/Navbar/navbar.module.scss';
+// @import '../container/about/about.module.scss';
 // @import '../container/Education/education.module.scss';
 // @import '../pages/Resume/resume.module.scss';
 // @import '../pages/PortfolioPage/portfolio.module.scss';
@@ -17,4 +18,3 @@
   box-sizing: border-box;
   text-decoration: none;
 }
-
