@@ -1,50 +1,72 @@
 .portEduPercent {
-  @apply text-3xl font-semibold mt-8;
+  font-size: 1.875rem;
+  font-weight: 600;
+  margin-top: 2rem;
 }
 
 .portLogoText {
   font-family: 'Montserrat', sans-serif;
-  @apply font-extrabold text-2xl m-0 uppercase z-50 absolute;
+  font-weight: 800;
+  font-size: 1.5rem;
+  margin: 0;
+  text-transform: uppercase;
+  z-index: 50;
+  position: absolute;
 }
 
 .portNavText {
-  @apply text-sm font-normal uppercase;
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 .portHeaderText {
-  @apply text-7xl font-black;
+  font-size: 4.5rem;
+  color: black;
 }
 .portHeaderHomeText {
-  @apply font-black;
+  color: black;
 }
 
 .portHeaderCaptionBold {
-  @apply text-2xl;
+  font-size: 1.5rem;
 }
 
 .portHeadingText {
-  @apply font-semibold lg:text-3xl md:text-3xl sm:text-3xl xs:text-2xl m-0 uppercase;
   color: #4da8da;
+  font-weight: 600;
+  font-size: 1.875rem;
+  margin: 0;
+  text-transform: uppercase;
 }
 
 .portHeadingCaption {
-  @apply uppercase text-base m-0  font-medium;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 .portParaText {
-  @apply text-base font-thin leading-6;
+  font-size: 1rem;
+  font-weight: 100;
+  line-height: 1.5rem;
 }
 
 .portAboutCaption {
-  @apply text-xl;
+  font-size: 1.25rem;
 }
 
 .portParaAboutText {
-  @apply text-base font-thin leading-7;
+  font-size: 1rem;
+  font-weight: 100;
+  line-height: 1.75rem;
 }
 
 .portButtonText {
-  @apply text-sm font-semibold uppercase;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .portServiceSubHeadingText {

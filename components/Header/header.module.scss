@@ -36,8 +36,8 @@
 }
 
 .Nav {
-  @apply gap-2 flex-1 flex justify-center;
   display: flex;
   flex: 1;
   justify-content: center;
+  gap: 0.5rem;
 }
