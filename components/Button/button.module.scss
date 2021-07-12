@@ -1,39 +1,51 @@
 .portHomeButton {
-  @apply text-sm px-5 py-3
-  uppercase font-semibold border-2 border-solid
-  hover:bg-transparent hover:items-center cursor-pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: 2px solid;
+  font-size: 14px;
+  padding: 12px 20px;
   border-color: #4da8da;
   color: #4da8da;
 }
 .portHomeButton:hover {
   border-color: white;
   color: white;
+  background: transparent;
+  cursor: pointer;
 }
 .portSocialButton {
-  @apply border-2
-  border-solid rounded-2xl items-center justify-center
-  h-10 w-10
-  hover:bg-transparent;
+  align-items: center;
+  justify-content: center;
+  border: solid 2px white;
+  border-radius: 50%;
+  height: 2.5rem;
+  width: 2.5rem;
 }
 .portSocialButton:hover {
-  border-color: #4da8da;
+  border: solid 1px #4da8da;
   color: #4da8da;
+  background-color: transparent;
 }
 
 .portResume {
-  @apply text-white bg-transparent p-2;
   border: #222;
+  color: white;
+  background: transparent;
+  padding: 0.5rem;
 }
 .portResume:hover {
   background-color: #222;
 }
 
 .portServiceButton {
-  @apply bg-transparent
-  flex
-  border-2 border-solid rounded-2xl
-  items-center justify-center
-  h-20 w-20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: solid 2px white;
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
 }
 .portServiceButton:hover {
   background-color: #4da8da;
@@ -41,6 +53,10 @@
   transform: translate(3px);
 }
 .disable {
-  @apply cursor-not-allowed opacity-50 text-sm px-5 py-3
-  uppercase font-semibold border-2 border-solid;
+  text-transform: uppercase;
+  opacity: 0.5;
+  font-size: 14px;
+  padding: 12px 20px;
+  font-weight: 600;
+  border: 2px solid;
 }
