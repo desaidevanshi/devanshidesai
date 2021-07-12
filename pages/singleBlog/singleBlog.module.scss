@@ -1,6 +1,7 @@
+@use '../../styles/colors.scss';
 .mainDiv {
-  background-color: #1b3241;
-  color: white;
+  background-color: colors.$background-light;
+  color: colors.$fontcolor-primary;
   display: flex;
   height: 100vh;
   justify-content: center;
@@ -13,6 +14,7 @@
 .imgdiv {
   @apply flex justify-center flex-col items-center py-4;
   width: 50%;
+  height: 100%;
 }
 
 .content {
@@ -24,10 +26,14 @@
   @apply flex-col flex lg:p-6 md:p-5 sm:p-4 xs:p-2 gap-5;
 }
 .head {
-  text-decoration: underline #4da8da;
+  text-decoration: underline colors.$fontcolor-secondary;
   font-size: x-large;
 }
 .detail {
   padding: 10px 0;
   margin-bottom: 20px;
+}
+.backAlign {
+  @apply text-xs mt-2 border-t-0 border-r-0 border-l-0 border-2 border-solid;
+  color: colors.$fontcolor-secondary;
 }
