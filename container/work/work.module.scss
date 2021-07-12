@@ -1,9 +1,10 @@
+@use '../../styles/colors.scss';
 .center {
   @apply flex justify-center;
   height: 100vh;
   align-items: center;
-  background-color: #1b3241;
-  color: white;
+  background-color: colors.$background-light;
+  color: colors.$fontcolor-primary;
 }
 @media screen and (max-width: 1000px) {
   .center {
@@ -11,7 +12,7 @@
   }
 }
 .portHoverCardText {
-  color: #1b3241;
+  color: colors.$background-light;
 }
 .portfolio {
   margin: 2% 7%;
@@ -25,7 +26,7 @@
 .headText {
   @apply text-center;
   font-size: xx-large;
-  color: #4da8da;
+  color: colors.$fontcolor-secondary;
   margin-bottom: 2%;
 }
 .pFilter {
@@ -59,7 +60,7 @@
 .hoverContext span {
   box-shadow: 0 0 10px rgb(0 0 0 / 45%);
   @apply flex items-center justify-center opacity-100 rounded-lg;
-  background: #4da8da;
+  background: colors.$fontcolor-secondary;
 }
 
 .relativeP {

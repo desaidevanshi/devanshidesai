@@ -1,10 +1,11 @@
+@use '../../styles/colors.scss';
 .serviceSec {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100vh;
-  background-color: #1b3241;
-  color: white;
+  background-color: colors.$background-light;
+  color: colors.$fontcolor-primary;
 }
 
 .heading {
@@ -18,7 +19,7 @@
 .heading h2 {
   @apply text-center;
   font-size: xx-large;
-  color: #4da8da;
+  color: colors.$fontcolor-secondary;
   margin-bottom: 2%;
 }
 
@@ -45,7 +46,7 @@
 }
 .box {
   @apply h-full p-10 rounded-xl overflow-hidden relative flex flex-col items-center;
-  background-color: #12232e;
+  background-color: colors.$background-dark;
   z-index: 1;
 }
 

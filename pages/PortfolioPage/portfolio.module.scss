@@ -1,18 +1,20 @@
+@use '../../styles/colors.scss';
 .portfolioList {
-  // @apply pt-[100px] pb-[50px];
   padding-top: 100px;
   padding-bottom: 50px;
-  background-color: #1b3241;
-  color: white;
+  background-color: colors.$background-light;
+  color: colors.$fontcolor-primary;
 }
 .portfolioItems {
   @apply flex flex-wrap h-full w-full px-5 justify-center;
+  gap: 15px;
 }
 .portHoverCardText {
-  color: #1b3241;
+  color: colors.$background-light;
 }
 .backAlign {
   @apply text-xs mt-2 border-t-0 border-r-0 border-l-0 border-2 border-solid;
+  color: colors.$fontcolor-secondary;
 }
 .pFilter {
   @apply mb-10 text-center;
@@ -41,5 +43,5 @@
 .hoverContext span {
   box-shadow: 0 0 10px rgb(0 0 0 / 45%);
   @apply flex items-center justify-center opacity-100 rounded-lg;
-  background: #4da8da;
+  background: colors.$fontcolor-secondary;
 }

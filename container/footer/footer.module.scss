@@ -1,7 +1,8 @@
+@use '../../styles/colors.scss';
 .footer {
   @apply md:gap-6 sm:gap-5 py-14 h-full lg:px-20 md:px-20;
-  background-color: #12232e;
-  color: white;
+  background-color: colors.$background-dark;
+  color: colors.$fontcolor-primary;
 }
 .footerMain {
   display: flex;
@@ -24,21 +25,22 @@
   padding: 0 20px;
 }
 .footerText span a {
-  color: white;
+  color: colors.$fontcolor-primary;
 }
 .footerText span a:hover {
-  color: #4da8da;
+  color: colors.$fontcolor-secondary;
 }
 .footerSoc {
   display: flex;
   justify-content: center;
 }
 .portSocialBtn {
-  @apply mx-1 flex items-center flex-col fill-current ease-in-out text-white;
+  @apply mx-1 flex items-center flex-col fill-current ease-in-out;
+  color: colors.$fontcolor-primary;
   &:hover {
     .btnHover {
       @apply fill-current ease-in-out cursor-pointer;
-      color: #4da8da;
+      color: colors.$fontcolor-secondary;
     }
   }
 }

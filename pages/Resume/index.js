@@ -45,7 +45,7 @@ const Skills = () => (
               </div>
             </div>
           </div>
-          <div className={styles.Skillbar}>
+          <div className={styles.Skillbars}>
             <PortText variant="portEduPercent" className={styles.portEduPercent} component="h1">
               72%
             </PortText>
@@ -58,7 +58,7 @@ const Skills = () => (
               </div>
             </div>
           </div>
-          <div className={styles.Skillbar}>
+          <div className={styles.Skillbars}>
             <PortText variant="portEduPercent" className={styles.portEduPercent} component="h1">
               92%
             </PortText>
@@ -71,7 +71,7 @@ const Skills = () => (
               </div>
             </div>
           </div>
-          <div className={styles.Skillbar}>
+          <div className={styles.Skillbars}>
             <PortText variant="portEduPercent" className={styles.portEduPercent} component="h1">
               80%
             </PortText>
@@ -84,7 +84,7 @@ const Skills = () => (
               </div>
             </div>
           </div>
-          <div className={styles.Skillbar}>
+          <div className={styles.Skillbars}>
             <PortText variant="portEduPercent" className={styles.portEduPercent} component="h1">
               72%
             </PortText>
@@ -97,7 +97,7 @@ const Skills = () => (
               </div>
             </div>
           </div>
-          <div className={styles.Skillbar}>
+          <div className={styles.Skillbars}>
             <PortText variant="portEduPercent" className={styles.portEduPercent} component="h1">
               85%
             </PortText>
@@ -151,7 +151,7 @@ const Skills = () => (
             </PortText>
             <PortText variant="portEduLeftText" className={styles.portEduLeftText}>
               {'At '}
-              <a className="college" href="https://silveroakuni.ac.in/">
+              <a className={styles.college} href="https://silveroakuni.ac.in/">
                 SilverOak University
               </a>
             </PortText>
@@ -165,7 +165,7 @@ const Skills = () => (
             </PortText>
             <PortText variant="portEduLeftText" className={styles.portEduLeftText}>
               {'At '}
-              <a className="college" href="https://silveroakuni.ac.in/">
+              <a className={styles.college} href="https://silveroakuni.ac.in/">
                 SilverOak University
               </a>
             </PortText>
@@ -179,7 +179,7 @@ const Skills = () => (
             </PortText>
             <PortText variant="portEduLeftText" className={styles.portEduLeftText}>
               {'At '}
-              <a className="college" href="https://silveroakuni.ac.in/">
+              <a className={styles.college} href="https://silveroakuni.ac.in/">
                 SilverOak University
               </a>
             </PortText>

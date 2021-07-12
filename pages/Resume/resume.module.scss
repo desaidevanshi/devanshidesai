@@ -1,10 +1,11 @@
-.light-theme {
-  background-color: #1b3241;
-  color: white;
+@use '../../styles/colors.scss';
+.light_theme {
+  background-color: colors.$background-light;
+  color: colors.$fontcolor-primary;
 }
 .Skillbar {
   @apply relative;
-  background: #4da8da;
+  background: colors.$fontcolor-secondary;
 }
 
 .resumeMain {
@@ -34,8 +35,8 @@
 
 .college {
   @apply hover:border-solid border-t-0 hover:transform border-b border-l-0 border-r-0;
-  color: #4da8da;
-  border-bottom: #4da8da;
+  color: colors.$fontcolor-secondary;
+  border-bottom: colors.$fontcolor-secondary;
 }
 
 .workEp {
@@ -85,5 +86,5 @@
   @apply flex flex-col sm:flex-row flex-1 w-full md:justify-around;
 }
 .backAlign {
-  color: #4da8da;
+  color: colors.$fontcolor-secondary;
 }
