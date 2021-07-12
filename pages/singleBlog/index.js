@@ -20,8 +20,16 @@ const Project = () => (
         <div className="textDiv">
           <div>
             <PortText variant="portHeadingText" className="portHeadingText">
-              Why Blogging is so Amazing & Important?
+              Personal Portfolio
             </PortText>
+          </div>
+          <div className="content">
+            <h3 className="head">Role</h3>
+            <p className="detail">Lorem ipsum dolor</p>
+            <h3 className="head">Project Categories</h3>
+            <p className="detail">Lorem ipsum dolor</p>
+            <h3 className="head">Technology Used</h3>
+            <p className="detail">Lorem ipsum dolor</p>
           </div>
         </div>
       </div>
