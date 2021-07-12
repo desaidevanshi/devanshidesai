@@ -1,11 +1,12 @@
 .portScrollNavbar {
-  @apply md:p-8 sm:p-6 xs:p-4 bg-[#12232e] text-white uppercase flex-col w-full justify-between md:px-40 sm:px-32 flex;
+  @apply md:p-8 sm:p-6 xs:p-4 text-white uppercase flex-col w-full justify-between md:px-40 sm:px-32 flex;
+  background-color: #12232e;
 }
 .spanNav {
   @apply items-center flex justify-end gap-6 uppercase;
 }
 .portNavText {
-  @apply font-Raleway border-solid border-b border-t-0 border-r-0 border-l-0 gap-10 font-light md:text-[13px] xs:text-sm;
+  @apply border-solid border-b border-t-0 border-r-0 border-l-0 gap-10 font-light md:text-sm xs:text-sm;
 }
 
 .headerCenter {

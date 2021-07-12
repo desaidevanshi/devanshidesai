@@ -1,128 +1,125 @@
-// .portEduPercent {
-//   @apply text-3xl font-semibold text-textColor-skin-base mt-8;
-// }
+.portEduPercent {
+  @apply text-3xl font-semibold mt-8;
+}
 
-// .portLogoText {
-//   font-family: "Montserrat", sans-serif;
-//   @apply font-extrabold text-[28px] m-0 text-textColor-skin-inverted uppercase z-50 absolute;
-// }
+.portLogoText {
+  font-family: 'Montserrat', sans-serif;
+  @apply font-extrabold text-2xl m-0 uppercase z-50 absolute;
+}
 
-// .portNavText {
-//   @apply text-[13px] font-normal uppercase;
-// }
+.portNavText {
+  @apply text-sm font-normal uppercase;
+}
 
-// .portHeaderText {
-//   @apply text-textColor-skin-base text-[88px] font-black;
-// }
-// .portHeaderHomeText {
-//   @apply text-textColor-skin-inverted font-black;
-// }
-// .portHeaderCaption {
-//   @apply text-textColor-skin-inverted-dull;
-// }
+.portHeaderText {
+  @apply text-7xl font-black;
+}
+.portHeaderHomeText {
+  @apply font-black;
+}
 
-// .portHeaderCaptionBold {
-//   @apply text-[24px] font-bold text-textColor-skin-inverted-dull;
-// }
+.portHeaderCaptionBold {
+  @apply text-2xl font-bold-dull;
+}
 
-// .portHeadingText {
-//   @apply font-semibold lg:text-[32px] md:text-[31px] sm:text-[30px] xs:text-[24px] m-0 uppercase;
-//   color: #4da8da;
-// }
+.portHeadingText {
+  @apply font-semibold lg:text-3xl md:text-3xl sm:text-3xl xs:text-2xls m-0 uppercase;
+  color: #4da8da;
+}
 
-// .portHeadingCaption {
-//   @apply uppercase text-[16px] m-0 text-textColor-skin-base  font-medium;
-// }
+.portHeadingCaption {
+  @apply uppercase text-base m-0  font-medium;
+}
 
-// .portParaText {
-//   @apply text-[16px] text-textColor-skin-dull font-thin leading-[26.5px];
-// }
+.portParaText {
+  @apply text-base font-thin leading-6;
+}
 
-// .portAboutCaption {
-//   @apply text-[20px] text-textColor-skin-base;
-// }
+.portAboutCaption {
+  @apply text-xl;
+}
 
-// .portParaAboutText {
-//   @apply text-[16px] text-textColor-skin-dull font-thin leading-[28px];
-// }
+.portParaAboutText {
+  @apply text-base font-thin leading-7;
+}
 
-// .portButtonText {
-//   @apply text-[13px] font-semibold uppercase;
-// }
+.portButtonText {
+  @apply text-sm font-semibold uppercase;
+}
 
-// .portServiceSubHeadingText {
-//   @apply text-textColor-skin-base font-semibold text-lg uppercase;
-// }
+.portServiceSubHeadingText {
+  @apply font-semibold text-lg uppercase;
+}
 
-// .portCounterText {
-//   @apply text-[32px] font-extrabold;
-// }
+.portCounterText {
+  @apply text-3xl font-extrabold;
+}
 
-// .portCounterCaption {
-//   @apply text-[16px] font-semibold;
-// }
+.portCounterCaption {
+  @apply text-base font-semibold;
+}
 
-// .portCardHeaderText {
-//   @apply text-textColor-skin-base text-[16px] font-semibold;
-// }
+.portCardHeaderText {
+  @apply text-base font-semibold;
+}
 
-// .portCardReadText {
-//   @apply text-[13px]  font-semibold  text-textColor-skin-copyright border-b-2 border-gray-600;
-// }
+.portCardReadText {
+  @apply text-sm  font-semibold border-b-2 border-gray-600;
+}
 
-// .portHeaderTextPCard {
-//   @apply text-[32px] mt-0 font-bold text-center;
-// }
+.portHeaderTextPCard {
+  @apply text-3xl mt-0 font-bold text-center;
+}
 
-// .portCardDateText {
-//   @apply text-[13px]  font-semibold  text-textColor-skin-date;
-// }
+.portCardDateText {
+  @apply text-sm  font-semibold;
+}
 
-// .portTestimonialText {
-//   @apply text-textColor-skin-inverted text-[24px] font-semibold m-0;
-// }
-// .portCommentText {
-//   @apply text-textColor-skin-base text-[24px] font-semibold m-0;
-// }
+.portTestimonialText {
+  @apply text-2xl font-semibold m-0;
+}
+.portCommentText {
+  @apply text-2xl font-semibold m-0;
+}
 
-// .portTestimonialPText {
-//   @apply text-[16px] font-sans text-textColor-skin-inverted;
-// }
-// .portEduLeftText {
-//   @apply font-sans;
-//   color: white;
-//   padding: 5px 0;
-// }
+.portTestimonialPText {
+  @apply text-base font-sans;
+}
+.portEduLeftText {
+  @apply font-sans;
+  color: white;
+  padding: 5px 0;
+}
 
-// .portTestimonialRoleText {
-//   @apply text-textColor-skin-inverted-dull text-[14px] font-semibold mt-2;
-// }
+.portTestimonialRoleText {
+  @apply-dull text-sm font-semibold mt-2;
+}
 
-// .portContactHeadingText {
-//   @apply text-[16px] font-bold text-textColor-skin-inverted;
-// }
+.portContactHeadingText {
+  @apply text-base font-bold;
+}
 
-// .portContactDetailText {
-//   @apply text-[14px] text-textColor-skin-inverted;
-// }
-// .portCommentdetailText {
-//   @apply text-[14px] text-textColor-skin-base;
-// }
-// .portFooterText {
-//   @apply text-[14px] text-textColor-skin-copyright;
-// }
+.portContactDetailText {
+  @apply text-sm;
+}
+.portCommentdetailText {
+  @apply text-sm;
+}
+.portFooterText {
+  @apply text-sm;
+}
 
-// .portFilterText {
-//   @apply text-textColor-skin-base text-[14px] uppercase;
-// }
+.portFilterText {
+  @apply text-sm uppercase;
+}
 
-// .portHoverCardText {
-//   @apply text-textColor-skin-base text-[20px] font-semibold text-center;
-// }
-// .portSingleBlog {
-//   @apply font-semibold md:text-[48px] sm:text-[40px] xs:text-[30px] m-0 uppercase;
-// }
+.portHoverCardText {
+  @apply text-xl font-semibold text-center;
+}
+.portSingleBlog {
+  @apply font-semibold md:text-5xl sm:text-4xl xs:text-3xl m-0 uppercase;
+}
 
-// .portSingleBlogText {
-//   @apply text-textColor-skin-base font-semibold text-[28px] m-0 uppercase;
-// }
+.portSingleBlogText {
+  @apply font-semibold text-2xl m-0 uppercase;
+}
