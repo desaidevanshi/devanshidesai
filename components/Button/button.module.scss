@@ -1,5 +1,5 @@
 .portHomeButton {
-  @apply bg-backgroundColor-skin-button-accent text-sm px-5 py-3
+  @apply text-sm px-5 py-3
   uppercase font-semibold border-2 border-solid
   hover:bg-transparent hover:items-center cursor-pointer;
   border-color: #4da8da;
@@ -10,10 +10,10 @@
   color: white;
 }
 .portSocialButton {
-  @apply bg-backgroundColor-skin-button-accent border-2 border-backgroundColor-skin-button-accent
+  @apply border-2
   border-solid rounded-2xl items-center justify-center
   h-10 w-10
-  hover:bg-transparent hover:text-backgroundColor-skin-button-accent;
+  hover:bg-transparent;
 }
 .portSocialButton:hover {
   border-color: #4da8da;
@@ -41,6 +41,6 @@
   transform: translate(3px);
 }
 .disable {
-  @apply cursor-not-allowed bg-backgroundColor-skin-button-disable opacity-50 text-sm text-textColor-skin-inverted px-5 py-3
-  uppercase font-semibold border-2 border-backgroundColor-skin-button-disable border-solid;
+  @apply cursor-not-allowed opacity-50 text-sm text-textColor-skin-inverted px-5 py-3
+  uppercase font-semibold border-2 border-solid;
 }
