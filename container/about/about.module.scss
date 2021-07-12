@@ -1,11 +1,16 @@
+@use '../../styles/colors.scss';
+
 .about {
   height: 100vh;
   display: flex;
   align-items: center;
   padding: 2% 7%;
+  background: colors.$background-dark;
+  color: colors.$fontcolor-primary;
 }
 .aboutImg {
   margin-right: 10px;
+  width: 50%;
 }
 .aboutImg img {
   border: solid 2px #4da8da;
@@ -17,29 +22,40 @@
   padding-left: 2%;
 }
 .name {
-  @apply mb-10 text-center;
+  margin-bottom: 2.5rem;
+  text-align: center;
   font-size: xxx-large;
   color: #4da8da;
 }
 .caption {
-  @apply mb-10 text-center;
+  margin-bottom: 2.5rem;
+  text-align: center;
   font-size: x-large;
 }
 .des {
   font-size: large;
   font-weight: lighter;
-  @apply mb-10;
+  margin-bottom: 2.5rem;
 }
 .portSocial {
   justify-content: center;
-  @apply mb-10 flex flex-row;
+  margin-bottom: 2.5rem;
+  display: flex;
 }
 
 .portSocialBtn {
-  @apply mx-1 flex items-center flex-col fill-current ease-in-out text-white;
+  margin: 0 0.25rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  fill: currentColor;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: white;
   &:hover {
     .btnHover {
-      @apply fill-current ease-in-out cursor-pointer;
+      cursor: pointer;
+      fill: currentColor;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       color: #4da8da;
     }
   }

@@ -1,20 +1,32 @@
 //Project Card
-
+@use '../../styles/colors.scss';
 // card portfolio style
 .cardPort {
-  @apply w-full px-0 py-2 sm:w-1/2 sm:p-1 lg:w-1/3 md:p-2;
+  padding: 0.5rem 0;
+  width: 30%;
   :hover {
     .hoverPort {
-      @apply opacity-70;
+      opacity: 0.7;
     }
   }
 }
 
 .cardPort img {
-  @apply w-full h-full;
+  width: 100%;
+  height: 100%;
 }
 
 .hoverPort {
-  @apply opacity-0 absolute  h-full w-full flex justify-center items-center inset-0 m-auto duration-500;
-  background: #4da8da;
+  background: colors.$fontcolor-secondary;
+  opacity: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  transition-duration: 500ms;
 }

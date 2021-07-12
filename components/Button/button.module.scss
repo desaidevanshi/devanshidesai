@@ -1,54 +1,56 @@
+@use '../../styles/colors.scss';
 .portHomeButton {
   text-transform: uppercase;
   font-weight: 600;
   border: 2px solid;
   font-size: 14px;
   padding: 12px 20px;
-  border-color: #4da8da;
-  color: #4da8da;
+  border-color: colors.$fontcolor-secondary;
+  color: colors.$fontcolor-secondary;
+  @apply bg-black;
 }
 .portHomeButton:hover {
-  border-color: white;
-  color: white;
+  border-color: colors.$fontcolor-primary;
+  color: colors.$fontcolor-primary;
   background: transparent;
   cursor: pointer;
 }
 .portSocialButton {
   align-items: center;
   justify-content: center;
-  border: solid 2px white;
+  border: solid 2px colors.$fontcolor-primary;
   border-radius: 50%;
   height: 2.5rem;
   width: 2.5rem;
 }
 .portSocialButton:hover {
-  border: solid 2px #4da8da;
-  color: #4da8da;
+  border: solid 2px colors.$fontcolor-secondary;
+  color: colors.$fontcolor-secondary;
   background-color: transparent;
 }
 
-.portResume {
-  border: #222;
-  color: white;
-  background: transparent;
-  padding: 0.5rem;
-}
-.portResume:hover {
-  background-color: #222;
-}
+// .portResume {
+//   border: #222;
+//   color: white;
+//   background: transparent;
+//   padding: 0.5rem;
+// }
+// .portResume:hover {
+//   background-color: #222;
+// }
 
 .portServiceButton {
   display: flex;
   justify-content: center;
   align-items: center;
   background: transparent;
-  border: solid 2px white;
+  border: solid 2px colors.$fontcolor-primary;
   border-radius: 50%;
   height: 5rem;
   width: 5rem;
 }
 .portServiceButton:hover {
-  background-color: #4da8da;
+  background-color: colors.$fontcolor-secondary;
   box-shadow: 0px 10px 10px black;
   transform: translate(3px);
 }

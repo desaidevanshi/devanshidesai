@@ -1,22 +1,43 @@
+@use '../../styles/colors.scss';
 .portScrollNavbar {
-  @apply md:p-8 sm:p-6 xs:p-4 text-white uppercase flex-col w-full justify-between md:px-40 sm:px-32 flex;
-  background-color: #12232e;
+  background-color: colors.$background-dark;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-transform: uppercase;
+  color: colors.$fontcolor-primary;
+  padding: 2%;
 }
 .spanNav {
-  @apply items-center flex justify-end gap-6 uppercase;
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  text-transform: uppercase;
 }
 .portNavText {
-  @apply border-solid border-b border-t-0 border-r-0 border-l-0 gap-10 font-light md:text-sm xs:text-sm;
+  border-bottom: solid 1px;
+  gap: 2.5rem;
+  font-weight: 300;
+  font-size: 0.875rem;
 }
 
 .headerCenter {
-  @apply flex lg:p-8 mt-14 md:p-6 sm:p-4 xs:p-3 flex-col justify-center items-center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2%;
 }
 
 .top {
-  @apply flex justify-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .Nav {
   @apply gap-2 flex-1 flex justify-center;
+  display: flex;
+  flex: 1;
+  justify-content: center;
 }

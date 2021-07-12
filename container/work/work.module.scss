@@ -51,6 +51,7 @@
 
 .item {
   @apply flex flex-wrap justify-center;
+  gap: 10px;
 }
 .hoverContext {
   @apply flex flex-col items-center;
