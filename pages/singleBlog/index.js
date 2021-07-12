@@ -10,7 +10,7 @@ const Project = () => (
         <PortText variant="portSingleBlog" className={styles.portSingleBlog}>
           Portfolio List
         </PortText>
-        <a className={styles.backAlign} href="http://localhost:3000/">
+        <a className={styles.backAlign} href="/">
           Back
         </a>
       </Header>
