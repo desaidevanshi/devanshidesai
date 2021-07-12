@@ -12,6 +12,7 @@
   margin-right: 10px;
   width: 60%;
 }
+
 .aboutImg img {
   border: solid 2px colors.$fontcolor-secondary;
 }
@@ -66,6 +67,9 @@
     justify-content: flex-end;
     height: fit-content;
   }
+  .aboutImg img {
+    width: 100%;
+  }
   .des {
     padding: 0 10px;
   }
@@ -77,9 +81,7 @@
   .about {
     justify-content: center;
   }
-  .aboutImg img {
-    width: 300px;
-  }
+
   .name {
     font-size: xx-large;
   }
