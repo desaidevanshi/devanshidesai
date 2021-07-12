@@ -1,35 +1,36 @@
 import Header from '../../components/Header';
 import PortText from '../../components/PortText';
 import Contact from '../../container/contact';
+import styles from './singleBlog.module.scss';
 
 const Project = () => (
   <>
-    <div className="light-theme">
+    <div className={styles.light_theme}>
       <Header>
-        <PortText variant="portSingleBlog" className="portSingleBlog">
+        <PortText variant="portSingleBlog" className={styles.portSingleBlog}>
           Portfolio List
         </PortText>
-        <a className="backAlign" href="http://localhost:3000/">
+        <a className={styles.backAlign} href="http://localhost:3000/">
           Back
         </a>
       </Header>
-      <div className="mainDiv">
-        <div className="imgdiv">
-          <img src="/images/249801.jpg" alt="ProjectImage" className="img" />
+      <div className={styles.mainDiv}>
+        <div className={styles.imgdiv}>
+          <img src="/images/249801.jpg" alt="ProjectImage" className={styles.img} />
         </div>
-        <div className="textDiv">
+        <div className={styles.textDiv}>
           <div>
-            <PortText variant="portHeadingText" className="portHeadingText">
+            <PortText variant="portHeadingText" className={styles.portHeadingText}>
               Personal Portfolio
             </PortText>
           </div>
-          <div className="content">
-            <h3 className="head">Role</h3>
-            <p className="detail">Lorem ipsum dolor</p>
-            <h3 className="head">Project Categories</h3>
-            <p className="detail">Lorem ipsum dolor</p>
-            <h3 className="head">Technology Used</h3>
-            <p className="detail">Lorem ipsum dolor</p>
+          <div className={styles.content}>
+            <h3 className={styles.head}>Role</h3>
+            <p className={styles.detail}>Lorem ipsum dolor</p>
+            <h3 className={styles.head}>Project Categories</h3>
+            <p className={styles.detail}>Lorem ipsum dolor</p>
+            <h3 className={styles.head}>Technology Used</h3>
+            <p className={styles.detail}>Lorem ipsum dolor</p>
           </div>
         </div>
       </div>

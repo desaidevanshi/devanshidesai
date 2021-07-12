@@ -1,21 +1,21 @@
 import Card from '../../components/Card';
 import Header from '../../components/Header';
 import PortText from '../../components/PortText';
-// import Footer from '../../container/footer';
 import Search from '../../public/svg/search_white_48dp.svg';
+import styles from './portfolio.module.scss';
 
 const PortfolioPage = () => (
-  <div className="light-theme">
+  <div className={styles.light_theme}>
     <Header>
-      <PortText variant="portSingleBlog" className="portSingleBlog">
+      <PortText variant="portSingleBlog" className={styles.portSingleBlog}>
         Portfolio List
       </PortText>
-      <a className="backAlign" href="http://localhost:3000/">
+      <a className={styles.backAlign} href="http://localhost:3000/">
         Back
       </a>
     </Header>
-    <section className="portfolioList">
-      <div className="pFilter">
+    <section className={styles.portfolioList}>
+      <div className={styles.pFilter}>
         <ul>
           <li>All</li>
           <li>Web Design</li>
@@ -24,17 +24,17 @@ const PortfolioPage = () => (
         </ul>
       </div>
 
-      <div className="portfolioItems">
+      <div className={styles.portfolioItems}>
         <Card variant="cardPort">
-          <div className="relativeP">
+          <div className={styles.relativeP}>
             <a href="/singleBlog">
               <img src="/images/249772.jpg" alt="" />
-              <div className="cardContent">
+              <div className={styles.cardContent}>
                 <Card variant="hoverPort">
-                  <div className="hoverContext">
-                    <h3 className="portHoverCardText">Application</h3>
+                  <div className={styles.hoverContext}>
+                    <h3 className={styles.portHoverCardText}>Application</h3>
                     <span>
-                      <Search className="searchIcon" />
+                      <Search className={styles.searchIcon} />
                     </span>
                   </div>
                 </Card>
@@ -44,15 +44,15 @@ const PortfolioPage = () => (
         </Card>
 
         <Card variant="cardPort">
-          <div className="relativeP">
+          <div className={styles.relativeP}>
             <a href="/singleBlog">
               <img src="/images/249772.jpg" alt="" />
-              <div className="cardContent">
+              <div className={styles.cardContent}>
                 <Card variant="hoverPort">
-                  <div className="hoverContext">
-                    <h3 className="portHoverCardText">Application</h3>
+                  <div className={styles.hoverContext}>
+                    <h3 className={styles.portHoverCardText}>Application</h3>
                     <span>
-                      <Search className="searchIcon" />
+                      <Search className={styles.searchIcon} />
                     </span>
                   </div>
                 </Card>
@@ -62,15 +62,15 @@ const PortfolioPage = () => (
         </Card>
 
         <Card variant="cardPort">
-          <div className="relativeP">
+          <div className={styles.relativeP}>
             <a href="/singleBlog">
               <img src="/images/249772.jpg" alt="" />
-              <div className="cardContent">
+              <div className={styles.cardContent}>
                 <Card variant="hoverPort">
-                  <div className="hoverContext">
-                    <h3 className="portHoverCardText">Application</h3>
+                  <div className={styles.hoverContext}>
+                    <h3 className={styles.portHoverCardText}>Application</h3>
                     <span>
-                      <Search className="searchIcon" />
+                      <Search className={styles.searchIcon} />
                     </span>
                   </div>
                 </Card>
@@ -80,15 +80,15 @@ const PortfolioPage = () => (
         </Card>
 
         <Card variant="cardPort">
-          <div className="relativeP">
+          <div className={styles.relativeP}>
             <a href="/singleBlog">
               <img src="/images/249772.jpg" alt="" />
-              <div className="cardContent">
+              <div className={styles.cardContent}>
                 <Card variant="hoverPort">
-                  <div className="hoverContext">
-                    <h3 className="portHoverCardText">Application</h3>
+                  <div className={styles.hoverContext}>
+                    <h3 className={styles.portHoverCardText}>Application</h3>
                     <span>
-                      <Search className="searchIcon" />
+                      <Search className={styles.searchIcon} />
                     </span>
                   </div>
                 </Card>
@@ -98,15 +98,15 @@ const PortfolioPage = () => (
         </Card>
 
         <Card variant="cardPort">
-          <div className="relativeP">
+          <div className={styles.relativeP}>
             <a href="/singleBlog">
               <img src="/images/249772.jpg" alt="" />
-              <div className="cardContent">
+              <div className={styles.cardContent}>
                 <Card variant="hoverPort">
-                  <div className="hoverContext">
-                    <h3 className="portHoverCardText">Application</h3>
+                  <div className={styles.hoverContext}>
+                    <h3 className={styles.portHoverCardText}>Application</h3>
                     <span>
-                      <Search className="searchIcon" />
+                      <Search className={styles.searchIcon} />
                     </span>
                   </div>
                 </Card>
@@ -116,15 +116,15 @@ const PortfolioPage = () => (
         </Card>
 
         <Card variant="cardPort">
-          <div className="relativeP">
+          <div className={styles.relativeP}>
             <a href="/singleBlog">
               <img src="/images/249772.jpg" alt="" />
-              <div className="cardContent">
+              <div className={styles.cardContent}>
                 <Card variant="hoverPort">
-                  <div className="hoverContext">
-                    <h3 className="portHoverCardText">Application</h3>
+                  <div className={styles.hoverContext}>
+                    <h3 className={styles.portHoverCardText}>Application</h3>
                     <span>
-                      <Search className="searchIcon" />
+                      <Search className={styles.searchIcon} />
                     </span>
                   </div>
                 </Card>
@@ -134,15 +134,15 @@ const PortfolioPage = () => (
         </Card>
 
         <Card variant="cardPort">
-          <div className="relativeP">
+          <div className={styles.relativeP}>
             <a href="/singleBlog">
               <img src="/images/249772.jpg" alt="" />
-              <div className="cardContent">
+              <div className={styles.cardContent}>
                 <Card variant="hoverPort">
-                  <div className="hoverContext">
-                    <h3 className="portHoverCardText">Application</h3>
+                  <div className={styles.hoverContext}>
+                    <h3 className={styles.portHoverCardText}>Application</h3>
                     <span>
-                      <Search className="searchIcon" />
+                      <Search className={styles.searchIcon} />
                     </span>
                   </div>
                 </Card>
@@ -152,15 +152,15 @@ const PortfolioPage = () => (
         </Card>
 
         <Card variant="cardPort">
-          <div className="relativeP">
+          <div className={styles.relativeP}>
             <a href="/singleBlog">
               <img src="/images/249772.jpg" alt="" />
-              <div className="cardContent">
+              <div className={styles.cardContent}>
                 <Card variant="hoverPort">
-                  <div className="hoverContext">
-                    <h3 className="portHoverCardText">Application</h3>
+                  <div className={styles.hoverContext}>
+                    <h3 className={styles.portHoverCardText}>Application</h3>
                     <span>
-                      <Search className="searchIcon" />
+                      <Search className={styles.searchIcon} />
                     </span>
                   </div>
                 </Card>
@@ -170,15 +170,15 @@ const PortfolioPage = () => (
         </Card>
 
         <Card variant="cardPort">
-          <div className="relativeP">
+          <div className={styles.relativeP}>
             <a href="/singleBlog">
               <img src="/images/249772.jpg" alt="" />
-              <div className="cardContent">
+              <div className={styles.cardContent}>
                 <Card variant="hoverPort">
-                  <div className="hoverContext">
-                    <h3 className="portHoverCardText">Application</h3>
+                  <div className={styles.hoverContext}>
+                    <h3 className={styles.portHoverCardText}>Application</h3>
                     <span>
-                      <Search className="searchIcon" />
+                      <Search className={styles.searchIcon} />
                     </span>
                   </div>
                 </Card>
@@ -188,15 +188,15 @@ const PortfolioPage = () => (
         </Card>
 
         <Card variant="cardPort">
-          <div className="relativeP">
+          <div className={styles.relativeP}>
             <a href="/singleBlog">
               <img src="/images/249772.jpg" alt="" />
-              <div className="cardContent">
+              <div className={styles.cardContent}>
                 <Card variant="hoverPort">
-                  <div className="hoverContext">
-                    <h3 className="portHoverCardText">Application</h3>
+                  <div className={styles.hoverContext}>
+                    <h3 className={styles.portHoverCardText}>Application</h3>
                     <span>
-                      <Search className="searchIcon" />
+                      <Search className={styles.searchIcon} />
                     </span>
                   </div>
                 </Card>
@@ -206,15 +206,15 @@ const PortfolioPage = () => (
         </Card>
 
         <Card variant="cardPort">
-          <div className="relativeP">
+          <div className={styles.relativeP}>
             <a href="/singleBlog">
               <img src="/images/249772.jpg" alt="" />
-              <div className="cardContent">
+              <div className={styles.cardContent}>
                 <Card variant="hoverPort">
-                  <div className="hoverContext">
-                    <h3 className="portHoverCardText">Application</h3>
+                  <div className={styles.hoverContext}>
+                    <h3 className={styles.portHoverCardText}>Application</h3>
                     <span>
-                      <Search className="searchIcon" />
+                      <Search className={styles.searchIcon} />
                     </span>
                   </div>
                 </Card>
@@ -224,15 +224,15 @@ const PortfolioPage = () => (
         </Card>
 
         <Card variant="cardPort">
-          <div className="relativeP">
+          <div className={styles.relativeP}>
             <a href="/singleBlog">
               <img src="/images/249772.jpg" alt="" />
-              <div className="cardContent">
+              <div className={styles.cardContent}>
                 <Card variant="hoverPort">
-                  <div className="hoverContext">
-                    <h3 className="portHoverCardText">Application</h3>
+                  <div className={styles.hoverContext}>
+                    <h3 className={styles.portHoverCardText}>Application</h3>
                     <span>
-                      <Search className="searchIcon" />
+                      <Search className={styles.searchIcon} />
                     </span>
                   </div>
                 </Card>
