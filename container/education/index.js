@@ -4,8 +4,8 @@ import PortText from '../../components/PortText';
 import styles from './education.module.scss';
 
 const Education = () => (
-  <section id="Education" className={styles.alignment}>
-    <div className="textAlign">
+  <section id="education" className={styles.alignment}>
+    <div className={styles.textAlign}>
       <PortText variant="portHeadingText" className={styles.portHeadingText}>
         Education and Skills
       </PortText>
@@ -23,7 +23,7 @@ const Education = () => (
             International Design Institute
           </PortText>
         </div>
-        <div className="leftTextAlign">
+        <div className={styles.leftTextAlign}>
           <PortText variant="portEduLeftText" className={styles.portEduLeftText}>
             2010-2012
           </PortText>
@@ -40,7 +40,7 @@ const Education = () => (
           <PortText variant="portEduPercent" className={styles.portEduPercent} component="h1">
             80%
           </PortText>
-          <div className="block">
+          <div className={styles.block}>
             <PortText variant="portHeadingCaption" className={styles.portHeadingCaption}>
               JAVASCRIPT
             </PortText>

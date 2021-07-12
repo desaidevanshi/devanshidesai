@@ -5,10 +5,6 @@ import Button from '../../components/Button';
 import styles from './work.module.scss';
 
 const Work = () => (
-  // function liClicked() {
-  //   const item = document.querySelector('listItems');
-  //   // x.classList.add('selItem');
-  // }
   <section id="work" className={styles.center}>
     <div className={styles.portfolio}>
       <div className={styles.row}>

@@ -1,59 +1,60 @@
-// .serviceSec {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   height: 100vh;
-//   background-color: #1b3241;
-//   color: white;
-// }
+.serviceSec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: #1b3241;
+  color: white;
+}
 
-// .heading {
-//   height: 30vh;
-//   width: 100%;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-// }
-// .heading h2 {
-//   @apply text-center;
-//   font-size: xx-large;
-//   color: #4da8da;
-//   margin-bottom: 2%;
-// }
+.heading {
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.heading h2 {
+  @apply text-center;
+  font-size: xx-large;
+  color: #4da8da;
+  margin-bottom: 2%;
+}
 
-// .heading p {
-//   @apply text-center;
-//   font-size: x-large;
-// }
-// .mainbox {
-//   @apply grid md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1;
-//   margin: 2% 7%;
-//   gap: 10px;
-// }
+.heading p {
+  @apply text-center;
+  font-size: x-large;
+}
+.mainbox {
+  @apply grid md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1;
+  margin: 2% 7%;
+  gap: 10px;
+}
 
-// .divRow {
-//   @apply flex lg:flex-col md:flex-col xs:flex-col sm:flex-col;
-// }
-// .divRow h3 {
-//   @apply my-10 text-center;
-//   font-size: x-large;
-// }
-// .divRow p {
-//   font-size: large;
-//   font-weight: lighter;
-// }
-// .box {
-//   @apply flex flex-col items-center;
-//   @apply h-full bg-[#12232e] p-10 rounded-[10px] overflow-hidden relative z-[1];
-// }
+.divRow {
+  @apply flex lg:flex-col md:flex-col xs:flex-col sm:flex-col;
+}
+.divRow h3 {
+  @apply my-10 text-center;
+  font-size: x-large;
+}
+.divRow p {
+  font-size: large;
+  font-weight: lighter;
+}
+.box {
+  @apply h-full p-10 rounded-xl overflow-hidden relative flex flex-col items-center;
+  background-color: #12232e;
+  z-index: 1;
+}
 
-// @media screen and (max-width: 777px) {
-//   .serviceSec {
-//     height: fit-content;
-//   }
-//   .mainbox {
-//     padding: 10px;
-//     gap: 10px;
-//   }
-// }
+@media screen and (max-width: 777px) {
+  .serviceSec {
+    height: fit-content;
+  }
+  .mainbox {
+    padding: 10px;
+    gap: 10px;
+  }
+}
