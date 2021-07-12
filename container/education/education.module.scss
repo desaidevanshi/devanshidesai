@@ -1,6 +1,7 @@
+@use '../../styles/colors.scss';
 .alignment {
   padding: 5% 7%;
-  background-color: #f2f2f2;
+  background-color: colors.$background-dark;
 }
 
 .textAlign {
@@ -13,7 +14,7 @@
 
 .leftsubbox {
   @apply py-5 pl-5 lg:w-2/4 xs:w-11/12 rounded-xl;
-  background-color: #4da8da;
+  background-color: colors.$fontcolor-secondary;
 }
 
 .leftTextAlign {
@@ -34,24 +35,24 @@
 
 .bar {
   @apply relative;
-  background-color: #1b3241;
+  background-color: colors.$background-light;
 }
 
 .ht {
   @apply h-3 animate-pulse;
-  background-color: #4da8da;
+  background-color: colors.$fontcolor-secondary;
 }
 .ht2 {
   @apply w-4/5 h-3 animate-pulse;
-  background-color: #4da8da;
+  background-color: colors.$fontcolor-secondary;
 }
 .ht3 {
   @apply w-3/4 h-3 animate-pulse;
-  background-color: #4da8da;
+  background-color: colors.$fontcolor-secondary;
 }
 .ht4 {
   @apply w-5/6 h-3 animate-pulse;
-  background-color: #4da8da;
+  background-color: colors.$fontcolor-secondary;
 }
 
 .viewMore {

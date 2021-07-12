@@ -1,8 +1,10 @@
+@use '../../styles/colors.scss';
 .contactContainer {
-  @apply xs:p-10 sm:py-24 sm:flex justify-center text-[16px] flex-col text-center;
+  @apply xs:p-10 sm:py-24 sm:flex justify-center text-base flex-col text-center;
   height: 100vh;
   display: flex;
   padding: 2% 15%;
+  background: colors.$background-dark;
 }
 @media screen and (max-width: 480px) {
   .contactContainer {
@@ -33,30 +35,30 @@
   @apply text-left text-red-500;
 }
 .contactInput {
-  @apply border-t-0 border-r-0 my-5 border-l-0 border-b-2 h-10  md:w-72 lg:w-96 p-[6px];
+  @apply border-t-0 border-r-0 my-5 border-l-0 border-b-2 h-10  md:w-72 lg:w-96 p-2;
   background: transparent;
-  border-color: #4da8da;
-  color: white;
+  border-color: colors.$fontcolor-secondary;
+  color: colors.$fontcolor-primary;
   font-size: 20px;
 }
 .borderApply {
-  @apply border-red-500 border-t-0 border-r-0 my-5 border-l-0 border-b-2 h-10 xs:w-full md:w-72 lg:w-96 p-[6px];
+  @apply border-red-500 border-t-0 border-r-0 my-5 border-l-0 border-b-2 h-10 xs:w-full md:w-72 lg:w-96 p-2;
   background: transparent;
-  color: white;
+  color: colors.$fontcolor-primary;
   font-size: 20px;
 }
 
 .contactTextArea {
-  @apply resize-none h-32 md:w-full sm:w-full xs:w-72 leading-6 shadow-none  p-[10px] border-t-0 border-r-0 border-l-0 border-b-2;
+  @apply resize-none h-32 md:w-full sm:w-full xs:w-72 leading-6 shadow-none  p-2 border-t-0 border-r-0 border-l-0 border-b-2;
   background: transparent;
-  border-color: #4da8da;
-  color: white;
+  border-color: colors.$fontcolor-secondary;
+  color: colors.$fontcolor-primary;
   font-size: 18px;
 }
 .captionCon {
   @apply mb-10 text-center;
   font-size: xx-large;
-  color: #4da8da;
+  color: colors.$fontcolor-secondary;
 }
 
 .desCon {
@@ -64,52 +66,6 @@
   font-size: x-large;
 }
 .footerLine {
-  @apply h-[1px] col-span-4 bg-gray-500;
+  @apply col-span-4 bg-gray-500;
+  height: 1px;
 }
-// .divider {
-//   padding: 50px 100px;
-// }
-// .lines {
-//   width: 100%;
-//   position: relative;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-// }
-// .lines::after,
-// .lines::before {
-//   content: '';
-//   position: absolute;
-//   margin: auto;
-//   height: 1px;
-//   background: gray;
-//   width: 45%;
-//   top: 45%;
-// }
-// @media screen and (max-width: 700px) {
-//   .lines::after,
-//   .lines::before {
-//     width: 40%;
-//   }
-//   .divider {
-//     padding: 40px;
-//   }
-// }
-
-// .lines::after {
-//   left: 0;
-// }
-// .lines::before {
-//   right: 0;
-// }
-// .circle {
-//   height: 30px;
-//   width: 30px;
-//   border: 1px solid gray;
-//   left: 0;
-//   right: 0;
-//   top: 0;
-//   bottom: 0;
-//   margin: auto;
-//   border-radius: 50%;
-// }

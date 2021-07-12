@@ -7,6 +7,7 @@
   padding: 12px 20px;
   border-color: colors.$fontcolor-secondary;
   color: colors.$fontcolor-secondary;
+  background: transparent;
 }
 .portHomeButton:hover {
   border-color: colors.$fontcolor-primary;
@@ -21,6 +22,7 @@
   border-radius: 50%;
   height: 2.5rem;
   width: 2.5rem;
+  background: transparent;
 }
 .portSocialButton:hover {
   border: solid 2px colors.$fontcolor-secondary;
