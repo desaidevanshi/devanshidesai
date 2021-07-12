@@ -8,7 +8,7 @@ const Project = () => (
     <div className={styles.light_theme}>
       <Header>
         <PortText variant="portSingleBlog" className={styles.portSingleBlog}>
-          Portfolio List
+          Project Details
         </PortText>
         <a className={styles.backAlign} href="/">
           Back
