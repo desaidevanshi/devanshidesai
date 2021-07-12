@@ -18,7 +18,8 @@
 }
 
 .leftTextAlign {
-  @apply leading-none pb-1 text-black;
+  @apply leading-none pb-1;
+  color: colors.$fontcolor-primary;
 }
 
 .bars {
@@ -30,7 +31,8 @@
 }
 
 .percentfield {
-  @apply text-3xl font-black text-black mt-8;
+  @apply text-3xl font-black  mt-8;
+  color: colors.$fontcolor-primary;
 }
 
 .bar {
