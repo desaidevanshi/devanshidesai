@@ -13,8 +13,13 @@
 }
 
 .contactForm {
-  @apply flex xs:flex-col xs:gap-0  sm:flex-row sm:gap-8;
+  @apply flex flex-1 xs:flex-col xs:gap-0  sm:flex-row sm:gap-8;
 }
+
+.contactForm input {
+  flex: 1;
+}
+
 .contactIn {
   display: flex;
   flex-direction: column;
@@ -31,21 +36,21 @@
   @apply text-left text-red-500;
 }
 .contactInput {
-  @apply border-t-0 border-r-0 my-5 border-l-0 border-b-2 h-10  md:w-72 lg:w-96 p-2;
+  @apply border-t-0 border-r-0 my-5 border-l-0 border-b-2 h-10 p-2;
   background: transparent;
   border-color: colors.$fontcolor-secondary;
   color: colors.$fontcolor-primary;
   font-size: 20px;
 }
 .borderApply {
-  @apply border-red-500 border-t-0 border-r-0 my-5 border-l-0 border-b-2 h-10 xs:w-full md:w-72 lg:w-96 p-2;
+  @apply border-red-500 border-t-0 border-r-0 my-5 border-l-0 border-b-2 h-10 p-2;
   background: transparent;
   color: colors.$fontcolor-primary;
   font-size: 20px;
 }
 
 .contactTextArea {
-  @apply resize-none h-32 md:w-full sm:w-full xs:w-72 leading-6 shadow-none  p-2 border-t-0 border-r-0 border-l-0 border-b-2;
+  @apply resize-none h-32 leading-6 shadow-none  p-2 border-t-0 border-r-0 border-l-0 border-b-2;
   background: transparent;
   border-color: colors.$fontcolor-secondary;
   color: colors.$fontcolor-primary;

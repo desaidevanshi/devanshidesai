@@ -1,12 +1,12 @@
 import React from 'react';
 import { useFormik } from 'formik';
-import classNames from 'classnames';
 import Button from '../../components/Button';
 import styles from './contact.module.scss';
 
 // A custom validation function. This must return an object
 // which keys are symmetrical to our values/initialValues
 // eslint-disable-next-line prettier/prettier
+// eslint-disable-next-line arrow-parens
 const validate = values => {
   const errors = {};
   if (!values.name) {
@@ -44,7 +44,7 @@ const SignupForm = () => {
   return (
     <section id="contact">
       <form onSubmit={formik.handleSubmit}>
-        <div className={classNames(styles.contactContainer, 'bg-primary')}>
+        <div className={styles.contactContainer}>
           <h2 className={styles.captionCon}>Contact</h2>
           <p className={styles.desCon}>GET IN TOUCH</p>
           <div className={styles.contactIn}>
@@ -84,14 +84,7 @@ const SignupForm = () => {
           </div>
         </div>
       </form>
-      {/* <div className={classNames(styles.divider, 'bg-primary')}>
-        <div className={styles.lines}>
-          <div className={styles.circle} />
-        </div>
-      </div> */}
-      <div className="bg-primary">
-        <div className={styles.footerLine} />
-      </div>
+      <div className={styles.footerLine} />
     </section>
   );
 };
