@@ -42,48 +42,42 @@ const SignupForm = () => {
     },
   });
   return (
-    <>
-      <form id="contact" onSubmit={formik.handleSubmit}>
+    <section id="contact">
+      <form onSubmit={formik.handleSubmit}>
         <div className={classNames(styles.contactContainer, 'bg-primary')}>
           <h2 className={styles.captionCon}>Contact</h2>
           <p className={styles.desCon}>GET IN TOUCH</p>
-          <div>
-            <div className={styles.contactIn}>
-              <div className={styles.contactForm}>
-                <div>
-                  <input
-                    id="name"
-                    name="name"
-                    type="text"
-                    value={formik.values.name}
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                    variant="contactInput"
-                    placeholder="Name"
-                    className={formik.errors.name ? styles.borderApply : styles.contactInput}
-                  />
-                </div>
-                <div>
-                  <input
-                    id="tel"
-                    name="tel"
-                    type="tel"
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                    value={formik.values.tel}
-                    variant="contactInput"
-                    placeholder="Phone Number"
-                    className={formik.errors.tel ? styles.borderApply : styles.contactInput}
-                  />
-                </div>
-              </div>
-              <textarea
-                variant="contactTextArea"
-                className={styles.contactTextArea}
-                component="textarea"
-                placeholder="How can we help you?"
+          <div className={styles.contactIn}>
+            <div className={styles.contactForm}>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                value={formik.values.name}
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+                variant="contactInput"
+                placeholder="Name"
+                className={formik.errors.name ? styles.borderApply : styles.contactInput}
+              />
+              <input
+                id="tel"
+                name="tel"
+                type="tel"
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+                value={formik.values.tel}
+                variant="contactInput"
+                placeholder="Phone Number"
+                className={formik.errors.tel ? styles.borderApply : styles.contactInput}
               />
             </div>
+            <textarea
+              variant="contactTextArea"
+              className={styles.contactTextArea}
+              component="textarea"
+              placeholder="How can we help you?"
+            />
             <Button type="submit" className={styles.buttonMargin}>
               SEND MESSAGE
             </Button>
@@ -98,7 +92,7 @@ const SignupForm = () => {
       <div className="bg-primary">
         <div className={styles.footerLine} />
       </div>
-    </>
+    </section>
   );
 };
 

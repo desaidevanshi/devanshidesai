@@ -14,17 +14,13 @@
 
 .contactForm {
   @apply flex xs:flex-col xs:gap-0  sm:flex-row sm:gap-8;
-  justify-content: center;
-  align-items: center;
 }
 .contactIn {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .buttonMargin {
-  @apply mt-10;
+  @apply w-40 mt-10 self-center;
 }
 
 .borderBottom {

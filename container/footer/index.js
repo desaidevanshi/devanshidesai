@@ -6,7 +6,7 @@ import Gmail from '../../public/svg/mail.svg';
 import styles from './footer.module.scss';
 
 const Footer = () => (
-  <section id="footer" className={styles.footer}>
+  <footer id="footer" className={styles.footer}>
     <div className={styles.footerSoc}>
       <a href="https://github.com/desaidevanshi">
         <Button className={styles.portSocialBtn} variant="portSocialButton">
@@ -57,9 +57,9 @@ const Footer = () => (
       </div> */}
     {/* <div className={styles.footerLine} /> */}
     <div className={styles.footerText}>
-      <footer>Devanshi © 2021. All Right Reserved, Designed By Devanshi Desai.</footer>
+      <div>Devanshi © 2021. All Right Reserved, Designed By Devanshi Desai.</div>
     </div>
-  </section>
+  </footer>
 );
 
 export default Footer;
