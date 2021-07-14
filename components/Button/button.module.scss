@@ -45,7 +45,8 @@
 .portServiceButton:hover {
   // background-color: colors.$fontcolor-secondary;
   box-shadow: 0px 10px 10px colors.$background-dark;
-  transform: translate(3px);
+  transform: translateZ(2px);
+  transition-duration: 500ms;
 }
 .disable {
   text-transform: uppercase;
