@@ -1,31 +1,29 @@
 import Computer from '../../public/svg/laptop_white_48dp.svg';
-import Code from '../../public/svg/code_white_48dp.svg';
-import Settings from '../../public/svg/support_white_48dp.svg';
 import Button from '../../components/Button';
 import styles from './service.module.scss';
+import Icon from '../../components/Icon';
 
-const Services = () => (
+const Services = ({ data }) => (
   <>
     <section id="services" className={styles.serviceSec}>
       <div className={styles.heading}>
-        <h2>Services</h2>
-        <p>WHAT CAN I DO</p>
+        <h2>{data.header.title}</h2>
+        <p>{data.header.caption}</p>
       </div>
       <div className={styles.mainbox}>
-        <div className={styles.box}>
-          <Button variant="portServiceButton">
-            <Computer />
-          </Button>
-          <div className={styles.divRow}>
-            <h3>Web Design</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore expedita et veniam
-              aut nulla ipsa enim ex in, quaerat, hic aspernatur voluptatem debitis, accusantium
-              itaque!
-            </p>
+        {data.services.map(x => (
+          <div className={styles.box}>
+            <Button variant="portServiceButton">
+              <Icon key={x.id} socialLink={x} variant="serviceBtn" />
+            </Button>
+            <div className={styles.divRow}>
+              <h3>{x.title}</h3>
+              <p>{x.description}</p>
+            </div>
           </div>
-        </div>
-        <div className={styles.box}>
+        ))}
+
+        {/* <div className={styles.box}>
           <Button variant="portServiceButton">
             <Code />
           </Button>
@@ -50,7 +48,7 @@ const Services = () => (
               vero.
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   </>

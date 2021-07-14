@@ -5,7 +5,7 @@
 }
 .Skillbar {
   @apply relative;
-  background: colors.$fontcolor-secondary;
+  background: colors.$background-dark;
 }
 
 .resumeMain {
@@ -63,33 +63,33 @@
 
 .Skillht1 {
   @apply w-11/12 h-3  animate-pulse;
-  background-color: #333333;
+  background-color: colors.$fontcolor-secondary;
 }
 .Skillht2 {
   @apply w-4/5 h-3 animate-pulse;
-  background-color: #333333;
+  background-color: colors.$fontcolor-secondary;
 }
 
 .Skillht3 {
   @apply w-3/4 h-3 animate-pulse;
-  background-color: #333333;
+  background-color: colors.$fontcolor-secondary;
 }
 
 .Skillht4 {
   @apply w-3/4 h-3 animate-pulse;
-  background-color: #333333;
+  background-color: colors.$fontcolor-secondary;
 }
 .Skillht5 {
   @apply w-5/6 h-3 animate-pulse;
-  background-color: #333333;
+  background-color: colors.$fontcolor-secondary;
 }
 .Skillht6 {
   @apply w-11/12 h-3 animate-pulse;
-  background-color: #333333;
+  background-color: colors.$fontcolor-secondary;
 }
 .Skillht7 {
   @apply w-8/12 h-3 animate-pulse;
-  background-color: #333333;
+  background-color: colors.$fontcolor-secondary;
 }
 
 .sideDiv {

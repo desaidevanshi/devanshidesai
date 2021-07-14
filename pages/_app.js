@@ -1,15 +1,17 @@
 /* eslint-disable react/prop-types */
 import '../styles/_global.scss';
+import { SWRConfig } from 'swr';
+import fetcher from '../lib/fetch';
 import Layout from '../components/Layout';
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <div>
+      <SWRConfig value={{ fetcher }}>
         <Layout>
           <Component {...pageProps} />
         </Layout>
-      </div>
+      </SWRConfig>
     </>
   );
 }

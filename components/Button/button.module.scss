@@ -23,6 +23,8 @@
   height: 2.5rem;
   width: 2.5rem;
   background: transparent;
+  margin: 0 0.25rem;
+  cursor: pointer;
 }
 .portSocialButton:hover {
   border: solid 2px colors.$fontcolor-secondary;
@@ -34,13 +36,14 @@
   justify-content: center;
   align-items: center;
   background: transparent;
-  border: solid 2px colors.$fontcolor-primary;
-  border-radius: 50%;
-  height: 5rem;
-  width: 5rem;
+  border: none;
+  // border: solid 2px colors.$fontcolor-primary;
+  // border-radius: 50%;
+  // height: 5rem;
+  // width: 5rem;
 }
 .portServiceButton:hover {
-  background-color: colors.$fontcolor-secondary;
+  // background-color: colors.$fontcolor-secondary;
   box-shadow: 0px 10px 10px colors.$background-dark;
   transform: translate(3px);
 }

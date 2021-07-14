@@ -43,9 +43,15 @@
   margin-bottom: 2.5rem;
   display: flex;
 }
-
+.portSocialButton {
+  align-items: center;
+}
+.portSocialBtn:hover {
+  border: solid 2px colors.$fontcolor-secondary;
+  color: colors.$fontcolor-secondary;
+  background-color: transparent;
+}
 .portSocialBtn {
-  margin: 0 0.25rem;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -61,6 +67,7 @@
     }
   }
 }
+
 @media screen and (max-width: 850px) {
   .about {
     flex-direction: column;

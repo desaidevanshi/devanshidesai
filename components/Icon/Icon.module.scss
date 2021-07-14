@@ -1,0 +1,53 @@
+@use '../../styles/colors.scss';
+
+.iconBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 2px colors.$fontcolor-primary;
+  border-radius: 50%;
+  height: 2.5rem;
+  width: 2.5rem;
+  background: transparent;
+  margin: 0 0.25rem;
+  cursor: pointer;
+
+  & svg {
+    height: 24px;
+    width: 24px;
+    fill: colors.$fontcolor-primary;
+  }
+
+  &:hover {
+    border-color: colors.$fontcolor-secondary;
+    & svg {
+      fill: colors.$fontcolor-secondary;
+    }
+  }
+}
+
+.serviceBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: solid 2px colors.$fontcolor-primary;
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+
+  & svg {
+    fill: colors.$fontcolor-primary;
+  }
+
+  &:hover {
+    background-color: colors.$fontcolor-secondary;
+    box-shadow: 0px 0px 10px colors.$background-dark;
+    transform: translate(1px);
+  }
+}
+.searchIcon {
+  box-shadow: 0 0 10px rgb(0 0 0 / 45%);
+  @apply flex items-center justify-center opacity-100 rounded-lg;
+  background: colors.$fontcolor-secondary;
+}

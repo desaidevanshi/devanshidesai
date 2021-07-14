@@ -41,14 +41,23 @@
   border-color: colors.$fontcolor-secondary;
   color: colors.$fontcolor-primary;
   font-size: 20px;
+  width: 80%;
 }
 .borderApply {
   @apply border-red-500 border-t-0 border-r-0 my-5 border-l-0 border-b-2 h-10 p-2;
   background: transparent;
   color: colors.$fontcolor-primary;
   font-size: 20px;
+  width: 80%;
 }
-
+@media screen and (max-width: 640px) {
+  .contactInput {
+    width: 100%;
+  }
+  .borderApply {
+    width: 100%;
+  }
+}
 .contactTextArea {
   @apply resize-none h-32 leading-6 shadow-none  p-2 border-t-0 border-r-0 border-l-0 border-b-2;
   background: transparent;

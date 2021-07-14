@@ -5,19 +5,30 @@ import Work from '../container/work';
 import Contact from '../container/contact';
 import Education from '../container/education';
 import Navbar from '../components/Navbar';
+import useBanner from '../hooks/useBanner';
+import useAbout from '../hooks/useAbout';
+import useServices from '../hooks/useServices';
+import useEducation from '../hooks/useEducation';
+import useWork from '../hooks/useWork';
+import useContact from '../hooks/useContact';
 
 export default function main() {
+  const { data: bannerData } = useBanner();
+  const { data: aboutData } = useAbout();
+  const { data: servicesData } = useServices();
+  const { data: educationData } = useEducation();
+  const { data: workData } = useWork();
+  const { data: contactData } = useContact();
+
   return (
     <>
-      <div>
-        <Navbar />
-        <Home />
-        <About />
-        <Services />
-        <Education />
-        <Work />
-        <Contact />
-      </div>
+      <Navbar />
+      {bannerData && <Home data={bannerData} />}
+      {aboutData && <About data={aboutData} />}
+      {servicesData && <Services data={servicesData} />}
+      {educationData && <Education data={educationData} />}
+      {workData && <Work data={workData} />}
+      {contactData && <Contact data={contactData} />}
     </>
   );
 }

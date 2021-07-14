@@ -1,25 +1,35 @@
+import { Fragment } from 'react';
 import Button from '../../components/Button';
-import Github from '../../public/svg/logo-github.svg';
-import Linkedin from '../../public/svg/logo-linkedin.svg';
-import Twitter from '../../public/svg/logo-twitter.svg';
-import Gmail from '../../public/svg/mail.svg';
+import Icon from '../../components/Icon';
+// import Github from '../../public/svg/logo-github.svg';
+// import Linkedin from '../../public/svg/logo-linkedin.svg';
+// import Twitter from '../../public/svg/logo-twitter.svg';
+// import Gmail from '../../public/svg/mail.svg';
 import styles from './about.module.scss';
 
-const About = () => (
+const About = ({ data }) => (
   <div id="about">
     <article className={styles.about}>
       <picture className={styles.aboutImg}>
-        <source media="(max-width:1025px)" srcSet="/images/about-img-lg.jpg" type="image.jpg" />
-        <img src="/images/about-img-lg.jpg" alt="Me" />
+        {/* <source media="(max-width:1025px)" 
+        srcSet="/images/about-img-lg.jpg" type="image.jpg" /> */}
+        <img src={data.portfolioImage.url} alt="Me" />
       </picture>
       <aside className={styles.description}>
-        <h2 className={styles.name}>Devanshi Desai</h2>
-        <h3 className={styles.caption}>Full-stack Developer</h3>
-        <p className={styles.des}>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus nobis neque, deserunt
-          nulla hic autem, eveniet aperiam aliquid eligendi, aut possimus obcaecati! Earum, cum hic.
-        </p>
+        <h2 className={styles.name}>
+          {data.firstName} {data.lastName}
+        </h2>
+        <h3 className={styles.caption}>{data.role}</h3>
+
+        <p className={styles.des}>{data.biography}</p>
+
         <div className={styles.portSocial}>
+          {data.socialLinks.map(x => (
+            <Icon key={x.id} socialLink={x} variant="iconBtn" />
+          ))}
+        </div>
+
+        {/* <div className={styles.portSocial}>
           <a href="https://github.com/desaidevanshi">
             <Button className={styles.portSocialBtn} variant="portSocialButton">
               <Github className={styles.btnHover} height={18} width={18} />
@@ -40,8 +50,8 @@ const About = () => (
               <Gmail className={styles.btnHover} height={18} width={18} />
             </Button>
           </a>
-        </div>
-        <Button>Download cv</Button>
+        </div> */}
+        <Button>{data.downloadCVText}</Button>
       </aside>
     </article>
   </div>
