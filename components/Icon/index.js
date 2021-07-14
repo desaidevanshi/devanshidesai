@@ -1,3 +1,7 @@
+/* eslint-disable react/jsx-closing-bracket-location */
+/* eslint-disable react/require-default-props */
+/* eslint-disable react/jsx-no-target-blank */
+/* eslint-disable react/prop-types */
 import PropTypes from 'prop-types';
 import React, { useEffect, useRef, memo } from 'react';
 import axios from '../../lib/axios';
@@ -25,8 +29,9 @@ const Icon = ({ socialLink, variant, className }) => {
       target="_blank"
       role="button"
       className={`${styles[variant]} ${className}`}
-      ref={iconRef}
-    />
+      ref={iconRef}>
+      socialIcons
+    </a>
   );
 };
 
