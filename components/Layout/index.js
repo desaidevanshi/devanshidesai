@@ -1,11 +1,14 @@
 import Footer from '../../container/footer';
+import useAbout from '../../hooks/useAbout';
 
 // eslint-disable-next-line react/prop-types
-const Layout = ({ children }) => (
-  <div>
-    <main>{children}</main>
-    <Footer />
-  </div>
-);
-
+const Layout = ({ children }) => {
+  const { data: aboutData } = useAbout();
+  return (
+    <div>
+      <main>{children}</main>
+      {aboutData && <Footer data={aboutData} />}
+    </div>
+  );
+};
 export default Layout;

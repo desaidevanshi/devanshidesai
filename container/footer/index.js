@@ -1,14 +1,19 @@
-import Button from '../../components/Button';
-import Github from '../../public/svg/logo-github.svg';
-import Linkedin from '../../public/svg/logo-linkedin.svg';
-import Twitter from '../../public/svg/logo-twitter.svg';
-import Gmail from '../../public/svg/mail.svg';
+import React from 'react';
+// import Button from '../../components/Button';
+import Icon from '../../components/Icon';
+// import Github from '../../public/svg/logo-github.svg';
+// import Linkedin from '../../public/svg/logo-linkedin.svg';
+// import Twitter from '../../public/svg/logo-twitter.svg';
+// import Gmail from '../../public/svg/mail.svg';
 import styles from './footer.module.scss';
 
-const Footer = () => (
+const Footer = ({ data }) => (
   <footer id="footer" className={styles.footer}>
     <div className={styles.footerSoc}>
-      <a href="https://github.com/desaidevanshi">
+      {data.socialLinks.map(x => (
+        <Icon key={x.id} socialLink={x} variant="iconBtn" />
+      ))}
+      {/* <a href="https://github.com/desaidevanshi">
         <Button className={styles.portSocialBtn} variant="portSocialButton">
           <Github className={styles.btnHover} height={18} width={18} />
         </Button>
@@ -27,7 +32,7 @@ const Footer = () => (
         <Button className={styles.portSocialBtn} variant="portSocialButton">
           <Gmail className={styles.btnHover} height={18} width={18} />
         </Button>
-      </a>
+      </a> */}
     </div>
     {/* <div className={styles.footerMain}>
         <div className={styles.contactF}>
@@ -57,7 +62,7 @@ const Footer = () => (
       </div> */}
     {/* <div className={styles.footerLine} /> */}
     <div className={styles.footerText}>
-      <div>Devanshi © 2021. All Right Reserved, Designed By Devanshi Desai.</div>
+      <div>{data.footerText}</div>
     </div>
   </footer>
 );
