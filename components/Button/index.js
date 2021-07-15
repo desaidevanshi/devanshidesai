@@ -1,3 +1,5 @@
+/* eslint-disable object-curly-newline */
+/* eslint-disable react/jsx-closing-bracket-location */
 /* eslint-disable react/prop-types */
 import PropTypes from 'prop-types';
 // import classNames from 'classnames';
