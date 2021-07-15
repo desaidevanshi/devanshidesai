@@ -56,3 +56,21 @@
   font-weight: 600;
   border: 2px solid;
 }
+.technoBtn {
+  font-weight: 400;
+  border: 2px solid;
+  font-size: 14px;
+  padding: 0 7px;
+  border-color: colors.$fontcolor-secondary;
+  color: colors.$fontcolor-secondary;
+  background: transparent;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  &:hover {
+    border-color: colors.$fontcolor-primary;
+    color: colors.$fontcolor-primary;
+    background: transparent;
+    cursor: pointer;
+  }
+}

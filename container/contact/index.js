@@ -56,8 +56,8 @@ const SignupForm = ({ data }) => {
     <section id="contact">
       <form onSubmit={formik.handleSubmit}>
         <div className={styles.contactContainer}>
-          <h2 className={styles.captionCon}>{data.contectHeader.title}</h2>
-          <p className={styles.desCon}>{data.contectHeader.caption}</p>
+          <h2 className={styles.captionCon}>{data.header.title}</h2>
+          <p className={styles.desCon}>{data.header.caption}</p>
           <div className={styles.contactIn}>
             <div className={styles.contactForm}>
               <input

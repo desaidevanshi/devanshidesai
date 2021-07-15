@@ -1,4 +1,5 @@
+/* eslint-disable arrow-parens */
 import useSWR from 'swr';
 
-const useProjects = () => useSWR('/portfolio-page');
+const useProjects = id => useSWR(id ? `/projects/${id}` : '/projects');
 export default useProjects;

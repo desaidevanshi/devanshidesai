@@ -9,6 +9,9 @@
       opacity: 0.7;
     }
   }
+  & img {
+    object-fit: cover;
+  }
 }
 @media screen and (max-width: 777px) {
   .cardPort {

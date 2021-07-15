@@ -2,7 +2,6 @@
 /* eslint-disable react/jsx-closing-bracket-location */
 /* eslint-disable react/prop-types */
 import PropTypes from 'prop-types';
-// import classNames from 'classnames';
 import Loader from '../Loader';
 import styles from './button.module.scss';
 
@@ -28,6 +27,7 @@ Button.propTypes = {
     'disable',
     'portNavButton',
     'portServiceButton',
+    'technoBtn',
   ]),
 };
 
