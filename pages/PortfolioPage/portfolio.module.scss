@@ -1,6 +1,6 @@
 @use '../../styles/colors.scss';
 .portfolioList {
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 50px;
   background-color: colors.$background-light;
   color: colors.$fontcolor-primary;
@@ -17,21 +17,18 @@
   color: colors.$fontcolor-secondary;
 }
 .pFilter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   @apply mb-10 text-center;
 }
 .pFilter ul {
   @apply m-0 p-0;
 }
+
 .pFilter ul li {
   @apply inline-block text-sm mr-5 relative cursor-pointer uppercase;
   font-size: large;
-}
-.pFilter ul li::before {
-  content: '/';
-  @apply absolute -right-4;
-}
-.pFilter ul li:last-child::before {
-  @apply hidden;
 }
 .relativeP {
   @apply relative h-full w-full;

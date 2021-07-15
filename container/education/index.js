@@ -59,7 +59,7 @@ const Education = ({ data }) => (
                 {x.title}
               </PortText>
               <div className={styles.bar}>
-                <div className={styles.ht2} style={{width: `${x.rating}%`}} />
+                <div className={styles.ht2} style={{ width: `${x.rating}%` }} />
               </div>
             </div>
           </div>
@@ -94,9 +94,7 @@ const Education = ({ data }) => (
       </div>
     </div>
     <div className={styles.align}>
-      <a href="/Resume">
-        <Button>View More</Button>
-      </a>
+      <Button href="/Resume">{data.button}</Button>
     </div>
   </section>
 );

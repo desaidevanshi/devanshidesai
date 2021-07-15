@@ -1,9 +1,11 @@
 import Header from '../../components/Header';
 import PortText from '../../components/PortText';
-import Contact from '../../container/contact';
+// import useContact from '../../hooks/useContact';
+// import Contact from '../../container/contact';
 import styles from './singleBlog.module.scss';
 
 const Project = () => (
+  // const { data: contactData } = useContact();
   <>
     <div className={styles.light_theme}>
       <Header>
@@ -16,6 +18,9 @@ const Project = () => (
       </Header>
       <div className={styles.mainDiv}>
         <div className={styles.imgdiv}>
+          <img src="/images/249801.jpg" alt="ProjectImage" className={styles.img} />
+          <img src="/images/249801.jpg" alt="ProjectImage" className={styles.img} />
+          <img src="/images/249801.jpg" alt="ProjectImage" className={styles.img} />
           <img src="/images/249801.jpg" alt="ProjectImage" className={styles.img} />
         </div>
         <div className={styles.textDiv}>
@@ -34,7 +39,7 @@ const Project = () => (
           </div>
         </div>
       </div>
-      <Contact />
+      {/* <Contact data={contactData} /> */}
     </div>
   </>
 );

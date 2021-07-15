@@ -50,7 +50,9 @@ const About = ({ data }) => (
             </Button>
           </a>
         </div> */}
-        <Button>{data.downloadCVText}</Button>
+        <Button href={data.resume.url} download={data.resume.url}>
+          {data.downloadCVText}
+        </Button>
       </aside>
     </article>
   </div>

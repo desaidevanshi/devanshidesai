@@ -4,7 +4,6 @@ import Services from '../container/services';
 import Work from '../container/work';
 import Contact from '../container/contact';
 import Education from '../container/education';
-import Navbar from '../components/Navbar';
 import useBanner from '../hooks/useBanner';
 import useAbout from '../hooks/useAbout';
 import useServices from '../hooks/useServices';
@@ -22,7 +21,6 @@ export default function main() {
 
   return (
     <>
-      <Navbar />
       {bannerData && <Home data={bannerData} />}
       {aboutData && <About data={aboutData} />}
       {servicesData && <Services data={servicesData} />}

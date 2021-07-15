@@ -10,12 +10,14 @@ const Work = ({ data }) => (
       <div className={styles.row}>
         <h2 className={styles.headText}>{data.header.title}</h2>
         <div className={styles.pFilter}>
-          <ul>
-            <li>All</li>
-            <li>Web Design</li>
-            <li>Application</li>
-            <li>Development</li>
-          </ul>
+          {data.project_categories.map(x => (
+            <ul>
+              <li>{x.title}</li>
+              {/* <li>Web Design</li>
+              <li>Application</li>
+              <li>Development</li> */}
+            </ul>
+          ))}
         </div>
       </div>
 
@@ -27,7 +29,7 @@ const Work = ({ data }) => (
               <div className={styles.cardContent}>
                 <Card variant="hoverPort">
                   <div className={styles.hoverContext}>
-                    <h3 className="portHoverCardText">{x.title}</h3>
+                    <h3 className={styles.portHoverCardText}>{x.title}</h3>
                     {/* <Icon key={x.id} socialLink={x} variant="searchIcon" /> */}
                   </div>
                 </Card>
@@ -68,9 +70,7 @@ const Work = ({ data }) => (
         </Card> */}
       </div>
       <div className={styles.align}>
-        <a href="/PortfolioPage">
-          <Button variant="portHomeButton">{data.buttonText}</Button>
-        </a>
+        <Button href="/PortfolioPage">{data.buttonText}</Button>
       </div>
     </div>
   </section>

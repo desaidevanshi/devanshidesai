@@ -1,193 +1,200 @@
 import React from 'react';
+import useResume from '../../hooks/useResume';
 import Header from '../../components/Header';
 import PortText from '../../components/PortText';
 import styles from './resume.module.scss';
 
-const Skills = () => (
-  <div className={styles.light_theme}>
-    <Header>
-      <PortText variant="portSingleBlog" className={styles.portSingleBlog}>
-        Resume
-      </PortText>
-      <a className={styles.backAlign} href="/">
-        Back
-      </a>
-    </Header>
-    <div className={styles.resumeMain}>
-      <div className={styles.blockTable}>
-        <PortText variant="portHeadingText" className={styles.portHeadingText}>
-          Technologies
+const Skills = () => {
+  const { data: resumeData } = useResume();
+  console.log(resumeData);
+  return (
+    <div className={styles.light_theme} data={resumeData}>
+      <Header>
+        <PortText variant="portSingleBlog" className={styles.portSingleBlog}>
+          {resumeData?.header?.title}
         </PortText>
-        <div className={styles.day}>
-          <div className={styles.Skillbars}>
-            <PortText variant="portEduPercent" component="h1" className={styles.portEduPercent}>
-              92%
-            </PortText>
-            <div className={styles.Skillblock}>
-              <PortText variant="portHeadingCaption" className={styles.portHeadingCaption}>
-                HTML5
-              </PortText>
-              <div className={styles.Skillbar}>
-                <div className={styles.Skillht1} />
-              </div>
-            </div>
-          </div>
-          <div className={styles.Skillbars}>
-            <PortText variant="portEduPercent" className={styles.portEduPercent} component="h1">
-              80%
-            </PortText>
-            <div className={styles.Skillblock}>
-              <PortText variant="portHeadingCaption" className={styles.portHeadingCaption}>
-                JAVASCRIPT
-              </PortText>
-              <div className={styles.Skillbar}>
-                <div className={styles.Skillht2} />
-              </div>
-            </div>
-          </div>
-          <div className={styles.Skillbars}>
-            <PortText variant="portEduPercent" className={styles.portEduPercent} component="h1">
-              72%
-            </PortText>
-            <div className={styles.Skillblock}>
-              <PortText variant="portHeadingCaption" className={styles.portHeadingCaption}>
-                SASS
-              </PortText>
-              <div className={styles.Skillbar}>
-                <div className={styles.Skillht3} />
-              </div>
-            </div>
-          </div>
-          <div className={styles.Skillbars}>
-            <PortText variant="portEduPercent" className={styles.portEduPercent} component="h1">
-              92%
-            </PortText>
-            <div className={styles.Skillblock}>
-              <PortText variant="portHeadingCaption" className={styles.portHeadingCaption}>
-                REACT
-              </PortText>
-              <div className={styles.Skillbar}>
-                <div className={styles.Skillht1} />
-              </div>
-            </div>
-          </div>
-          <div className={styles.Skillbars}>
-            <PortText variant="portEduPercent" className={styles.portEduPercent} component="h1">
-              80%
-            </PortText>
-            <div className={styles.Skillblock}>
-              <PortText variant="portHeadingCaption" className={styles.portHeadingCaption}>
-                NEXTJS
-              </PortText>
-              <div className={styles.Skillbar}>
-                <div className={styles.Skillht2} />
-              </div>
-            </div>
-          </div>
-          <div className={styles.Skillbars}>
-            <PortText variant="portEduPercent" className={styles.portEduPercent} component="h1">
-              72%
-            </PortText>
-            <div className={styles.Skillblock}>
-              <PortText variant="portHeadingCaption" className={styles.portHeadingCaption}>
-                REACT-NATIVE
-              </PortText>
-              <div className={styles.Skillbar}>
-                <div className={styles.Skillht3} />
-              </div>
-            </div>
-          </div>
-          <div className={styles.Skillbars}>
-            <PortText variant="portEduPercent" className={styles.portEduPercent} component="h1">
-              85%
-            </PortText>
-            <div className={styles.Skillblock}>
-              <PortText variant="portHeadingCaption" className={styles.portHeadingCaption}>
-                TAILWINDCSS
-              </PortText>
-              <div className={styles.Skillbar}>
-                <div className={styles.Skillht4} />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className={styles.workEp}>
-        <div className={styles.workExp}>
+        <a className={styles.backAlign} href="/">
+          {resumeData?.header?.goBack}
+        </a>
+      </Header>
+      <div className={styles.resumeMain}>
+        <div className={styles.blockTable}>
           <PortText variant="portHeadingText" className={styles.portHeadingText}>
-            Work experience
+            {resumeData?.skillsHead}
           </PortText>
+          <div className={styles.day}>
+            {resumeData?.skills?.map(x => (
+              <div className={styles.Skillbars}>
+                <PortText variant="portEduPercent" component="h1" className={styles.portEduPercent}>
+                  {x?.rating}%
+                </PortText>
+                <div className={styles.Skillblock}>
+                  <PortText variant="portHeadingCaption" className={styles.portHeadingCaption}>
+                    {x?.title}
+                  </PortText>
+                  <div className={styles.Skillbar}>
+                    <div className={styles.Skillht1} style={{ width: `${x?.rating}%` }} />
+                  </div>
+                </div>
+              </div>
+            ))}
+
+            {/* <div className={styles.Skillbars}>
+              <PortText variant="portEduPercent" className={styles.portEduPercent} component="h1">
+                80%
+              </PortText>
+              <div className={styles.Skillblock}>
+                <PortText variant="portHeadingCaption" className={styles.portHeadingCaption}>
+                  JAVASCRIPT
+                </PortText>
+                <div className={styles.Skillbar}>
+                  <div className={styles.Skillht2} />
+                </div>
+              </div>
+            </div>
+            <div className={styles.Skillbars}>
+              <PortText variant="portEduPercent" className={styles.portEduPercent} component="h1">
+                72%
+              </PortText>
+              <div className={styles.Skillblock}>
+                <PortText variant="portHeadingCaption" className={styles.portHeadingCaption}>
+                  SASS
+                </PortText>
+                <div className={styles.Skillbar}>
+                  <div className={styles.Skillht3} />
+                </div>
+              </div>
+            </div>
+            <div className={styles.Skillbars}>
+              <PortText variant="portEduPercent" className={styles.portEduPercent} component="h1">
+                92%
+              </PortText>
+              <div className={styles.Skillblock}>
+                <PortText variant="portHeadingCaption" className={styles.portHeadingCaption}>
+                  REACT
+                </PortText>
+                <div className={styles.Skillbar}>
+                  <div className={styles.Skillht1} />
+                </div>
+              </div>
+            </div>
+            <div className={styles.Skillbars}>
+              <PortText variant="portEduPercent" className={styles.portEduPercent} component="h1">
+                80%
+              </PortText>
+              <div className={styles.Skillblock}>
+                <PortText variant="portHeadingCaption" className={styles.portHeadingCaption}>
+                  NEXTJS
+                </PortText>
+                <div className={styles.Skillbar}>
+                  <div className={styles.Skillht2} />
+                </div>
+              </div>
+            </div>
+            <div className={styles.Skillbars}>
+              <PortText variant="portEduPercent" className={styles.portEduPercent} component="h1">
+                72%
+              </PortText>
+              <div className={styles.Skillblock}>
+                <PortText variant="portHeadingCaption" className={styles.portHeadingCaption}>
+                  REACT-NATIVE
+                </PortText>
+                <div className={styles.Skillbar}>
+                  <div className={styles.Skillht3} />
+                </div>
+              </div>
+            </div>
+            <div className={styles.Skillbars}>
+              <PortText variant="portEduPercent" className={styles.portEduPercent} component="h1">
+                85%
+              </PortText>
+              <div className={styles.Skillblock}>
+                <PortText variant="portHeadingCaption" className={styles.portHeadingCaption}>
+                  TAILWINDCSS
+                </PortText>
+                <div className={styles.Skillbar}>
+                  <div className={styles.Skillht4} />
+                </div>
+              </div>
+            </div> */}
+          </div>
         </div>
-        <div className={styles.workPara}>
-          <PortText variant="portHeadingCaption" className={styles.portHeadingCaption}>
-            <b>FRONT-END DEVELOPER </b>
-            (from Nov 2020 to present)
-          </PortText>
-          <PortText variant="portAboutCaption" className={styles.portAboutCaption}>
-            {'At '}
-            <a style={{ color: '#4da8da' }} href="https://www.upgmp.com/">
-              UpGMP.inc
-            </a>
-            , as Front-End developer from Novemver 2020 to present. Contributed in developing 2
-            mobile application IOS & ANDROID, 1. It was a recipe app, a famous youtuber in gujarat
-            needed a mobile application which can provide their recipe videos to all over the world.
-            2. There was a survay application needed by VKC footwere company to get a proper
-            feedback application from thir retailers. As working there I used to enjoy working as a
-            front-end dev. I am taking the training of back-end as well.
-          </PortText>
-        </div>
-      </div>
-      <div className={styles.blockTable}>
-        <PortText variant="portHeadingText" className={styles.portHeadingText}>
-          Education
-        </PortText>
-        <div className={styles.education}>
-          <div className={styles.leftTextAlign}>
-            <PortText variant="portEduLeftText" className={styles.portEduLeftText}>
-              <b>Bachelor of Computer Engineering</b>
-            </PortText>
-            <PortText variant="portEduLeftText" className={styles.portEduLeftText}>
-              2018-2022
-            </PortText>
-            <PortText variant="portEduLeftText" className={styles.portEduLeftText}>
-              {'At '}
-              <a className={styles.college} href="https://silveroakuni.ac.in/">
-                SilverOak University
-              </a>
+        <div className={styles.workEp}>
+          <div className={styles.workExp}>
+            <PortText variant="portHeadingText" className={styles.portHeadingText}>
+              {resumeData?.workexp}
             </PortText>
           </div>
-          <div className={styles.leftTextAlign}>
-            <PortText variant="portEduLeftText" className={styles.portEduLeftText}>
-              <b>Bachelor of Computer Engineering</b>
-            </PortText>
-            <PortText variant="portEduLeftText" className={styles.portEduLeftText}>
-              2018-2022
-            </PortText>
-            <PortText variant="portEduLeftText" className={styles.portEduLeftText}>
-              {'At '}
-              <a className={styles.college} href="https://silveroakuni.ac.in/">
-                SilverOak University
-              </a>
-            </PortText>
-          </div>
-          <div className={styles.leftTextAlign}>
-            <PortText variant="portEduLeftText" className={styles.portEduLeftText}>
-              <b>Bachelor of Computer Engineering</b>
-            </PortText>
-            <PortText variant="portEduLeftText" className={styles.portEduLeftText}>
-              2018-2022
-            </PortText>
-            <PortText variant="portEduLeftText" className={styles.portEduLeftText}>
-              {'At '}
-              <a className={styles.college} href="https://silveroakuni.ac.in/">
-                SilverOak University
-              </a>
-            </PortText>
+          {resumeData?.experiences.map(x => (
+            <div className={styles.workPara}>
+              <PortText variant="portHeadingCaption" className={styles.portHeadingCaption}>
+                <b>{x.role} </b>
+                from {x.startDate} to {x.endDate}
+              </PortText>
+              <PortText variant="portAboutCaption" className={styles.portAboutCaption}>
+                {'At '}
+                <a style={{ color: '#4da8da' }} href={x.companyLink}>
+                  {x.companyName}
+                </a>
+                {x.description}
+              </PortText>
+            </div>
+          ))}
+        </div>
+        <div className={styles.blockTable}>
+          <PortText variant="portHeadingText" className={styles.portHeadingText}>
+            {resumeData?.education}
+          </PortText>
+          <div className={styles.education}>
+            {resumeData?.education_details.map(x => (
+              <div className={styles.leftTextAlign}>
+                <PortText variant="portEduLeftText" className={styles.portEduLeftText}>
+                  <b>{x.degree}</b>
+                </PortText>
+                <PortText variant="portEduLeftText" className={styles.portEduLeftText}>
+                  {x.startDate} to {x.endDate}
+                </PortText>
+                <PortText variant="portEduLeftText" className={styles.portEduLeftText}>
+                  {'At '}
+                  <a className={styles.college} href={x.institueLink}>
+                    {x.institute}
+                  </a>
+                </PortText>
+              </div>
+            ))}
+
+            {/* <div className={styles.leftTextAlign}>
+              <PortText variant="portEduLeftText" className={styles.portEduLeftText}>
+                <b>Bachelor of Computer Engineering</b>
+              </PortText>
+              <PortText variant="portEduLeftText" className={styles.portEduLeftText}>
+                2018-2022
+              </PortText>
+              <PortText variant="portEduLeftText" className={styles.portEduLeftText}>
+                {'At '}
+                <a className={styles.college} href="https://silveroakuni.ac.in/">
+                  SilverOak University
+                </a>
+              </PortText>
+            </div>
+            <div className={styles.leftTextAlign}>
+              <PortText variant="portEduLeftText" className={styles.portEduLeftText}>
+                <b>Bachelor of Computer Engineering</b>
+              </PortText>
+              <PortText variant="portEduLeftText" className={styles.portEduLeftText}>
+                2018-2022
+              </PortText>
+              <PortText variant="portEduLeftText" className={styles.portEduLeftText}>
+                {'At '}
+                <a className={styles.college} href="https://silveroakuni.ac.in/">
+                  SilverOak University
+                </a>
+              </PortText>
+            </div> */}
           </div>
         </div>
       </div>
     </div>
-  </div>
-);
-
+  );
+};
 export default Skills;

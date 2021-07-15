@@ -12,7 +12,7 @@
   }
 }
 .portHoverCardText {
-  color: colors.$background-light;
+  color: colors.$background-dark;
 }
 .portfolio {
   margin: 2% 7%;
@@ -30,26 +30,20 @@
   margin-bottom: 2%;
 }
 .pFilter {
+  display: flex;
   @apply mb-10 text-center;
-  font-size: x-large;
 }
 .pFilter ul {
   @apply m-0 p-0;
 }
+
+.pFilter ul li {
+  @apply inline-block text-sm mr-5 relative cursor-pointer uppercase;
+  font-size: large;
+}
 .selItem {
   @apply font-semibold;
 }
-.pFilter ul li {
-  @apply inline-block text-sm mr-5 relative cursor-pointer uppercase;
-}
-.pFilter ul li::before {
-  content: '/';
-  @apply absolute -right-4 font-normal;
-}
-.pFilter ul li:last-child::before {
-  @apply hidden;
-}
-
 .item {
   @apply flex flex-wrap justify-center;
   gap: 10px;

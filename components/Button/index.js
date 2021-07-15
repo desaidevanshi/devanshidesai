@@ -6,19 +6,16 @@ import styles from './button.module.scss';
 
 // main button
 // eslint-disable-next-line prettier/prettier
-const Button = ({
-  variant, className, isDisabled, children, isLoading, onClick, ...rest
-}) => (
-  <button
+const Button = ({ variant, className, isDisabled, children, isLoading, onClick, ...rest }) => (
+  <a
+    role="button"
     type="button"
     className={`${styles[variant]} ${className}`}
-    onClick={isDisabled || isLoading ? () => {} : onClick}
     // eslint-disable-next-line prettier/prettier
-    {...rest}
-  >
+    {...rest}>
     {isLoading && <Loader />}
     {children}
-  </button>
+  </a>
 );
 
 Button.propTypes = {
