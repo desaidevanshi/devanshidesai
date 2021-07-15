@@ -1,4 +1,5 @@
-import Computer from '../../public/svg/laptop_white_48dp.svg';
+// import Computer from '../../public/svg/laptop_white_48dp.svg';
+import useMarkdown from '../../hooks/useMarkdown';
 import Button from '../../components/Button';
 import styles from './service.module.scss';
 import Icon from '../../components/Icon';
@@ -11,17 +12,20 @@ const Services = ({ data }) => (
         <p>{data.header.caption}</p>
       </div>
       <div className={styles.mainbox}>
-        {data.services.map(x => (
-          <div className={styles.box}>
-            <Button variant="portServiceButton">
-              <Icon key={x.id} socialLink={x} variant="serviceBtn" />
-            </Button>
-            <div className={styles.divRow}>
-              <h3>{x.title}</h3>
-              <p>{x.description}</p>
+        {data.services.map(x => {
+          const { HTML } = useMarkdown(x.description);
+          return (
+            <div className={styles.box}>
+              <Button variant="portServiceButton">
+                <Icon key={x.id} socialLink={x} variant="serviceBtn" />
+              </Button>
+              <div className={styles.divRow}>
+                <h3>{x.title}</h3>
+                <p dangerouslySetInnerHTML={{ __html: HTML }} />
+              </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
 
         {/* <div className={styles.box}>
           <Button variant="portServiceButton">

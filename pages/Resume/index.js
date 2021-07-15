@@ -1,4 +1,5 @@
 import React from 'react';
+import useMarkdown from '../../hooks/useMarkdown';
 import useResume from '../../hooks/useResume';
 import Header from '../../components/Header';
 import PortText from '../../components/PortText';
@@ -6,7 +7,6 @@ import styles from './resume.module.scss';
 
 const Skills = () => {
   const { data: resumeData } = useResume();
-  console.log(resumeData);
   return (
     <div className={styles.light_theme} data={resumeData}>
       <Header>

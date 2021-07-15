@@ -7,6 +7,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  padding: 0 7%;
 }
 @media screen and (max-width: 777px) {
   .mainDiv {
@@ -18,27 +19,10 @@
 }
 
 .imgdiv {
-  overflow-x: scroll;
-  scroll-snap-type: inline mandatory;
-  gap: 10px;
   @apply flex items-center py-4;
-  width: 50%;
-  height: 80%;
+  flex: 1;
 }
-.imgdiv::-webkit-scrollbar {
-  width: auto;
-}
-.imgdiv::-webkit-scrollbar-track {
-  background: none;
-  border-bottom: solid 1px colors.$fontcolor-secondary;
-}
-.imgdiv img {
-  scroll-snap-align: start;
-}
-.imgdiv::-webkit-scrollbar-thumb {
-  border-radius: 20px;
-  background: colors.$fontcolor-secondary;
-}
+
 .content {
   @apply leading-8 text-left;
   padding: 20px 0;
@@ -46,6 +30,7 @@
 
 .textDiv {
   @apply flex-col flex lg:p-6 md:p-5 sm:p-4 xs:p-2 gap-5;
+  flex: 1;
 }
 .head {
   text-decoration: underline colors.$fontcolor-secondary;

@@ -19,9 +19,6 @@ const Project = () => (
       <div className={styles.mainDiv}>
         <div className={styles.imgdiv}>
           <img src="/images/249801.jpg" alt="ProjectImage" className={styles.img} />
-          <img src="/images/249801.jpg" alt="ProjectImage" className={styles.img} />
-          <img src="/images/249801.jpg" alt="ProjectImage" className={styles.img} />
-          <img src="/images/249801.jpg" alt="ProjectImage" className={styles.img} />
         </div>
         <div className={styles.textDiv}>
           <div>

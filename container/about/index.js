@@ -1,3 +1,4 @@
+import useMarkdown from '../../hooks/useMarkdown';
 import Button from '../../components/Button';
 import Icon from '../../components/Icon';
 // import Github from '../../public/svg/logo-github.svg';
@@ -6,29 +7,31 @@ import Icon from '../../components/Icon';
 // import Gmail from '../../public/svg/mail.svg';
 import styles from './about.module.scss';
 
-const About = ({ data }) => (
-  <div id="about">
-    <article className={styles.about}>
-      <picture className={styles.aboutImg}>
-        {/* <source media="(max-width:1025px)" 
+const About = ({ data }) => {
+  const { HTML } = useMarkdown(data.biography);
+  return (
+    <div id="about">
+      <article className={styles.about}>
+        <picture className={styles.aboutImg}>
+          {/* <source media="(max-width:1025px)" 
         srcSet="/images/about-img-lg.jpg" type="image.jpg" /> */}
-        <img src={data.portfolioImage.url} alt="Me" />
-      </picture>
-      <aside className={styles.description}>
-        <h2 className={styles.name}>
-          {data.firstName} {data.lastName}
-        </h2>
-        <h3 className={styles.caption}>{data.role}</h3>
+          <img src={data.portfolioImage.url} alt="Me" />
+        </picture>
+        <aside className={styles.description}>
+          <h2 className={styles.name}>
+            {data.firstName} {data.lastName}
+          </h2>
+          <h3 className={styles.caption}>{data.role}</h3>
 
-        <p className={styles.des}>{data.biography}</p>
+          <p className={styles.des} dangerouslySetInnerHTML={{ __html: HTML }} />
 
-        <div className={styles.portSocial}>
-          {data.socialLinks.map(x => (
-            <Icon key={x.id} socialLink={x} variant="iconBtn" />
-          ))}
-        </div>
+          <div className={styles.portSocial}>
+            {data.socialLinks.map(x => (
+              <Icon key={x.id} socialLink={x} variant="iconBtn" />
+            ))}
+          </div>
 
-        {/* <div className={styles.portSocial}>
+          {/* <div className={styles.portSocial}>
           <a href="https://github.com/desaidevanshi">
             <Button className={styles.portSocialBtn} variant="portSocialButton">
               <Github className={styles.btnHover} height={18} width={18} />
@@ -50,12 +53,12 @@ const About = ({ data }) => (
             </Button>
           </a>
         </div> */}
-        <Button href={data.resume.url} download={data.resume.url}>
-          {data.downloadCVText}
-        </Button>
-      </aside>
-    </article>
-  </div>
-);
-
+          <Button href={data.resume.url} download={data.resume.url}>
+            {data.downloadCVText}
+          </Button>
+        </aside>
+      </article>
+    </div>
+  );
+};
 export default About;

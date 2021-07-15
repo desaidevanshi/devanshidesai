@@ -1,8 +1,6 @@
-// import classNames from 'classnames';
 import Card from '../../components/Card';
 import Button from '../../components/Button';
 import styles from './work.module.scss';
-// import Icon from '../../components/Icon';
 
 const Work = ({ data }) => (
   <section id="work" className={styles.center}>
@@ -30,7 +28,6 @@ const Work = ({ data }) => (
                 <Card variant="hoverPort">
                   <div className={styles.hoverContext}>
                     <h3 className={styles.portHoverCardText}>{x.title}</h3>
-                    {/* <Icon key={x.id} socialLink={x} variant="searchIcon" /> */}
                   </div>
                 </Card>
               </div>
