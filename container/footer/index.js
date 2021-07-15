@@ -1,3 +1,5 @@
+/* eslint-disable arrow-parens */
+/* eslint-disable react/prop-types */
 import React from 'react';
 // import Button from '../../components/Button';
 import Icon from '../../components/Icon';

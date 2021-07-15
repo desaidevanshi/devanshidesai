@@ -1,3 +1,6 @@
+/* eslint-disable arrow-parens */
+/* eslint-disable react/no-danger */
+/* eslint-disable react/prop-types */
 import ReactRotatingText from 'react-rotating-text';
 import styles from './home.module.scss';
 import useMarkdown from '../../hooks/useMarkdown';

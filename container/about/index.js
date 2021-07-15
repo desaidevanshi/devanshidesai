@@ -1,3 +1,7 @@
+/* eslint-disable arrow-parens */
+/* eslint-disable react/no-danger */
+/* eslint-disable react/jsx-one-expression-per-line */
+/* eslint-disable react/prop-types */
 import useMarkdown from '../../hooks/useMarkdown';
 import Button from '../../components/Button';
 import Icon from '../../components/Icon';
@@ -13,7 +17,7 @@ const About = ({ data }) => {
     <div id="about">
       <article className={styles.about}>
         <picture className={styles.aboutImg}>
-          {/* <source media="(max-width:1025px)" 
+          {/* <source media="(max-width:1025px)"
         srcSet="/images/about-img-lg.jpg" type="image.jpg" /> */}
           <img src={data.portfolioImage.url} alt="Me" />
         </picture>

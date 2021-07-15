@@ -1,3 +1,6 @@
+/* eslint-disable arrow-parens */
+/* eslint-disable react/jsx-one-expression-per-line */
+/* eslint-disable react/prop-types */
 import React from 'react';
 import Button from '../../components/Button';
 import PortText from '../../components/PortText';

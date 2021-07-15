@@ -1,3 +1,4 @@
+/* eslint-disable arrow-parens */
 import useProjects from '../../hooks/useProjects';
 import Card from '../../components/Card';
 import Header from '../../components/Header';

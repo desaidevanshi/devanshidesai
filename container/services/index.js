@@ -1,3 +1,6 @@
+/* eslint-disable react/no-danger */
+/* eslint-disable react/prop-types */
+/* eslint-disable arrow-parens */
 // import Computer from '../../public/svg/laptop_white_48dp.svg';
 import useMarkdown from '../../hooks/useMarkdown';
 import Button from '../../components/Button';

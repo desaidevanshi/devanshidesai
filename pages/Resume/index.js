@@ -1,5 +1,6 @@
+/* eslint-disable arrow-parens */
+/* eslint-disable react/jsx-one-expression-per-line */
 import React from 'react';
-import useMarkdown from '../../hooks/useMarkdown';
 import useResume from '../../hooks/useResume';
 import Header from '../../components/Header';
 import PortText from '../../components/PortText';

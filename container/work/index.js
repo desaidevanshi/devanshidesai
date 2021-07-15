@@ -1,3 +1,5 @@
+/* eslint-disable arrow-parens */
+/* eslint-disable react/prop-types */
 import Card from '../../components/Card';
 import Button from '../../components/Button';
 import styles from './work.module.scss';
