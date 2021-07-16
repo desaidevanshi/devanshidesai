@@ -38,8 +38,9 @@
 }
 
 .leftTextAlign {
-  @apply leading-none pb-1;
+  @apply leading-none pb-1 mb-1;
   color: colors.$fontcolor-primary;
+  border-bottom: 2px solid;
 }
 .portEduLeftText {
   color: colors.$fontcolor-primary;
@@ -73,7 +74,7 @@
   display: flex;
   justify-content: center;
 }
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 777px) {
   .container {
     height: auto;
   }

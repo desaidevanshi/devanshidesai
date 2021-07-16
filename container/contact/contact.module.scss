@@ -1,15 +1,26 @@
 @use '../../styles/colors.scss';
-.contactContainer {
-  @apply xs:p-10 sm:py-24 sm:flex justify-center text-base flex-col text-center;
+.container {
   height: 100vh;
-  display: flex;
-  padding: 2% 15%;
   background: colors.$background-dark;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
-@media screen and (max-width: 480px) {
-  .contactContainer {
-    padding: 2% 7%;
-  }
+.container form {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.contactContainer {
+  height: 100%;
+  width: 60%;
+  @apply sm:pb-24 sm:flex justify-center text-base flex-col text-center;
+  align-items: center;
+  justify-content: center;
+  padding-top: calc(2.5rem + 1rem);
 }
 
 .contactForm {
@@ -23,6 +34,7 @@
 .contactIn {
   display: flex;
   flex-direction: column;
+  @apply w-full;
 }
 .buttonMargin {
   @apply w-40 mt-10 self-center;
@@ -36,26 +48,21 @@
   @apply text-left text-red-500;
 }
 .contactInput {
-  @apply border-t-0 border-r-0 my-5 border-l-0 border-b-2 h-10 p-2 outline-none;
+  @apply w-full border-t-0 border-r-0 my-5 border-l-0 border-b-2 h-10 p-2 outline-none;
   background: transparent;
   border-color: colors.$fontcolor-secondary;
   color: colors.$fontcolor-primary;
   font-size: 20px;
-  width: 80%;
 }
 .borderApply {
-  @apply border-red-500 border-t-0 border-r-0 my-5 border-l-0 border-b-2 h-10 p-2 outline-none;
+  @apply border-red-500 w-full border-t-0 border-r-0 my-5 border-l-0 border-b-2 h-10 p-2 outline-none;
   background: transparent;
   color: colors.$fontcolor-primary;
   font-size: 20px;
-  width: 80%;
 }
-@media screen and (max-width: 640px) {
-  .contactInput {
-    width: 100%;
-  }
-  .borderApply {
-    width: 100%;
+@media screen and (max-width: 777px) {
+  .contactContainer {
+    width: 80%;
   }
 }
 .contactTextArea {
@@ -66,17 +73,17 @@
   font-size: 18px;
 }
 .captionCon {
-  @apply mb-10 text-center;
-  font-size: xx-large;
+  @apply text-center text-4xl;
   color: colors.$fontcolor-secondary;
 }
 
 .desCon {
-  @apply mb-10 text-center;
-  font-size: x-large;
+  @apply text-center text-2xl uppercase;
   color: colors.$fontcolor-primary;
 }
 .footerLine {
-  @apply col-span-4 bg-gray-500;
+  @apply col-span-4;
   height: 1px;
+  width: 80%;
+  background: colors.$fontcolor-primary;
 }

@@ -13,7 +13,7 @@
   color: colors.$background-light;
 }
 .backAlign {
-  @apply text-base mt-2 border-t-0 border-r-0 border-l-0 border-2 border-solid;
+  @apply text-lg mt-2 border-t-0 border-r-0 border-l-0 border-2 border-solid;
   color: colors.$fontcolor-secondary;
   border-color: colors.$fontcolor-secondary;
   cursor: pointer;

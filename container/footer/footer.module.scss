@@ -24,12 +24,7 @@
   flex-direction: column;
   align-items: center;
   padding: 0 20px;
-}
-.footerText span a {
-  color: colors.$fontcolor-primary;
-}
-.footerText span a:hover {
-  color: colors.$fontcolor-secondary;
+  @apply text-lg;
 }
 .footerSoc {
   display: flex;

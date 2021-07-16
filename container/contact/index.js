@@ -39,7 +39,6 @@ const SignupForm = ({ data }) => {
     validate,
     onSubmit: (values, { resetForm }) => {
       // eslint-disable-next-line no-alert
-      alert(JSON.stringify(values, null, 2));
       resetForm();
       return axios({
         method: 'post',
@@ -53,7 +52,7 @@ const SignupForm = ({ data }) => {
     },
   });
   return (
-    <section id="contact">
+    <section id="contact" className={styles.container}>
       <form onSubmit={formik.handleSubmit}>
         <div className={styles.contactContainer}>
           <h2 className={styles.captionCon}>{data.header.title}</h2>

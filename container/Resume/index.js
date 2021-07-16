@@ -59,7 +59,7 @@ const Skills = ({ data }) => {
             <div className={styles.workPara}>
               <PortText variant="portHeadingCaption" className={styles.portHeadingCaption}>
                 <b>{x.role} </b>
-                from {x.startDate} to {x.endDate}
+                from {x.startD} to {x.endD}
               </PortText>
               <PortText variant="portAboutCaption" className={styles.portAboutCaption}>
                 {'At '}
@@ -82,7 +82,7 @@ const Skills = ({ data }) => {
                   <b>{x.degree}</b>
                 </PortText>
                 <PortText variant="portEduLeftText" className={styles.portEduLeftText}>
-                  {x.startDate} to {x.endDate}
+                  {x.startD} to {x.endD}
                 </PortText>
                 <PortText variant="portEduLeftText" className={styles.portEduLeftText}>
                   {'At '}

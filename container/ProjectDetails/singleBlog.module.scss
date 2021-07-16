@@ -16,11 +16,14 @@
 }
 .img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .imgdiv {
   @apply flex items-center py-4;
   flex: 1;
+  height: 25rem;
 }
 
 .content {
@@ -31,17 +34,19 @@
 .textDiv {
   @apply flex-col flex lg:p-6 md:p-5 sm:p-4 xs:p-2 gap-5;
   flex: 1;
+  height: 25rem;
 }
 .head {
   text-decoration: underline colors.$fontcolor-secondary;
   font-size: x-large;
 }
 .detail {
+  @apply text-lg;
   padding: 10px 0;
   margin-bottom: 20px;
 }
 .backAlign {
-  @apply text-base mt-2 border-t-0 border-r-0 border-l-0 border-2 border-solid;
+  @apply text-lg mt-2 border-t-0 border-r-0 border-l-0 border-2 border-solid;
   color: colors.$fontcolor-secondary;
   border-color: colors.$fontcolor-secondary;
   cursor: pointer;
@@ -53,4 +58,10 @@
   gap: 5px;
   padding: 10px;
   height: 45px;
+}
+@media screen and (max-width: 777px) {
+  .mainDiv {
+    flex-direction: column;
+    align-items: baseline;
+  }
 }

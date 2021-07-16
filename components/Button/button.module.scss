@@ -57,9 +57,8 @@
   border: 2px solid;
 }
 .technoBtn {
-  font-weight: 400;
+  @apply text-lg;
   border: 2px solid;
-  font-size: 14px;
   padding: 0 7px;
   border-color: colors.$fontcolor-secondary;
   color: colors.$fontcolor-secondary;

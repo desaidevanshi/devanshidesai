@@ -112,6 +112,8 @@
     width: 15rem;
     height: 95vh;
     align-items: center;
+    background: colors.$background-dark;
+    opacity: 0.95;
   }
   .menu li {
     display: flex;
@@ -147,6 +149,6 @@
     align-items: center;
   }
   .menu li a {
-    justify-content: flex-end;
+    justify-content: center;
   }
 }

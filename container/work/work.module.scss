@@ -5,6 +5,7 @@
   align-items: center;
   background-color: colors.$background-light;
   color: colors.$fontcolor-primary;
+  padding-top: calc(2.5rem + 1rem);
 }
 @media screen and (max-width: 1000px) {
   .center {
@@ -15,26 +16,21 @@
   color: colors.$background-dark;
 }
 .portfolio {
-  height: 100%;
-  width: 100%;
-  margin: 2% 7%;
+  max-width: 1024px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.5rem;
 }
 .row {
   @apply flex flex-col;
-  height: 20vh;
   justify-content: center;
   align-items: center;
 }
-@media screen and (max-width: 1025px) {
-  .row {
-    height: 30vh;
-  }
-}
 .headText {
-  @apply text-center;
-  font-size: xx-large;
+  @apply text-center text-4xl;
   color: colors.$fontcolor-secondary;
-  margin-bottom: 2%;
 }
 .pFilter {
   display: flex;
@@ -52,8 +48,8 @@
   @apply font-semibold;
 }
 .item {
-  @apply flex flex-wrap justify-center;
-  gap: 10px;
+  @apply flex flex-wrap justify-center p-6;
+  gap: 1rem;
 }
 .hoverContext {
   @apply flex flex-col items-center;
@@ -75,7 +71,6 @@
   }
 }
 .desCon {
-  @apply mb-10 text-center;
-  font-size: x-large;
+  @apply text-center text-2xl uppercase;
   color: colors.$fontcolor-primary;
 }
