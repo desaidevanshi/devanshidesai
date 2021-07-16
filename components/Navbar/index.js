@@ -12,6 +12,7 @@ const Navbar = () => {
   const navRef = useRef();
   const ulRef = useRef();
   const navbarRef = useRef();
+  const toggleRef = useRef();
 
   useEffect(() => {
     const onScroll = () => {
@@ -42,8 +43,34 @@ const Navbar = () => {
         }
       }
     });
-
-    const toggle = document.getElementById('toggle');
+    window.removeEventListener('keydown', event => {
+      if (event.key === 'Escape') {
+        if (navRef.current.style.display === 'flex') {
+          navRef.current.style.display = 'none';
+        }
+      }
+    });
+    const toggle = toggleRef.current;
+    window.addEventListener('click', e => {
+      if (
+        e.target !== ulRef &&
+        navRef.current.style.display === 'flex' &&
+        e.target !== toggleRef.current
+      ) {
+        navRef.current.style.display = 'none';
+        toggle.classList.toggle('active');
+      }
+    });
+    window.removeEventListener('click', e => {
+      if (
+        e.target !== ulRef &&
+        navRef.current.style.display === 'flex' &&
+        e.target !== toggleRef.current
+      ) {
+        navRef.current.style.display = 'none';
+        toggle.classList.toggle('active');
+      }
+    });
     toggle.classList.toggle('active');
   };
   return (
@@ -57,11 +84,9 @@ const Navbar = () => {
                 <span>shi.</span>
               </a>
 
-              <button className="nav-btn" id="toggle" onClick={toggleNavbar} />
+              <button className="nav-btn" id="toggle" ref={toggleRef} onClick={toggleNavbar} />
             </div>
             <div className="sub-container" id="navbar" ref={navRef}>
-              <button onClick={toggleNavbar} className="blankSpace" />
-
               <ul className="menu" ref={ulRef}>
                 <li>
                   <a href="/#home" className={pathname === '/#home' ? 'active' : undefined}>

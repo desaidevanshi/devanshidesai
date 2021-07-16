@@ -9,48 +9,43 @@ import styles from './education.module.scss';
 const Education = ({ data }) => {
   const eduData = [...data.skills.slice(0, 3)];
   return (
-    <section id="education" className={styles.alignment}>
-      <div className={styles.textAlign}>
-        <PortText variant="portHeadingText" className={styles.portHeadingText}>
-          {data.Header.title}
-        </PortText>
-      </div>
-      <div className={styles.leftbox}>
-        <div className={styles.leftsubbox}>
-          {data.educations.map(x => (
-            <div key={x.id} className={styles.leftTextAlign}>
-              <PortText variant="portEduLeftText" className={styles.portEduLeftText}>
-                {x.startDate} to {x.endDate}
-              </PortText>
-              <PortText variant="portEduLeftText" className={styles.portEduLeftText}>
-                {x.degree}
-              </PortText>
-              <PortText variant="portEduLeftText" className={styles.portEduLeftText}>
-                {x.institute}
-              </PortText>
-            </div>
-          ))}
+    <section id="education" className={styles.container}>
+      <div className={styles.alignment}>
+        <div className={styles.textAlign}>
+          <h2 className={styles.heading}>{data.Header.title}</h2>
+          <p className={styles.caption}>{data.Header.caption}</p>
         </div>
-        <div className={styles.baralign}>
-          {eduData.map(x => (
-            <div className={styles.bars}>
-              <PortText variant="portEduPercent" className={styles.portEduPercent} component="h1">
-                {x.rating}%
-              </PortText>
-              <div className={styles.block}>
-                <PortText variant="portHeadingCaption" className={styles.portHeadingCaption}>
-                  {x.title}
+        <div className={styles.leftbox}>
+          <div className={styles.leftsubbox}>
+            {data.educations.map(x => (
+              <div key={x.id} className={styles.leftTextAlign}>
+                <p className={styles.portEduLeftText}>
+                  {x.startD} to {x.endD}
+                </p>
+                <p className={styles.portEduLeftText}>{x.degree}</p>
+                <p className={styles.portEduLeftText}>{x.institute}</p>
+              </div>
+            ))}
+          </div>
+          <div className={styles.baralign}>
+            {eduData.map(x => (
+              <div className={styles.bars}>
+                <PortText variant="portEduPercent" className={styles.portEduPercent} component="h1">
+                  {x.rating}%
                 </PortText>
-                <div className={styles.bar}>
-                  <div className={styles.ht2} style={{ width: `${x.rating}%` }} />
+                <div className={styles.block}>
+                  <p className={styles.portEduLeftText}>{x.title}</p>
+                  <div className={styles.bar}>
+                    <div className={styles.ht2} style={{ width: `${x.rating}%` }} />
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
-      <div className={styles.align}>
-        <Button href="/resume">{data.button}</Button>
+        <div className={styles.align}>
+          <Button href="/resume">{data.button}</Button>
+        </div>
       </div>
     </section>
   );

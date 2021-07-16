@@ -9,7 +9,10 @@ const Home = ({ data }) => {
   const { HTML } = useMarkdown(data.description);
   return (
     <>
-      <section id="home" className={styles.banner}>
+      <section
+        id="home"
+        className={styles.banner}
+        style={{ backgroundImage: `url(${data.backgroundImage.url})` }}>
         <div className={styles.containerH}>
           <h1 dangerouslySetInnerHTML={{ __html: HTML }} className={styles.header} />
           <p className={styles.desc}>

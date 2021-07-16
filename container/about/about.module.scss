@@ -1,94 +1,75 @@
 @use '../../styles/colors.scss';
 
-.about {
+.container {
   height: 100vh;
+  background: colors.$background-dark;
+  display: flex;
+  justify-content: center;
+}
+
+.about {
+  gap: 2rem;
+  max-width: 1024px;
+  padding-left: 1.5rem;
+  padding-top: calc(2.5rem + 1rem);
   display: flex;
   align-items: center;
-  padding: 2% 7%;
-  background: colors.$background-dark;
   color: colors.$fontcolor-primary;
 }
 .aboutImg {
-  margin-right: 10px;
-  width: 60%;
+  justify-content: center;
+  display: flex;
 }
-
-// .aboutImg img {
-//   border: solid 2px colors.$fontcolor-secondary;
-// }
+.aboutImg img {
+  height: 25rem;
+}
 .description {
+  height: 25rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-left: 2%;
 }
 .name {
-  margin-bottom: 2.5rem;
-  text-align: center;
-  font-size: xxx-large;
+  @apply text-5xl;
   color: colors.$fontcolor-secondary;
 }
 .caption {
-  margin-bottom: 2.5rem;
-  text-align: center;
-  font-size: x-large;
+  @apply text-2xl;
+  line-height: 3rem;
 }
 .des {
-  font-size: large;
-  font-weight: lighter;
-  margin-bottom: 2.5rem;
+  @apply text-lg;
 }
 .portSocial {
   justify-content: center;
-  margin-bottom: 2.5rem;
   display: flex;
-}
-.portSocialButton {
-  align-items: center;
-}
-.portSocialBtn:hover {
-  border: solid 2px colors.$fontcolor-secondary;
-  color: colors.$fontcolor-secondary;
-  background-color: transparent;
-}
-.portSocialBtn {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  fill: currentColor;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  color: colors.$fontcolor-primary;
-  &:hover {
-    .btnHover {
-      cursor: pointer;
-      fill: currentColor;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      color: colors.$fontcolor-secondary;
-    }
-  }
+  padding: 1rem 0;
 }
 @media screen and (max-width: 850px) {
-  .about {
-    flex-direction: column;
-    justify-content: flex-end;
+  .name {
+    @apply text-4xl;
+  }
+  .container {
     height: fit-content;
   }
-  .aboutImg img {
-    width: 100%;
-  }
-  .des {
-    padding: 0 10px;
-  }
-  .description {
+  .about {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
   }
-}
-@media screen and (max-width: 513px) {
-  .about {
-    justify-content: center;
+  .description {
+    height: fit-content;
+    align-items: center;
+    padding-bottom: 1rem;
   }
-
-  .name {
-    font-size: xx-large;
+  .aboutImg img {
+    height: 22rem;
+  }
+}
+@media screen and (max-width: 426px) {
+  .aboutImg img {
+    height: 18rem;
   }
 }

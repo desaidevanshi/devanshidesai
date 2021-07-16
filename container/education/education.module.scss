@@ -1,19 +1,39 @@
 @use '../../styles/colors.scss';
-.alignment {
-  padding: 5% 7%;
-  background-color: colors.$background-dark;
+.container {
+  height: 100vh;
+  background: colors.$background-dark;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
 }
 
+.alignment {
+  margin-top: calc(2.5rem + 1rem);
+  width: 100%;
+  max-width: 1024px;
+  background-color: colors.$background-dark;
+  display: flex;
+  flex-direction: column;
+}
+.heading {
+  @apply text-center text-4xl;
+  color: colors.$fontcolor-secondary;
+}
+.caption {
+  @apply text-center text-2xl uppercase;
+  color: colors.$fontcolor-primary;
+}
 .textAlign {
   @apply text-center;
 }
 
 .leftbox {
-  @apply flex md:flex-row xs:flex-col xs:items-center my-14;
+  @apply flex md:flex-row xs:flex-col xs:items-center my-8;
 }
 
 .leftsubbox {
-  @apply py-5 pl-5 lg:w-2/4 xs:w-11/12 rounded-xl;
+  @apply p-5 lg:w-2/4 rounded-xl;
   background-color: colors.$fontcolor-secondary;
 }
 
@@ -21,7 +41,10 @@
   @apply leading-none pb-1;
   color: colors.$fontcolor-primary;
 }
-
+.portEduLeftText {
+  color: colors.$fontcolor-primary;
+  @apply text-lg;
+}
 .bars {
   @apply flex items-center gap-4 px-5;
 }
@@ -39,32 +62,19 @@
   @apply relative;
   background-color: colors.$background-light;
 }
-
-.ht {
-  @apply h-3 animate-pulse;
-  background-color: colors.$fontcolor-secondary;
-}
 .ht2 {
   @apply h-3 animate-pulse;
   background-color: colors.$fontcolor-secondary;
 }
-.ht3 {
-  @apply w-3/4 h-3 animate-pulse;
-  background-color: colors.$fontcolor-secondary;
-}
-.ht4 {
-  @apply w-5/6 h-3 animate-pulse;
-  background-color: colors.$fontcolor-secondary;
-}
-
-.viewMore {
-  @apply flex-1 flex justify-center items-center;
-}
-
 .block {
   @apply w-full flex-col;
 }
 .align {
   display: flex;
   justify-content: center;
+}
+@media screen and (max-width: 426px) {
+  .container {
+    height: auto;
+  }
 }

@@ -6,10 +6,11 @@
   height: 100vh;
   background-color: colors.$background-light;
   color: colors.$fontcolor-primary;
+  justify-content: center;
 }
 
 .heading {
-  height: 30vh;
+  padding-top: calc(2.5rem + 1rem);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -17,35 +18,31 @@
   align-items: center;
 }
 .heading h2 {
-  @apply text-center;
-  font-size: xx-large;
+  @apply text-center text-4xl;
   color: colors.$fontcolor-secondary;
-  margin-bottom: 2%;
 }
 
 .heading p {
-  @apply text-center;
-  font-size: x-large;
+  @apply text-center text-2xl uppercase;
 }
 .mainbox {
   @apply grid md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1;
-  margin: 2% 7%;
-  gap: 10px;
+  max-width: 1024px;
+  padding: 1.5rem;
+  gap: 15px;
 }
 
 .divRow {
   @apply flex lg:flex-col md:flex-col xs:flex-col sm:flex-col;
 }
 .divRow h3 {
-  @apply my-10 text-center;
-  font-size: x-large;
+  @apply text-center text-2xl leading-loose;
 }
 .divRow p {
-  font-size: large;
-  font-weight: lighter;
+  @apply text-lg;
 }
 .box {
-  @apply h-full p-10 rounded-xl overflow-hidden relative flex flex-col items-center;
+  @apply h-full p-7 rounded-xl overflow-hidden relative flex flex-col items-center;
   background-color: colors.$background-dark;
   z-index: 1;
 }
@@ -57,5 +54,8 @@
   .mainbox {
     padding: 10px;
     gap: 10px;
+  }
+  .box {
+    @apply p-9;
   }
 }

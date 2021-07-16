@@ -6,11 +6,11 @@ import Navbar from '../Navbar';
 const Layout = ({ children }) => {
   const { data: aboutData } = useAbout();
   return (
-    <div>
+    <>
       <Navbar />
       <main>{children}</main>
       {aboutData && <Footer data={aboutData} />}
-    </div>
+    </>
   );
 };
 export default Layout;
