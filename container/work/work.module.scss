@@ -48,8 +48,7 @@
   @apply font-semibold;
 }
 .item {
-  @apply flex flex-wrap justify-center p-6;
-  gap: 1rem;
+  @apply xs:flex-col sm:flex-row flex flex-wrap justify-center md:flex-nowrap;
 }
 .hoverContext {
   @apply flex flex-col items-center;
@@ -67,9 +66,14 @@
     height: auto;
   }
   .item {
-    flex-direction: column;
+    flex-direction: row;
   }
 }
+// @media screen and (max-width: 668px) {
+//   .item {
+//     flex-direction: column;
+//   }
+// }
 .desCon {
   @apply text-center text-2xl uppercase;
   color: colors.$fontcolor-primary;
