@@ -1,3 +1,4 @@
+/* eslint-disable operator-linebreak */
 /* eslint-disable react/jsx-closing-bracket-location */
 /* eslint-disable prettier/prettier */
 /* eslint-disable jsx-a11y/control-has-associated-label */
