@@ -5,10 +5,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background:  no-repeat rgb(0, 0, 0, 0.7);
+  background: no-repeat rgb(0, 0, 0, 0.7);
   background-position: center center;
   background-size: cover;
   background-blend-mode: soft-light;
+  @apply bg-fixed;
 }
 
 .containerH {
