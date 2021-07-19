@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable react/jsx-closing-bracket-location */
 /* eslint-disable react/prop-types */
 /* eslint-disable arrow-parens */
@@ -86,7 +87,7 @@ const Skills = ({ data }) => {
                 </PortText>
                 <PortText variant="portEduLeftText" className={styles.portEduLeftText}>
                   {'At '}
-                  <a className={styles.college} href={x.institueLink}>
+                  <a className={styles.college} href={x.institueLink} target="_blank">
                     {x.institute}
                   </a>
                 </PortText>
