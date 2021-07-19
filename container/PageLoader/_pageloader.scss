@@ -6,7 +6,8 @@
   -webkit-transition-delay: 0.5s;
   -o-transition-delay: 0.5s;
   transition-delay: 0.5s;
-  @apply fixed bg-[#fff] z-50 h-full w-full;
+  background-color: rgba(255, 255, 255, 1);
+  @apply fixed  z-50 h-full w-full;
 }
 .preloader.loaded {
   visibility: hidden;
@@ -14,14 +15,12 @@
 }
 .preloader:before,
 .preloader:after {
-  position: absolute;
-  height: 50%;
-  width: 100%;
   content: '';
   -webkit-transition: 0.5s all ease;
   -o-transition: 0.5s all ease;
   transition: 0.5s all ease;
-  background: colors.$background-light;
+  background-color: colors.$background-light;
+  @apply absolute h-1/2 w-full;
 }
 .preloader:before {
   @apply top-0 left-0;
@@ -43,13 +42,18 @@
   transition: 0.2s all ease;
   -webkit-animation: 1s infinite ease-in-out;
   animation: 1s infinite ease-in-out;
-  @apply w-[50px] h-[50px] rounded-[50%] fixed top-1/2 left-1/2 z-10 bg-[#fff];
+  background-color: rgba(255, 255, 255, 1);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  @apply fixed top-1/2 left-1/2 z-10;
 }
 .preloader .loader:before,
 .preloader .loader:after {
   -webkit-animation: 0.8s infinite ease-in-out;
   animation: 0.8s infinite ease-in-out;
-  @apply w-full h-full rounded-[50%] absolute top-0 left-0;
+  border-radius: 50%;
+  @apply w-full h-full absolute top-0 left-0;
 }
 .preloader .loader:before {
   content: '';
@@ -57,7 +61,11 @@
   box-sizing: content-box;
   -webkit-animation-name: anim-loader;
   animation-name: anim-loader;
-  @apply border-[10px] border-solid border-[#222] top-[-10px] left-[-10px];
+  border-width: 10px;
+  border-color: rgba(34, 34, 34, 1);
+  top: -10px;
+  left: -10px;
+  @apply border-solid;
 }
 
 .preloader.loaded .loader {
