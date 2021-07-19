@@ -53,7 +53,7 @@ const SignupForm = ({ data }) => {
   });
   return (
     <section id="contact" className={styles.container}>
-      <form onSubmit={formik.handleSubmit}>
+      <form>
         <div className={styles.contactContainer}>
           <h2 className={styles.captionCon}>{data.header.title}</h2>
           <p className={styles.desCon}>{data.header.caption}</p>
@@ -92,7 +92,7 @@ const SignupForm = ({ data }) => {
               component="textarea"
               placeholder={data.message}
             />
-            <Button type="submit" className={styles.buttonMargin}>
+            <Button type="submit" className={styles.buttonMargin} onClick={formik.handleSubmit}>
               {data.buttonText}
             </Button>
           </div>
