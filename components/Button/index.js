@@ -2,7 +2,6 @@
 /* eslint-disable react/jsx-closing-bracket-location */
 /* eslint-disable react/prop-types */
 import PropTypes from 'prop-types';
-import Loader from '../Loader';
 import styles from './button.module.scss';
 
 // main button
@@ -14,7 +13,6 @@ const Button = ({ variant, className, isDisabled, children, isLoading, onClick, 
     className={`${styles[variant]} ${className}`}
     // eslint-disable-next-line prettier/prettier
     {...rest}>
-    {isLoading && <Loader />}
     {children}
   </a>
 );
