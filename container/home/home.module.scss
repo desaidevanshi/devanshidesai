@@ -9,7 +9,7 @@
   background-position: center center;
   background-size: cover;
   background-blend-mode: soft-light;
-  @apply bg-fixed;
+  @apply md:bg-fixed;
 }
 
 .containerH {
