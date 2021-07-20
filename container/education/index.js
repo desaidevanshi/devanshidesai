@@ -29,7 +29,7 @@ const Education = ({ data }) => {
           </div>
           <div className={styles.baralign}>
             {eduData.map(x => (
-              <div className={styles.bars}>
+              <div className={styles.bars} key={x.id}>
                 <PortText variant="portEduPercent" className={styles.portEduPercent} component="h1">
                   {x.rating}%
                 </PortText>

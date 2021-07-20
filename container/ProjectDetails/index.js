@@ -44,7 +44,7 @@ const ProjectDetails = ({ data }) => {
               <h3 className={styles.head}>Technologies Used</h3>
               <div className={styles.techno}>
                 {data?.socialLinks?.map(y => (
-                  <Button variant="technoBtn" href={y.url} target="_blank">
+                  <Button variant="technoBtn" href={y.url} target="_blank" key={y.id}>
                     {y.name}
                   </Button>
                 ))}

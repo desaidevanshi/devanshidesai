@@ -34,7 +34,7 @@ const Skills = ({ data }) => {
           </PortText>
           <div className={styles.day}>
             {data?.skills?.map(x => (
-              <div className={styles.Skillbars}>
+              <div className={styles.Skillbars} key={x.id}>
                 <PortText variant="portEduPercent" component="h1" className={styles.portEduPercent}>
                   {x?.rating}%
                 </PortText>
@@ -57,7 +57,7 @@ const Skills = ({ data }) => {
             </PortText>
           </div>
           {data?.experiences?.map(x => (
-            <div className={styles.workPara}>
+            <div className={styles.workPara} key={x.id}>
               <PortText variant="portHeadingCaption" className={styles.portHeadingCaption}>
                 <b>{x.role} </b>
                 <br />
