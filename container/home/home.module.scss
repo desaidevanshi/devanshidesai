@@ -29,3 +29,8 @@
 .desc {
   font-size: x-large;
 }
+@media screen and (max-width: 777px) {
+  .header {
+    @apply text-4xl;
+  }
+}

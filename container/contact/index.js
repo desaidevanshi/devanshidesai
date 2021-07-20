@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import { useFormik } from 'formik';
-import Button from '../../components/Button';
 import styles from './contact.module.scss';
 import axios from '../../lib/axios';
 
@@ -38,11 +37,14 @@ const SignupForm = ({ data }) => {
     },
     validate,
     onSubmit: (values, { resetForm }) => {
+      if (!values) {
+        formik.errors.msg = 'This field is mandatory';
+      }
       // eslint-disable-next-line no-alert
       resetForm();
       return axios({
         method: 'post',
-        url: 'https://devanshi-portfolio-api.herokuapp.com/contact-forms/',
+        url: 'https://devanshi-portfolio-api.herokuapp.com/contact-forms',
         data: {
           name: values.name,
           mail: values.mail,
@@ -92,13 +94,13 @@ const SignupForm = ({ data }) => {
               component="textarea"
               placeholder={data.message}
             />
-            <Button type="submit" className={styles.buttonMargin} onClick={formik.handleSubmit}>
+            <button type="button" className={styles.buttonMargin} onSubmit={formik.handleSubmit}>
               {data.buttonText}
-            </Button>
+            </button>
           </div>
         </div>
       </form>
-      <div className={styles.footerLine} />
+      {/* <div className={styles.footerLine} /> */}
     </section>
   );
 };

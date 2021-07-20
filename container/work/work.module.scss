@@ -1,7 +1,7 @@
 @use '../../styles/colors.scss';
 .center {
-  @apply flex justify-center;
-  height: 100vh;
+  @apply flex justify-center lg:h-screen;
+  // height: 100vh;
   align-items: center;
   background-color: colors.$background-light;
   color: colors.$fontcolor-primary;
@@ -31,6 +31,11 @@
 .headText {
   @apply text-center text-4xl;
   color: colors.$fontcolor-secondary;
+}
+@media screen and (max-width: 777px) {
+  .headText {
+    @apply text-2xl;
+  }
 }
 .pFilter {
   display: flex;
@@ -62,9 +67,9 @@
 }
 
 @media screen and (max-width: 777px) {
-  .center {
-    height: auto;
-  }
+  // .center {
+  //   height: auto;
+  // }
   .item {
     flex-direction: row;
   }

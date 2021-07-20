@@ -3,7 +3,7 @@
 /* eslint-disable react/jsx-one-expression-per-line */
 /* eslint-disable react/prop-types */
 import useMarkdown from '../../hooks/useMarkdown';
-import Button from '../../components/Button';
+// import Button from '../../components/Button';
 import Icon from '../../components/Icon';
 import styles from './about.module.scss';
 
@@ -28,9 +28,9 @@ const About = ({ data }) => {
               <Icon key={x.id} socialLink={x} variant="iconBtn" />
             ))}
           </div>
-          <Button href={data.resume.url} download={data.resume.url}>
+          {/* <Button href={data.resume.url} download={data.resume.url}>
             {data.downloadCVText}
-          </Button>
+          </Button> */}
         </aside>
       </article>
     </section>

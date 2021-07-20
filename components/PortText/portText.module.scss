@@ -5,7 +5,11 @@
   margin-top: 2rem;
   color: colors.$fontcolor-primary;
 }
-
+@media screen and (max-width: 777px) {
+  .portEduPercent {
+    @apply text-2xl;
+  }
+}
 .portLogoText {
   font-weight: 800;
   font-size: 1.5rem;
@@ -39,6 +43,11 @@
   font-size: 1.875rem;
   margin: 0;
   text-transform: uppercase;
+}
+@media screen and (max-width: 777px) {
+  .portHeadingText {
+    @apply text-2xl;
+  }
 }
 
 .portHeadingCaption {

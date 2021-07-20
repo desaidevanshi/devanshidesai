@@ -1,6 +1,7 @@
 @use '../../styles/colors.scss';
 .container {
-  height: 100vh;
+  @apply lg:h-screen;
+  // height: 100vh;
   background: colors.$background-dark;
   display: flex;
   flex-direction: column;
@@ -38,8 +39,22 @@
 }
 .buttonMargin {
   @apply w-40 mt-10 self-center;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: 2px solid;
+  font-size: 14px;
+  padding: 12px 20px;
+  border-color: colors.$fontcolor-secondary;
+  color: colors.$fontcolor-secondary;
+  background: transparent;
 }
 
+.buttonMargin:hover {
+  border-color: colors.$fontcolor-primary;
+  color: colors.$fontcolor-primary;
+  background: transparent;
+  cursor: pointer;
+}
 .borderBottom {
   @apply border-red-500;
 }
@@ -76,7 +91,11 @@
   @apply text-center text-4xl;
   color: colors.$fontcolor-secondary;
 }
-
+@media screen and (max-width: 777px) {
+  .captionCon {
+    @apply text-2xl;
+  }
+}
 .desCon {
   @apply text-center text-2xl uppercase;
   color: colors.$fontcolor-primary;

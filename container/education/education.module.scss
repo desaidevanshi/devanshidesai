@@ -1,6 +1,7 @@
 @use '../../styles/colors.scss';
 .container {
-  height: 100vh;
+  @apply lg:h-screen;
+  // height: 100vh;
   background: colors.$background-dark;
   display: flex;
   justify-content: center;
@@ -20,6 +21,11 @@
   @apply text-center text-4xl;
   color: colors.$fontcolor-secondary;
 }
+@media screen and (max-width: 777px) {
+  .heading {
+    @apply text-2xl;
+  }
+}
 .caption {
   @apply text-center text-2xl uppercase;
   color: colors.$fontcolor-primary;
@@ -35,16 +41,22 @@
 .leftsubbox {
   @apply p-5 lg:w-2/5 md:w-2/5 sm:w-2/4 rounded-xl;
   background-color: colors.$fontcolor-secondary;
+  padding-bottom: 0;
 }
 
 .leftTextAlign {
-  @apply leading-none pb-1 mb-1;
-  color: colors.$fontcolor-primary;
-  border-bottom: 2px solid;
+  @apply leading-none pb-2 mb-2;
+  // color: colors.$fontcolor-primary;
+  // border-bottom: 2px solid;
 }
 .portEduLeftText {
+  @apply text-lg leading-6;
   color: colors.$fontcolor-primary;
-  @apply text-lg;
+}
+@media screen and (max-width: 777px) {
+  .portEduLeftText {
+    @apply text-base;
+  }
 }
 .bars {
   @apply flex items-center gap-4 px-5;
@@ -74,8 +86,8 @@
   display: flex;
   justify-content: center;
 }
-@media screen and (max-width: 777px) {
-  .container {
-    height: auto;
-  }
-}
+// @media screen and (max-width: 777px) {
+//   .container {
+//     height: auto;
+//   }
+// }

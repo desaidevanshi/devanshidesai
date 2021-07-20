@@ -68,11 +68,11 @@
   display: inline-block;
 }
 .menu li a {
-  @apply text-lg;
+  @apply text-lg my-4 md:mx-3;
   width: 100%;
   text-align: center;
   height: 100%;
-  margin: 1rem;
+  // margin: 1rem;
   color: colors.$fontcolor-primary;
 }
 .menu li a:hover {
@@ -90,6 +90,7 @@
 }
 .fixed-header {
   background: colors.$background-dark;
+  box-shadow: 0 0 10px;
 }
 .nav-transparent {
   background: colors.$background-dark;
@@ -107,7 +108,7 @@
     flex-direction: column;
     position: relative;
     transition: 0.5s;
-    width: 15rem;
+    width: 25rem;
     height: 95vh;
     align-items: center;
     background: colors.$background-dark;
@@ -141,6 +142,7 @@
     margin-top: 45px;
   }
   .menu {
+    width: 15rem;
     margin-right: 1.5rem;
   }
   .menu li {

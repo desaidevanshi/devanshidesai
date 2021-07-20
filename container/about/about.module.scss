@@ -1,7 +1,8 @@
 @use '../../styles/colors.scss';
 
 .container {
-  height: 100vh;
+  @apply md:h-screen;
+  // height: 100vh;
   background: colors.$background-dark;
   display: flex;
   justify-content: center;
@@ -50,9 +51,9 @@
   .name {
     @apply text-4xl;
   }
-  .container {
-    height: fit-content;
-  }
+  // .container {
+  //   height: fit-content;
+  // }
   .about {
     padding-right: 1rem;
     padding-left: 1rem;
