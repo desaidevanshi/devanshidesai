@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import { useFormik } from 'formik';
-import styles from './contact.module.scss';
 import axios from '../../lib/axios';
+import styles from './contact.module.scss';
 
 // A custom validation function. This must return an object
 // which keys are symmetrical to our values/initialValues
@@ -94,7 +94,7 @@ const SignupForm = ({ data }) => {
               component="textarea"
               placeholder={data.message}
             />
-            <button type="button" className={styles.buttonMargin} onSubmit={formik.handleSubmit}>
+            <button type="submit" className={styles.buttonMargin} onClick={formik.handleSubmit}>
               {data.buttonText}
             </button>
           </div>
