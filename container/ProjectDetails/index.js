@@ -2,6 +2,8 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable arrow-parens */
 import { useRouter } from 'next/router';
+// import { useCallback, useEffect, useRef } from 'react';
+// import Image from 'next/image';
 import Button from '../../components/Button';
 import Header from '../../components/Header';
 import PortText from '../../components/PortText';
@@ -9,6 +11,34 @@ import styles from './singleBlog.module.scss';
 
 const ProjectDetails = ({ data }) => {
   const router = useRouter();
+  // const imgRef = useRef(null);
+  // const intervalRef = useRef();
+  // const cardRef = useRef();
+
+  // const startScroll = useCallback(() => {
+  //   intervalRef.current = setInterval(() => {
+  //     const total = imgRef.current.scrollLeft + imgRef.current.offsetWidth;
+  //     if (Math.round(total) === imgRef.current.scrollWidth) {
+  //       imgRef.current.scrollLeft = 0;
+  //     } else {
+  //       imgRef.current.scrollLeft += cardWidth;
+  //     }
+  //   }, 3000);
+  // }, []);
+
+  // const stopScroll = useCallback(() => {
+  //   clearInterval(intervalRef.current);
+  // }, []);
+
+  // useEffect(() => {
+  //   startScroll();
+  //   imgRef.current.addEventListener('mouseover', stopScroll);
+  //   imgRef.current.addEventListener('mouseout', startScroll);
+  //   return () => {
+  //     imgRef.current.removeEventListener('mouseover', stopScroll);
+  //     imgRef.current.removeEventListener('mouseout', startScroll);
+  //   };
+  // }, [startScroll, stopScroll]);
 
   return (
     <>
@@ -28,7 +58,10 @@ const ProjectDetails = ({ data }) => {
         </Header>
         <div className={styles.mainDiv}>
           <div className={styles.imgdiv}>
-            <img src={data?.displayImage?.url} alt="ProjectImage" className={styles.img} />
+            {/* <img src={data?.displayImage?.url} alt="ProjectImage" className={styles.img} /> */}
+            <img src="/images/about-img-lg.jpg" className={styles.portImgHover} alt="project" />
+            <img src="/images/about-img-lg.jpg" className={styles.portImgHover} alt="project" />
+            <img src="/images/about-img-lg.jpg" className={styles.portImgHover} alt="project" />
           </div>
           <div className={styles.textDiv}>
             <div>

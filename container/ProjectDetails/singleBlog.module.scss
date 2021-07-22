@@ -22,8 +22,15 @@
 .imgdiv {
   @apply flex items-center py-4;
   flex: 1;
-  height: 40rem;
   justify-content: center;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  gap: 20px;
+  scroll-snap-type: inline mandatory;
+  & .portImgHover {
+    width: 100%;
+    scroll-snap-align: start;
+  }
 }
 
 .content {
