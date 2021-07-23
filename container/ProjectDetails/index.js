@@ -3,7 +3,6 @@
 /* eslint-disable arrow-parens */
 import { useRouter } from 'next/router';
 // import { useCallback, useEffect, useRef } from 'react';
-// import Image from 'next/image';
 import Button from '../../components/Button';
 import Header from '../../components/Header';
 import PortText from '../../components/PortText';
@@ -45,7 +44,7 @@ const ProjectDetails = ({ data }) => {
       <div className={styles.light_theme}>
         <Header>
           <PortText variant="portSingleBlog" className={styles.portSingleBlog}>
-            Project
+            Project Details
           </PortText>
           <button
             className={styles.backAlign}
@@ -60,7 +59,7 @@ const ProjectDetails = ({ data }) => {
           <div className={styles.imgdiv}>
             {/* <img src={data?.displayImage?.url} alt="ProjectImage" className={styles.img} /> */}
             <img src="/images/about-img-lg.jpg" className={styles.portImgHover} alt="project" />
-            <img src="/images/about-img-lg.jpg" className={styles.portImgHover} alt="project" />
+            <img src="/images/249935.jpg" className={styles.portImgHover} alt="project" />
             <img src="/images/about-img-lg.jpg" className={styles.portImgHover} alt="project" />
           </div>
           <div className={styles.textDiv}>
