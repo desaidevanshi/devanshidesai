@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable operator-linebreak */
 /* eslint-disable react/jsx-closing-bracket-location */
 /* eslint-disable prettier/prettier */
@@ -5,11 +6,10 @@
 /* eslint-disable react/button-has-type */
 /* eslint-disable react/no-find-dom-node */
 /* eslint-disable arrow-parens */
-import { useRouter } from 'next/router';
 import React, { useEffect, useRef } from 'react';
+import Link from 'next/link';
 
 const Navbar = () => {
-  const { pathname } = useRouter();
   const navRef = useRef();
   const ulRef = useRef();
   const navbarRef = useRef();
@@ -90,29 +90,29 @@ const Navbar = () => {
             <div className="sub-container" id="navbar" ref={navRef}>
               <ul className="menu" ref={ulRef}>
                 <li>
-                  <a href="/#home" className={pathname === '/#home' ? 'active' : undefined}>
-                    Home
-                  </a>
+                  <Link href="/#home" className="/#home">
+                    <a>Home</a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/#about" className={pathname === '/#about' ? 'active' : undefined}>
-                    About
-                  </a>
+                  <Link href="/#about" className="/#about">
+                    <a>About</a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/#services" className={pathname === '/#services' ? 'active' : undefined}>
-                    Services
-                  </a>
+                  <Link href="/#services" className="/#services">
+                    <a>Services</a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/#work" className={pathname === '/#work' ? 'active' : undefined}>
-                    Work
-                  </a>
+                  <Link href="/#work" className="/#work">
+                    <a>Work</a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/#contact" className={pathname === '/#contact' ? 'active' : undefined}>
-                    Contact
-                  </a>
+                  <Link href="/#contact" className="/#contact">
+                    <a>Contact</a>
+                  </Link>
                 </li>
               </ul>
             </div>

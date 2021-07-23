@@ -54,6 +54,7 @@
 }
 .item {
   @apply xs:flex-col sm:flex-row flex flex-wrap justify-center md:flex-nowrap;
+  height: 20rem;
 }
 .hoverContext {
   @apply flex flex-col items-center;
