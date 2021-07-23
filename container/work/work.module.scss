@@ -54,32 +54,24 @@
 }
 .item {
   @apply xs:flex-col sm:flex-row flex flex-wrap justify-center md:flex-nowrap;
-  height: 20rem;
 }
 .hoverContext {
   @apply flex flex-col items-center;
 }
 
 .relativeP {
-  @apply relative h-full w-full;
+  @apply relative;
 }
 .align {
   @apply flex justify-center mt-8;
 }
 
 @media screen and (max-width: 777px) {
-  // .center {
-  //   height: auto;
-  // }
   .item {
     flex-direction: row;
   }
 }
-// @media screen and (max-width: 668px) {
-//   .item {
-//     flex-direction: column;
-//   }
-// }
+
 .desCon {
   @apply text-center text-2xl uppercase;
   color: colors.$fontcolor-primary;
