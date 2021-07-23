@@ -60,7 +60,7 @@
 }
 
 .college {
-  @apply hover:border-solid border-t-0 hover:transform border-b border-l-0 border-r-0;
+  @apply hover:border-solid border-t-0 hover:cursor-pointer border-b border-l-0 border-r-0;
   color: colors.$fontcolor-secondary;
   border-bottom: colors.$fontcolor-secondary;
 }

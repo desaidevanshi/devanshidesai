@@ -2,6 +2,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable arrow-parens */
 import { useRouter } from 'next/router';
+import Image from 'next/image';
 import Card from '../../components/Card';
 import Header from '../../components/Header';
 import PortText from '../../components/PortText';
@@ -30,7 +31,7 @@ const Projects = ({ data }) => {
             <Card variant="cardPort" key={x.id}>
               <div className={styles.relativeP}>
                 <a href={`work/${x.id}`}>
-                  <img src={x.displayImage.url} alt="ProjectImg" />
+                  <Image height={300} width={300} src={x.displayImage.url} alt="ProjectImg" />
                   <div className={styles.cardContent}>
                     <Card variant="hoverPort">
                       <div className={styles.hoverContext}>

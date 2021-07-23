@@ -1,5 +1,6 @@
 /* eslint-disable arrow-parens */
 /* eslint-disable react/prop-types */
+import Image from 'next/image';
 import Card from '../../components/Card';
 import Button from '../../components/Button';
 import styles from './work.module.scss';
@@ -16,7 +17,7 @@ const Work = ({ data }) => (
         {data.projects.map(x => (
           <Card variant="cardPort" key={x.id}>
             <div className={styles.relativeP}>
-              <img src={x.displayImage.url} alt="" />
+              <Image height={300} width={300} src={x.displayImage.url} alt="" />
               <div className={styles.cardContent}>
                 <Card variant="hoverPort">
                   <div className={styles.hoverContext}>

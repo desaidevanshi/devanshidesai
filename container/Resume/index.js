@@ -53,12 +53,16 @@ const Skills = ({ data }) => {
             <div className={styles.workPara} key={x.id}>
               <p variant="portHeadingCaption" className={styles.portEduLeftText}>
                 <b>{x.role} </b>
-                <br />
+              </p>
+              <p
+                variant="portHeadingCaption"
+                className={styles.portEduLeftText}
+                style={{ lineHeight: '2rem' }}>
                 from {x.startDt} to {x.endDt}
               </p>
               <p variant="portAboutCaption" className={styles.portEduLeftText}>
                 {'At '}
-                <a style={{ color: '#4da8da' }} href={x.companyLink} target="_blank">
+                <a className={styles.college} href={x.institueLink} target="_blank">
                   {x.companyName}
                 </a>
                 {x.description}
