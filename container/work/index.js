@@ -14,7 +14,7 @@ const Work = ({ data }) => (
 
       <div className={styles.item}>
         {data.projects.map(x => (
-          <Card variant="cardPort">
+          <Card variant="cardPort" key={x.id}>
             <div className={styles.relativeP}>
               <img src={x.displayImage.url} alt="" />
               <div className={styles.cardContent}>

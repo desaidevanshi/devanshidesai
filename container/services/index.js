@@ -18,9 +18,9 @@ const Services = ({ data }) => (
         {data.services.map(x => {
           const { HTML } = useMarkdown(x.description);
           return (
-            <div className={styles.box}>
+            <div className={styles.box} key={x.id}>
               <Button variant="portServiceButton">
-                <Icon key={x.id} socialLink={x} variant="serviceBtn" />
+                <Icon socialLink={x} variant="serviceBtn" />
               </Button>
               <div className={styles.divRow}>
                 <h3>{x.title}</h3>

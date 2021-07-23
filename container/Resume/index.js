@@ -6,7 +6,6 @@
 import React from 'react';
 import { useRouter } from 'next/router';
 import Header from '../../components/Header';
-import PortText from '../../components/PortText';
 import styles from './resume.module.scss';
 
 const Skills = ({ data }) => {
@@ -15,9 +14,7 @@ const Skills = ({ data }) => {
   return (
     <div className={styles.light_theme}>
       <Header>
-        <PortText variant="portSingleBlog" className={styles.portSingleBlog}>
-          Resume
-        </PortText>
+        <h1 className={styles.portSingleBlog}>Resume</h1>
         <button
           className={styles.backAlign}
           type="button"
@@ -29,19 +26,17 @@ const Skills = ({ data }) => {
       </Header>
       <div className={styles.resumeMain}>
         <div className={styles.blockTable}>
-          <PortText variant="portHeadingText" className={styles.portHeadingText}>
+          <h2 variant="portHeadingText" className={styles.portHeadingText}>
             Technologies
-          </PortText>
-          <div className={styles.day}>
+          </h2>
+          <div className={styles.tech}>
             {data?.skills?.map(x => (
               <div className={styles.Skillbars} key={x.id}>
-                <PortText variant="portEduPercent" component="h1" className={styles.portEduPercent}>
-                  {x?.rating}%
-                </PortText>
+                <h3 className={styles.portEduLeft}>{x?.rating}%</h3>
                 <div className={styles.Skillblock}>
-                  <PortText variant="portHeadingCaption" className={styles.portHeadingCaption}>
+                  <p variant="portHeadingCaption" className={styles.portEduLeftText}>
                     {x?.title}
-                  </PortText>
+                  </p>
                   <div className={styles.Skillbar}>
                     <div className={styles.Skillht1} style={{ width: `${x?.rating}%` }} />
                   </div>
@@ -50,48 +45,46 @@ const Skills = ({ data }) => {
             ))}
           </div>
         </div>
-        <div className={styles.workEp}>
-          <div className={styles.workExp}>
-            <PortText variant="portHeadingText" className={styles.portHeadingText}>
-              Work Experience
-            </PortText>
-          </div>
+        <div className={styles.blockTable}>
+          <h2 variant="portHeadingText" className={styles.portHeadingText}>
+            Work Experience
+          </h2>
           {data?.experiences?.map(x => (
             <div className={styles.workPara} key={x.id}>
-              <PortText variant="portHeadingCaption" className={styles.portHeadingCaption}>
+              <p variant="portHeadingCaption" className={styles.portEduLeftText}>
                 <b>{x.role} </b>
                 <br />
                 from {x.startDt} to {x.endDt}
-              </PortText>
-              <PortText variant="portAboutCaption" className={styles.portAboutCaption}>
+              </p>
+              <p variant="portAboutCaption" className={styles.portEduLeftText}>
                 {'At '}
-                <a style={{ color: '#4da8da' }} href={x.companyLink}>
+                <a style={{ color: '#4da8da' }} href={x.companyLink} target="_blank">
                   {x.companyName}
                 </a>
                 {x.description}
-              </PortText>
+              </p>
             </div>
           ))}
         </div>
         <div className={styles.blockTable}>
-          <PortText variant="portHeadingText" className={styles.portHeadingText}>
+          <h2 variant="portHeadingText" className={styles.portHeadingText}>
             Education
-          </PortText>
+          </h2>
           <div className={styles.education}>
             {data?.educations?.map(x => (
               <div className={styles.leftTextAlign} key={x.id}>
-                <PortText variant="portEduLeftText" className={styles.portEduLeftText}>
+                <p variant="portEduLeftText" className={styles.portEduLeftText}>
                   <b>{x.degree}</b>
-                </PortText>
-                <PortText variant="portEduLeftText" className={styles.portEduLeftText}>
+                </p>
+                <p variant="portEduLeftText" className={styles.portEduLeftText}>
                   {x.startD} to {x.endD}
-                </PortText>
-                <PortText variant="portEduLeftText" className={styles.portEduLeftText}>
+                </p>
+                <p variant="portEduLeftText" className={styles.portEduLeftText}>
                   {'At '}
                   <a className={styles.college} href={x.institueLink} target="_blank">
                     {x.institute}
                   </a>
-                </PortText>
+                </p>
               </div>
             ))}
           </div>
