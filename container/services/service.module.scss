@@ -8,7 +8,26 @@
   color: colors.$fontcolor-primary;
   justify-content: center;
 }
+.serviceBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: solid 2px colors.$fontcolor-primary;
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
 
+  & svg {
+    fill: colors.$fontcolor-primary;
+  }
+
+  &:hover {
+    background-color: colors.$fontcolor-secondary;
+    box-shadow: 0px 0px 10px colors.$background-dark;
+    transform: translate(1px);
+  }
+}
 .heading {
   padding-top: calc(3.5rem + 1rem);
   width: 100%;
@@ -42,11 +61,14 @@
   @apply text-lg text-center;
 }
 .box {
-  @apply h-full p-7 rounded-xl overflow-hidden relative flex flex-col items-center;
+  @apply h-full p-7 rounded-xl overflow-hidden relative flex flex-col items-center duration-300;
   background-color: colors.$background-dark;
   z-index: 1;
 }
-
+.box:hover {
+  box-shadow: 0 5px 15px colors.$fontcolor-secondary;
+  transition-duration: 500ms;
+}
 @media screen and (max-width: 777px) {
   .heading h2 {
     @apply text-2xl;
