@@ -7,10 +7,11 @@ import React from 'react';
 import { useRouter } from 'next/router';
 import Header from '../../components/Header';
 import styles from './resume.module.scss';
+import useSkills from '../../hooks/useSkills';
 
 const Skills = ({ data }) => {
   const router = useRouter();
-
+  const { data: skillsData } = useSkills();
   return (
     <div className={styles.light_theme}>
       <Header>
@@ -30,7 +31,7 @@ const Skills = ({ data }) => {
             Technologies
           </h2>
           <div className={styles.tech}>
-            {data?.skills?.map(x => (
+            {skillsData?.map(x => (
               <div className={styles.Skillbars} key={x.id}>
                 <h3 className={styles.portEduLeft}>{x?.rating}%</h3>
                 <div className={styles.Skillblock}>

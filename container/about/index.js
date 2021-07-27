@@ -2,6 +2,7 @@
 /* eslint-disable react/no-danger */
 /* eslint-disable react/jsx-one-expression-per-line */
 /* eslint-disable react/prop-types */
+import Image from 'next/image';
 import useMarkdown from '../../hooks/useMarkdown';
 // import Button from '../../components/Button';
 import Icon from '../../components/Icon';
@@ -12,9 +13,10 @@ const About = ({ data }) => {
   return (
     <section id="about" className={styles.container}>
       <article className={styles.about}>
-        <picture className={styles.aboutImg}>
-          <img src={data.portfolioImage.url} alt="Me" />
-        </picture>
+        <Image className={styles.aboutImg} src={data.portfolioImage.url} height={999} width={999} />
+        {/* <picture >
+          <img alt="Me" />
+        </picture> */}
         <aside className={styles.description}>
           <h2 className={styles.name}>
             {data.firstName} {data.lastName}

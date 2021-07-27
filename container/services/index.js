@@ -19,9 +19,7 @@ const Services = ({ data }) => (
           const { HTML } = useMarkdown(x.description);
           return (
             <div className={styles.box} key={x.id}>
-              <Button variant="portServiceButton">
                 <Icon socialLink={x} variant="serviceBtn" />
-              </Button>
               <div className={styles.divRow}>
                 <h3>{x.title}</h3>
                 <p dangerouslySetInnerHTML={{ __html: HTML }} />
