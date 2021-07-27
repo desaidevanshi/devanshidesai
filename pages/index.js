@@ -10,19 +10,19 @@ import useServices from '../hooks/useServices';
 import useEducation from '../hooks/useEducation';
 import useWork from '../hooks/useWork';
 import useContact from '../hooks/useContact';
-// import PageLoader from '../container/PageLoader';
+import PageLoader from '../container/PageLoader';
 
 export default function main() {
-  const { data: bannerData } = useBanner();
+  const { data: bannerData, isLoading: bannerLoading } = useBanner();
   const { data: aboutData } = useAbout();
   const { data: servicesData } = useServices();
   const { data: educationData } = useEducation();
   const { data: workData } = useWork();
   const { data: contactData } = useContact();
 
-  // if (isValidating) {
-  //   return <PageLoader />;
-  // }
+  if (bannerLoading) {
+    return <PageLoader />;
+  }
 
   return (
     <>
