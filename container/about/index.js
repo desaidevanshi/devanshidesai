@@ -16,13 +16,9 @@ const About = ({ data }) => {
   return (
     <section id="about" className={styles.container}>
       <article className={styles.about}>
-        <Image
-          className={styles.aboutImg}
-          src={data.portfolioImage.url}
-          alt="aboutIm"
-          height={999}
-          width={999}
-        />
+        <div className={styles.aboutImg}>
+          <Image src={data.portfolioImage.url} alt="aboutIm" height={400} width={400} />
+        </div>
         {/* <div>
           <Image
             cloudName="devanshidesai"
