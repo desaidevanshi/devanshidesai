@@ -1,8 +1,6 @@
-import Head from 'next/head';
-
 export default function Meta() {
   return (
-    <Head>
+    <>
       <meta name="application-name" content="Devanshi Desai" />
       <meta name="apple-mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-status-bar-style" content="default" />
@@ -33,10 +31,8 @@ export default function Meta() {
       <meta property="og:description" content="Devanshi Desai personal portfolio" />
       <meta property="og:site_name" content="Devanshi Desai" />
       <meta name="theme-color" content="#12232e" />
-
       <link rel="apple-touch-icon" href="apple-icon-180.png" />
       <meta name="apple-mobile-web-app-capable" content="yes" />
-
       <link
         rel="apple-touch-startup-image"
         href="apple-splash-2048-2732.jpg"
@@ -173,6 +169,6 @@ export default function Meta() {
         media="(device-width: 320px) and (device-height:
 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
       />
-    </Head>
+    </>
   );
 }
