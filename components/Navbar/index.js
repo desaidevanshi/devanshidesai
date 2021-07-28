@@ -86,7 +86,7 @@ const Navbar = () => {
               </a>
 
               <button
-                name="nav-btn"
+                aria-label="Navigation"
                 className="nav-btn"
                 id="toggle"
                 ref={toggleRef}
