@@ -32,11 +32,9 @@ export default function Meta() {
       <meta property="og:title" content="Devanshi Desai" />
       <meta property="og:description" content="Devanshi Desai personal portfolio" />
       <meta property="og:site_name" content="Devanshi Desai" />
-
-      <link rel="manifest" href="../manifest.json" />
+      <meta name="theme-color" content="#12232e" />
 
       <link rel="apple-touch-icon" href="apple-icon-180.png" />
-
       <meta name="apple-mobile-web-app-capable" content="yes" />
 
       <link
