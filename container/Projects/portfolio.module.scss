@@ -6,8 +6,7 @@
   color: colors.$fontcolor-primary;
 }
 .portfolioItems {
-  @apply flex flex-wrap h-full w-full px-5 justify-center;
-  gap: 15px;
+  @apply flex flex-wrap h-full w-full px-5 justify-center xs:gap-4 md:gap-8;
 }
 .portHoverCardText {
   color: colors.$background-light;

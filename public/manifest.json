@@ -1,0 +1,39 @@
+{
+  "short_name": "Devanshi",
+  "name": "Devanshi Desai | Portfolio App",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/logo.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#12232e",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "theme_color": "#12232e",
+  "shortcuts": [
+    {
+      "name": "Devanshi Desai | Resume Page",
+      "short_name": "Resume",
+      "description": "What I have done",
+      "url": "/resume",
+      "icons": [{ "src": "/logo.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Devanshi Desai | Project List",
+      "short_name": "Project List",
+      "description": "Projects I have completed",
+      "url": "/projects",
+      "icons": [{ "src": "/logo.png", "sizes": "192x192" }]
+    }
+  ],
+  "description": "Personal portfolio application"
+}

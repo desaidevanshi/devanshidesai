@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Home from '../container/home';
 import About from '../container/about';
 import Services from '../container/services';
@@ -26,6 +27,10 @@ export default function main() {
 
   return (
     <>
+      <Head>
+        <title>Devanshi Desai | Home page</title>
+        <link rel="icon" href="/logo.png" />
+      </Head>
       {bannerData && <Home data={bannerData} />}
       {aboutData && <About data={aboutData} />}
       {servicesData && <Services data={servicesData} />}

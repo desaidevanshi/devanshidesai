@@ -40,8 +40,12 @@
 
 .leftsubbox {
   @apply p-5 lg:w-2/5 md:w-2/5 sm:w-2/4 rounded-xl;
-  background-color: colors.$fontcolor-secondary;
+  background-color: colors.$background-light;
   padding-bottom: 0;
+}
+.leftsubbox:hover {
+  box-shadow: 0 5px 15px colors.$fontcolor-secondary;
+  transition-duration: 500ms;
 }
 
 .leftTextAlign {

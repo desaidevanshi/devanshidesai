@@ -2,6 +2,7 @@
 /* eslint-disable implicit-arrow-linebreak */
 /* eslint-disable object-curly-newline */
 import Document, { Html, Head, Main, NextScript } from 'next/document';
+import Meta from '../components/meta';
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -24,7 +25,9 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
-        <Head />
+        <Head>
+          <Meta />
+        </Head>
         <body>
           <Main />
           <NextScript />

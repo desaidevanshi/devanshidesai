@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import useProjects from '../hooks/useProjects';
 import Projects from '../container/Projects';
 import PageLoader from '../container/PageLoader';
@@ -7,6 +8,14 @@ const ProjectList = () => {
   if (isLoading) {
     return <PageLoader />;
   }
-  return <>{projectData && <Projects data={projectData} />}</>;
+  return (
+    <>
+      <Head>
+        <title>Devanshi Desai | Projects List</title>
+        <link rel="icon" href="/logo.png" />
+      </Head>
+      {projectData && <Projects data={projectData} />}
+    </>
+  );
 };
 export default ProjectList;

@@ -22,6 +22,7 @@
   align-items: center;
   flex-direction: column;
   padding: 1.5rem;
+  gap: 1rem;
 }
 .row {
   @apply flex flex-col;
@@ -53,7 +54,7 @@
   @apply font-semibold;
 }
 .item {
-  @apply xs:flex-col sm:flex-row flex flex-wrap justify-center md:flex-nowrap;
+  @apply xs:flex-col sm:flex-row flex flex-wrap justify-center md:flex-nowrap xs:gap-4 md:gap-8;
 }
 .hoverContext {
   @apply flex flex-col items-center;
