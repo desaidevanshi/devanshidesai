@@ -11,7 +11,7 @@ export default function Meta() {
       <meta name="msapplication-config" content="/browserconfig.xml" />
       <meta name="msapplication-tap-highlight" content="no" />
       <meta name="theme-color" content="#12232e" />
-      {/* <meta name="viewport" content="initial-scale=1.0, width=device-width" /> */}
+
       {/* github */}
       <meta name="github:title" content="Devanshi Desai" />
       <meta name="github:description" content="Devanshi Desai personal portfolio" />
