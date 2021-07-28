@@ -85,7 +85,13 @@ const Navbar = () => {
                 <span>shi.</span>
               </a>
 
-              <button className="nav-btn" id="toggle" ref={toggleRef} onClick={toggleNavbar} />
+              <button
+                name="nav-btn"
+                className="nav-btn"
+                id="toggle"
+                ref={toggleRef}
+                onClick={toggleNavbar}
+              />
             </div>
             <div className="sub-container" id="navbar" ref={navRef}>
               <ul className="menu" ref={ulRef}>
