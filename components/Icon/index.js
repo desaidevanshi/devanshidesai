@@ -25,6 +25,7 @@ const Icon = ({ socialLink, variant, className }) => {
   }, []);
   return (
     <a
+      rel="noreferrer"
       aria-label="button"
       href={socialLink.url}
       target="_blank"

@@ -17,7 +17,7 @@ const Work = ({ data }) => (
         {data.projects.map(x => (
           <Card variant="cardPort" key={x.id}>
             <div className={styles.relativeP}>
-              <Image height={300} width={300} src={x.displayImage.url} alt="" />
+              <Image height={300} width={300} src={x.displayImage.url} alt="projectIm" />
               <div className={styles.cardContent}>
                 <Card variant="hoverPort">
                   <div className={styles.hoverContext}>

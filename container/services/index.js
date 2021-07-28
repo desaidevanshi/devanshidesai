@@ -17,7 +17,13 @@ const Services = ({ data }) => (
           const { HTML } = useMarkdown(x.description);
           return (
             <div className={styles.box} key={x.id}>
-              <Image height={48} width={48} src={x.icon.url} className="serviceBtn" />
+              <Image
+                height={48}
+                width={48}
+                src={x.icon.url}
+                alt="serviceBtn"
+                className="serviceBtn"
+              />
               <div className={styles.divRow}>
                 <h3>{x.title}</h3>
                 <p dangerouslySetInnerHTML={{ __html: HTML }} />
