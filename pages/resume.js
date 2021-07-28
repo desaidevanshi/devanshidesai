@@ -12,7 +12,7 @@ const Resume = () => {
     <>
       <Head>
         <title>Devanshi Desai | Resume page</title>
-        <link rel="icon" href="/logo.png" />
+        <link rel="icon" href="/icons/logo.png" />
       </Head>
       {resumeData && <Skills data={resumeData} />}
     </>

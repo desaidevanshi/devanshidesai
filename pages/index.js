@@ -29,7 +29,7 @@ export default function main() {
     <>
       <Head>
         <title>Devanshi Desai | Home page</title>
-        <link rel="icon" href="/logo.png" />
+        <link rel="icon" href="/icons/logo.png" />
       </Head>
       {bannerData && <Home data={bannerData} />}
       {aboutData && <About data={aboutData} />}

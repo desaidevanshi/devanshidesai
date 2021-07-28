@@ -15,7 +15,7 @@ const Work = () => {
     <>
       <Head>
         <title>Devanshi Desai | Project Details</title>
-        <link rel="icon" href="/logo.png" />
+        <link rel="icon" href="/icons/logo.png" />
       </Head>
       {data && <ProjectDetails data={data} />}
     </>

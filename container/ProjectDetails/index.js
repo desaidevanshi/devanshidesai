@@ -58,9 +58,9 @@ const ProjectDetails = ({ data }) => {
         <div className={styles.mainDiv}>
           <div className={styles.imgdiv}>
             {/* <img src={data?.displayImage?.url} alt="ProjectImage" className={styles.img} /> */}
-            <img src="/images/Splash.jpeg" className={styles.portImgHover} alt="project" />
-            <img src="/images/RecipeApp1.jpeg" className={styles.portImgHover} alt="project" />
-            <img src="/images/RecipeApp2.jpeg" className={styles.portImgHover} alt="project" />
+            <img lazy src="/images/Splash.jpeg" className={styles.portImgHover} alt="project" />
+            <img lazy src="/images/RecipeApp1.jpeg" className={styles.portImgHover} alt="project" />
+            <img lazy src="/images/RecipeApp2.jpeg" className={styles.portImgHover} alt="project" />
           </div>
           <div className={styles.textDiv}>
             <div>

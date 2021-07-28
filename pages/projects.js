@@ -12,7 +12,7 @@ const ProjectList = () => {
     <>
       <Head>
         <title>Devanshi Desai | Projects List</title>
-        <link rel="icon" href="/logo.png" />
+        <link rel="icon" href="/icons/logo.png" />
       </Head>
       {projectData && <Projects data={projectData} />}
     </>

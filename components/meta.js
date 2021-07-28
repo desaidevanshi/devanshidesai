@@ -31,8 +31,11 @@ export default function Meta() {
       <meta property="og:description" content="Devanshi Desai personal portfolio" />
       <meta property="og:site_name" content="Devanshi Desai" />
       <meta name="theme-color" content="#12232e" />
+
       <link rel="apple-touch-icon" href="apple-icon-180.png" />
+
       <meta name="apple-mobile-web-app-capable" content="yes" />
+
       <link
         rel="apple-touch-startup-image"
         href="apple-splash-2048-2732.jpg"
@@ -126,14 +129,14 @@ export default function Meta() {
       <link
         rel="apple-touch-startup-image"
         href="apple-splash-828-1792.jpg"
-        media="(device-width: 414px) and
-(device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+        media="(device-width: 414px) and (device-height:
+896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
       />
       <link
         rel="apple-touch-startup-image"
         href="apple-splash-1792-828.jpg"
-        media="(device-width: 414px) and
-(device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+        media="(device-width: 414px) and (device-height:
+896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
       />
       <link
         rel="apple-touch-startup-image"

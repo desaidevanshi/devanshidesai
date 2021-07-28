@@ -31,7 +31,13 @@ const Projects = ({ data }) => {
             <Card variant="cardPort" key={x.id}>
               <div className={styles.relativeP}>
                 <a href={`work/${x.id}`}>
-                  <Image height={300} width={300} src={x.displayImage.url} alt="ProjectIm" />
+                  <Image
+                    height={300}
+                    width={300}
+                    src={x.displayImage.url}
+                    alt="ProjectIm"
+                    loading="lazy"
+                  />
                   <div className={styles.cardContent}>
                     <Card variant="hoverPort">
                       <div className={styles.hoverContext}>
