@@ -28,15 +28,15 @@ const Home = ({ data }) => {
         <div>
           <Image
             src="/images/banner.jpg"
-            height={500}
-            width={500}
+            height={422}
+            width={511}
             alt="Girl sitting with laptop"
             priority
           />
         </div>
       </section>
       <div style={{ justifyContent: 'center', display: 'flex' }}>
-        <Image src="/images/sep.png" width={600} height={200} alt="Seperator" />
+        <Image src="/images/sep.png" width={640} height={204} alt="Seperator" />
       </div>
     </>
   );
