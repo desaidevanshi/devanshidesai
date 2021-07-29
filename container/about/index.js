@@ -5,9 +5,8 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import Image from 'next/image';
-// import { Image } from 'cloudinary-react';
 import useMarkdown from '../../hooks/useMarkdown';
-// import Button from '../../components/Button';
+import Button from '../../components/Button';
 import Icon from '../../components/Icon';
 import styles from './about.module.scss';
 
@@ -19,21 +18,6 @@ const About = ({ data }) => {
         <div className={styles.aboutImg}>
           <Image src={data.portfolioImage.url} alt="aboutIm" height={400} width={536} />
         </div>
-        {/* <div>
-          <Image
-            cloudName="devanshidesai"
-            useRootPath="true"
-            publicId={data.portfolioImage.provider_metadata.public_id}
-            dpr="auto"
-            responsive
-            crop="scale"
-            width="auto"
-            responsiveUseBreakpoints="true"
-            quality="auto"
-            fetchFormat="auto"
-          />
-          <Transformation width="50" height="50" crop="fit" />
-        </div> */}
         <aside className={styles.description}>
           <h2 className={styles.name}>
             {data.firstName} {data.lastName}
@@ -47,9 +31,9 @@ const About = ({ data }) => {
               <Icon key={x.id} socialLink={x} variant="iconBtn" />
             ))}
           </div>
-          {/* <Button href={data.resume.url} download={data.resume.url}>
+          <Button href="/Resume.pdf" download={data.resume.url}>
             {data.downloadCVText}
-          </Button> */}
+          </Button>
         </aside>
       </article>
     </section>
