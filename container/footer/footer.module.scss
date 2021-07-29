@@ -1,7 +1,7 @@
 @use '../../styles/colors.scss';
 .footer {
   @apply md:gap-6 sm:gap-5 py-14 h-full lg:px-20 md:px-20;
-  background-color: colors.$background-dark;
+  background-color: colors.$background-light;
   color: colors.$fontcolor-primary;
   gap: 20px;
 }

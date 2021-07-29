@@ -1,19 +1,24 @@
 @use '../../styles/colors.scss';
 .portHomeButton {
+  @apply mt-10 duration-300;
   text-transform: uppercase;
   font-weight: 600;
   border: 2px solid;
   font-size: 14px;
   padding: 12px 20px;
-  border-color: colors.$fontcolor-secondary;
-  color: colors.$fontcolor-secondary;
-  background: transparent;
-}
-.portHomeButton:hover {
   border-color: colors.$fontcolor-primary;
   color: colors.$fontcolor-primary;
   background: transparent;
+  border-radius: 0.5rem;
+}
+
+.portHomeButton:hover {
+  border-color: colors.$fontcolor-primary;
+  color: colors.$background-dark;
+  background: transparent;
   cursor: pointer;
+  background: colors.$fontcolor-primary;
+  transition-duration: 300ms;
 }
 .portSocialButton {
   align-items: center;

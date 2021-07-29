@@ -16,7 +16,7 @@ const PageLoader = () => {
             -webkit-transition-delay: 0.5s;
             -o-transition-delay: 0.5s;
             transition-delay: 0.5s;
-            background-color: #1b3241;
+            background-color: black;
             position: fixed;
             z-index: 999;
             height: 100vh;
@@ -41,7 +41,7 @@ const PageLoader = () => {
             position: absolute;
             height: 50%;
             width: 100%;
-            background-color: #1b3241;
+            background-color: black;
              {
               /* @apply absolute h-1/2 w-full bg-[#222]; */
             }
@@ -109,7 +109,7 @@ const PageLoader = () => {
             box-sizing: content-box;
             -webkit-animation-name: anim-loader;
             animation-name: anim-loader;
-            border: 10px solid #1b3241;
+            border: 10px solid black;
             top: -10px;
             left: -10px;
              {

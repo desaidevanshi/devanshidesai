@@ -13,6 +13,7 @@
   justify-content: center;
   align-items: center;
   display: none;
+  border-radius: 0.25rem;
 }
 .nav-btn::before {
   content: '';
@@ -134,13 +135,13 @@
     position: absolute;
     width: 100%;
     background: transparent;
-    margin-top: 50px;
+    margin-top: 55px;
     visibility: visible;
   }
 }
 @media screen and (max-width: 585px) {
   .sub-container {
-    margin-top: 45px;
+    margin-top: 55px;
   }
   .menu {
     width: 15rem;

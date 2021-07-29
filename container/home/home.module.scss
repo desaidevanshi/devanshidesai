@@ -1,15 +1,12 @@
 @use '../../styles/colors.scss';
 .banner {
-  height: 100vh;
+  @apply md:h-screen;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: no-repeat rgb(0, 0, 0, 0.7);
-  background-position: center center;
-  background-size: cover;
-  background-blend-mode: soft-light;
-  @apply md:bg-fixed;
+  flex-wrap: wrap;
+  padding-top: 7rem;
 }
 
 .containerH {
@@ -19,7 +16,6 @@
   padding: 10px 25px;
   justify-content: center;
   transition: 0.5s;
-  height: 100vh;
   color: colors.$fontcolor-primary;
 }
 .header {

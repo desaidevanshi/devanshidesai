@@ -11,12 +11,12 @@
   }
 }
 .light_theme {
-  background-color: colors.$background-light;
+  background-color: colors.$background-dark;
   color: colors.$fontcolor-primary;
 }
 .Skillbar {
   @apply relative;
-  background: colors.$background-dark;
+  background: colors.$background-light;
 }
 
 .resumeMain {

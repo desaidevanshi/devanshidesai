@@ -38,22 +38,25 @@
   @apply w-full;
 }
 .buttonMargin {
-  @apply w-40 mt-10 self-center;
+  @apply w-40 mt-10 self-center duration-300;
   text-transform: uppercase;
   font-weight: 600;
   border: 2px solid;
   font-size: 14px;
   padding: 12px 20px;
-  border-color: colors.$fontcolor-secondary;
-  color: colors.$fontcolor-secondary;
+  border-color: colors.$fontcolor-primary;
+  color: colors.$fontcolor-primary;
   background: transparent;
+  border-radius: 0.5rem;
 }
 
 .buttonMargin:hover {
   border-color: colors.$fontcolor-primary;
-  color: colors.$fontcolor-primary;
+  color: colors.$background-dark;
   background: transparent;
   cursor: pointer;
+  background: colors.$fontcolor-primary;
+  transition-duration: 300ms;
 }
 .borderBottom {
   @apply border-red-500;
@@ -65,7 +68,7 @@
 .contactInput {
   @apply w-full border-t-0 border-r-0 my-5 border-l-0 border-b-2 h-10 p-2 outline-none;
   background: transparent;
-  border-color: colors.$fontcolor-secondary;
+  border-color: colors.$fontcolor-primary;
   color: colors.$fontcolor-primary;
   font-size: 20px;
 }
@@ -83,7 +86,7 @@
 .contactTextArea {
   @apply resize-none h-32 leading-6 shadow-none  p-2 border-t-0 border-r-0 border-l-0 border-b-2 outline-none;
   background: transparent;
-  border-color: colors.$fontcolor-secondary;
+  border-color: colors.$fontcolor-primary;
   color: colors.$fontcolor-primary;
   font-size: 20px;
 }

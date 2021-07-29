@@ -2,7 +2,7 @@
 .portfolioList {
   padding-top: 50px;
   padding-bottom: 50px;
-  background-color: colors.$background-light;
+  background-color: colors.$background-dark;
   color: colors.$fontcolor-primary;
 }
 .portfolioItems {
@@ -35,6 +35,9 @@
 .relativeP {
   @apply relative h-full w-full;
   cursor: pointer;
+  > Image:hover {
+    filter: grayscale(0%);
+  }
 }
 .hoverContext {
   @apply flex flex-col items-center;
