@@ -1,8 +1,8 @@
 {
   "name": "Devanshi Desai | Portfolio App",
   "short_name": "Devanshi",
-  "theme_color": "#12232e",
-  "background_color": "#12232e",
+  "theme_color": "#222",
+  "background_color": "#fff",
   "display": "fullscreen",
   "orientation": "portrait",
   "scope": "/",
