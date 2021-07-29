@@ -29,6 +29,9 @@ const Home = ({ data }) => {
           <Image src="/images/banner.jpg" height={500} width={500} alt="Girl sitting with laptop" />
         </div>
       </section>
+      <div style={{ justifyContent: 'center', display: 'flex' }}>
+        <Image src="/images/sep.png" width={600} height={200} alt="Seperator" />
+      </div>
     </>
   );
 };

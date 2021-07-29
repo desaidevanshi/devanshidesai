@@ -17,15 +17,14 @@
   align-items: flex-start;
   color: colors.$fontcolor-primary;
 }
-.aboutImg {
-  flex: 1;
-}
+// .aboutImg {
+//   flex: 1;
+// }
 @media screen and (min-width: 560px) {
   .aboutImg {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
   }
 }
 @media screen and (max-width: 1025px) {
@@ -45,6 +44,7 @@
   flex-direction: column;
   align-items: flex-start;
   flex: 1;
+  justify-content: center;
 }
 .name {
   @apply text-5xl;
