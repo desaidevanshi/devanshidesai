@@ -6,11 +6,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.5rem;
+  padding: calc(3.5rem + 1rem) 1.5rem;
 }
 
 .alignment {
-  margin-top: calc(2.5rem + 1rem);
   width: 100%;
   max-width: 1024px;
   background-color: colors.$background-dark;
@@ -55,6 +54,7 @@
 }
 .portEduLeftText {
   @apply text-lg leading-6;
+  font-weight: 600;
   color: colors.$fontcolor-primary;
 }
 @media screen and (max-width: 777px) {

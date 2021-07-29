@@ -11,8 +11,7 @@
 .about {
   gap: 2rem;
   max-width: 1200px;
-  padding-bottom: 1.5rem;
-  padding-top: calc(3.5rem + 1rem);
+  padding: calc(3.5rem + 1rem) 1.5rem;
   display: flex;
   align-items: flex-start;
   color: colors.$fontcolor-primary;
@@ -27,12 +26,12 @@
     align-items: center;
   }
 }
-@media screen and (max-width: 1025px) {
-  .about {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-}
+// @media screen and (max-width: 1025px) {
+//   .about {
+//     padding-left: 2rem;
+//     padding-right: 2rem;
+//   }
+// }
 @media screen and (max-width: 1300px) {
   .about {
     max-width: 1024px;

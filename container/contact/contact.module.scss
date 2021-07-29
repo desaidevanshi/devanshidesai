@@ -1,5 +1,6 @@
 @use '../../styles/colors.scss';
 .container {
+  padding: calc(3.5rem + 1rem) 1rem;
   @apply lg:h-screen;
   // height: 100vh;
   background: colors.$background-dark;
