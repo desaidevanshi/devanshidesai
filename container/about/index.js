@@ -17,7 +17,7 @@ const About = ({ data }) => {
     <section id="about" className={styles.container}>
       <article className={styles.about}>
         <div className={styles.aboutImg}>
-          <Image src={data.portfolioImage.url} alt="aboutIm" height={400} width={513} />
+          <Image src={data.portfolioImage.url} alt="aboutIm" height={400} width={536} />
         </div>
         {/* <div>
           <Image
