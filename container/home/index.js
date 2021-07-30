@@ -27,7 +27,7 @@ const Home = ({ data }) => {
         </div>
         <div>
           <Image
-            src="/images/banner.jpg"
+            src={data.backgroundImage.url}
             height={422}
             width={511}
             alt="Girl sitting with laptop"
