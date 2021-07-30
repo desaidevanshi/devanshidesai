@@ -36,6 +36,7 @@ const ProjectDetails = ({ data }) => {
     imgRef.current.addEventListener('mouseover', stopScroll);
     imgRef.current.addEventListener('mouseout', startScroll);
     return () => {
+      stopScroll();
       imgRef.current.removeEventListener('mouseover', stopScroll);
       imgRef.current.removeEventListener('mouseout', startScroll);
     };
