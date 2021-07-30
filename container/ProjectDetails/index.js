@@ -3,11 +3,10 @@
 /* eslint-disable arrow-parens */
 import { useRouter } from 'next/router';
 import { useCallback, useEffect, useRef } from 'react';
-// import { useCallback, useEffect, useRef } from 'react';
 import Button from '../../components/Button';
 import Header from '../../components/Header';
 import PortText from '../../components/PortText';
-import styles from './singleBlog.module.scss';
+import styles from './projectDetails.module.scss';
 
 const ProjectDetails = ({ data }) => {
   const router = useRouter();
@@ -32,13 +31,14 @@ const ProjectDetails = ({ data }) => {
   }, []);
 
   useEffect(() => {
+    const instance = imgRef.current;
     startScroll();
-    imgRef.current.addEventListener('mouseover', stopScroll);
-    imgRef.current.addEventListener('mouseout', startScroll);
+    instance.addEventListener('mouseover', stopScroll);
+    instance.addEventListener('mouseout', startScroll);
     return () => {
       stopScroll();
-      imgRef.current.removeEventListener('mouseover', stopScroll);
-      imgRef.current.removeEventListener('mouseout', startScroll);
+      instance.removeEventListener('mouseover', stopScroll);
+      instance.removeEventListener('mouseout', startScroll);
     };
   }, [startScroll, stopScroll]);
 

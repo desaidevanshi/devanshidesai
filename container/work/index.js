@@ -17,14 +17,16 @@ const Work = ({ data }) => (
         {data.projects.map(x => (
           <Card variant="cardPort" key={x.id}>
             <div className={styles.relativeP}>
-              <Image height={300} width={300} src={x.displayImage.url} alt="projectIm" />
-              <div className={styles.cardContent}>
-                <Card variant="hoverPort">
-                  <div className={styles.hoverContext}>
-                    <h3 className={styles.portHoverCardText}>{x.title}</h3>
-                  </div>
-                </Card>
-              </div>
+              <a href={`work/${x.id}`}>
+                <Image height={300} width={300} src={x.displayImage.url} alt="projectIm" />
+                <div className={styles.cardContent}>
+                  <Card variant="hoverPort">
+                    <div className={styles.hoverContext}>
+                      <h3 className={styles.portHoverCardText}>{x.title}</h3>
+                    </div>
+                  </Card>
+                </div>
+              </a>
             </div>
           </Card>
         ))}
