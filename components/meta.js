@@ -17,7 +17,7 @@ export default function Meta() {
       <meta name="github:description" content="Devanshi Desai personal portfolio" />
       <meta name="github:card" content="summary" />
       <meta name="github:creator" content="@desaidevanshi" />
-      {/* lonked in */}
+      {/* linked in */}
       <meta name="linkedin:title" content="Devanshi Desai" />
       <meta name="linkedin:description" content="Devanshi Desai personal portfolio" />
       <meta name="linkedin:card" content="summary" />
@@ -30,7 +30,7 @@ export default function Meta() {
       <meta property="og:title" content="Devanshi Desai" />
       <meta property="og:description" content="Devanshi Desai personal portfolio" />
       <meta property="og:site_name" content="Devanshi Desai" />
-      <meta name="theme-color" content="#12232e" />
+      <meta name="theme-color" content="#fff" />
 
       <link rel="apple-touch-icon" href="apple-icon-180.png" />
 
