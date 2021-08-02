@@ -15,22 +15,7 @@
   align-items: flex-start;
   color: colors.$fontcolor-primary;
 }
-// .aboutImg {
-//   flex: 1;
-// }
-@media screen and (min-width: 560px) {
-  .aboutImg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-// @media screen and (max-width: 1025px) {
-//   .about {
-//     padding-left: 2rem;
-//     padding-right: 2rem;
-//   }
-// }
+
 @media screen and (max-width: 1300px) {
   .about {
     max-width: 1024px;
