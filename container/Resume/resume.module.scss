@@ -131,3 +131,21 @@
     @apply text-2xl;
   }
 }
+.item {
+  @apply xs:flex-col sm:flex-row flex flex-wrap justify-center md:flex-wrap xs:gap-4 lg:flex-1;
+}
+@media screen and (max-width: 777px) {
+  .item {
+    flex-direction: row;
+  }
+}
+.relativeP {
+  @apply relative cursor-pointer;
+}
+.hoverContext {
+  @apply flex flex-col items-center;
+}
+.portHoverCardText {
+  color: colors.$background-dark;
+  text-align: center;
+}

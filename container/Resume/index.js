@@ -5,13 +5,17 @@
 /* eslint-disable react/jsx-one-expression-per-line */
 import React from 'react';
 import { useRouter } from 'next/router';
+import Image from 'next/image';
 import Header from '../../components/Header';
 import styles from './resume.module.scss';
 import useSkills from '../../hooks/useSkills';
+import useCertificates from '../../hooks/useCertificates';
+import Card from '../../components/Card';
 
 const Skills = ({ data }) => {
   const router = useRouter();
   const { data: skillsData } = useSkills();
+  const { data: certificateData } = useCertificates();
   return (
     <div className={styles.light_theme}>
       <Header>
@@ -70,6 +74,28 @@ const Skills = ({ data }) => {
               </p>
             </div>
           ))}
+        </div>
+        <div className={styles.blockTable}>
+          <h2 variant="portHeadingText" className={styles.portHeadingText}>
+            Certificates
+          </h2>
+
+          <div className={styles.item}>
+            {certificateData?.map(x => (
+              <Card variant="cardPort" key={x.id}>
+                <div className={styles.relativeP}>
+                  <Image height={232} width={300} src={x.certificate.url} alt="projectIm" />
+                  <div className={styles.cardContent}>
+                    <Card variant="hoverPort">
+                      <div className={styles.hoverContext}>
+                        <h3 className={styles.portHoverCardText}>{x.title}</h3>
+                      </div>
+                    </Card>
+                  </div>
+                </div>
+              </Card>
+            ))}
+          </div>
         </div>
         <div className={styles.blockTable}>
           <h2 variant="portHeadingText" className={styles.portHeadingText}>
