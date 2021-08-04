@@ -25,15 +25,13 @@ const Home = ({ data }) => {
             />
           </p>
         </div>
-        <div>
-          <Image
-            src={data.backgroundImage.url}
-            height={422}
-            width={511}
-            alt="Girl sitting with laptop"
-            priority
-          />
-        </div>
+        <Image
+          src={data.backgroundImage.url}
+          height={422}
+          width={511}
+          alt="Girl sitting with laptop"
+          priority
+        />
       </section>
       <div style={{ justifyContent: 'center', display: 'flex' }}>
         <Image src="/images/sep.png" width={640} height={204} alt="Seperator" />

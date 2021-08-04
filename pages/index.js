@@ -14,14 +14,14 @@ import useContact from '../hooks/useContact';
 import PageLoader from '../container/PageLoader';
 
 export default function main() {
-  const { data: bannerData, isLoading: bannerLoading } = useBanner();
+  const { data: bannerData, isLoading } = useBanner();
   const { data: aboutData } = useAbout();
   const { data: servicesData } = useServices();
   const { data: educationData } = useEducation();
   const { data: workData } = useWork();
   const { data: contactData } = useContact();
 
-  if (bannerLoading) {
+  if (isLoading) {
     return <PageLoader />;
   }
 
