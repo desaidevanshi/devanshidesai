@@ -4,7 +4,6 @@
 import PropTypes from 'prop-types';
 import styles from './button.module.scss';
 
-// main button
 // eslint-disable-next-line prettier/prettier
 const Button = ({ variant, className, isDisabled, children, isLoading, onClick, ...rest }) => (
   <a

@@ -42,13 +42,8 @@
   align-items: center;
   background: transparent;
   border: none;
-  // border: solid 2px colors.$fontcolor-primary;
-  // border-radius: 50%;
-  // height: 5rem;
-  // width: 5rem;
 }
 .portServiceButton:hover {
-  // background-color: colors.$fontcolor-secondary;
   box-shadow: 0px 10px 10px colors.$background-light;
   transform: translateZ(2px);
   transition-duration: 500ms;

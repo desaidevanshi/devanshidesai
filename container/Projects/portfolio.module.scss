@@ -34,7 +34,7 @@
   font-size: large;
 }
 .relativeP {
-  @apply relative h-full w-full;
+  @apply relative w-full;
   cursor: pointer;
   > Image:hover {
     filter: grayscale(0%);

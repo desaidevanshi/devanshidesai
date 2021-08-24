@@ -12,6 +12,7 @@ import useEducation from '../hooks/useEducation';
 import useWork from '../hooks/useWork';
 import useContact from '../hooks/useContact';
 import PageLoader from '../container/PageLoader';
+// import Testimonial from '../container/testimonial';
 
 export default function main() {
   const { data: bannerData, isLoading } = useBanner();
@@ -24,7 +25,6 @@ export default function main() {
   if (isLoading) {
     return <PageLoader />;
   }
-
   return (
     <>
       <Head>
