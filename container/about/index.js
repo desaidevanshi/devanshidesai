@@ -29,7 +29,7 @@ const About = ({ data }) => {
               <Icon key={x.id} socialLink={x} variant="iconBtn" />
             ))}
           </div>
-          <Button href="/Resume.pdf" download={data.resume.url}>
+          <Button href="/Devanshi Desai (Resume).pdf" download={data.resume.url}>
             {data.downloadCVText}
           </Button>
         </aside>
